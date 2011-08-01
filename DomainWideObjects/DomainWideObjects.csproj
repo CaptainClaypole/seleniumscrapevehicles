@@ -43,6 +43,7 @@
     <Compile Include="IAuthenticatable.cs" />
     <Compile Include="ISiteConfigurable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchResults.cs" />
     <Compile Include="SiteConfig.cs" />
     <Compile Include="Website.cs" />
   </ItemGroup>

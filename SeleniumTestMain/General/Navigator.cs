@@ -10,7 +10,7 @@ using OpenQA.Selenium.IE;
 using OpenQA.Selenium.Firefox;
 using System.Diagnostics;
 using DomainWideObjects;
-
+using SeleniumTestMain.General;
 
 
 namespace SeleniumTestMain
@@ -30,9 +30,12 @@ namespace SeleniumTestMain
 
         private SiteConfigurator siteConfig;
         private Website website;
+        public SearchResults pageNum;
+        private int currentPageNum = 1;
 
-        // Set initial page number integer
-        private int pageNum = 1;
+
+
+       
 
 
 
@@ -74,44 +77,48 @@ namespace SeleniumTestMain
 
         }
 
-        public void pageNumChecker()
+        public void ClickNextPage(int i)
         {
-            int pageNumCounted = 1;
-            pageNum = 1;
-
-      
-
-            // proper while
-            while (CheckForNextPage())
+            
+            if (pageNum.searchResultsPageCount > 1)
             {
-                pageNumCounted = pageNum;
-                Console.WriteLine(pageNumCounted);
-                // increment page number to see if it exists.
-                pageNum++;
-            }
+                if (i < pageNum.searchResultsPageCount)
+                {
+                  // do something if more than one page
+                    //currentPageNum++; // increment page number and then click it.
 
-            Console.WriteLine("hello");
+                   bool isClicked = ClickPage(i);
+                    
+
+                }
+                
+
+            }
+            else
+            {
+                Console.WriteLine("nothing to click"); 
+
+                // Search for next vehicle.
+            }
+            
+
+
         }
 
-        public bool CheckForNextPage()
-        {
-            // Wait for element
-            driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 1));
-            try {
-
-                driver.FindElement(By.XPath("//a[@onclick='navi(this," + pageNum + ");']"));
-
+        private bool ClickPage(int currentPageNum) {
+            try
+            {
+                // set longer timeout to wait before clicking element.
+                driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 15));
+                driver.FindElement(By.XPath("//a[@onclick='navi(this," + currentPageNum + ");']")).Click();
                 return true;
-            } catch (Exception e) {
-                // not found!!
-
+                driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 1));
+            }catch(Exception)
+            {
                 return false;
             }
-
-
-
-         
         }
+
 
 
 

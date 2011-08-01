@@ -9,7 +9,8 @@ using SeleniumTestMain.General.Data;
 namespace SeleniumTestMain {
     public class Main
     {
-       
+        private string tableHTMLtagToScrape = "t_main";
+        
 
         public void MainMethod()
         {
@@ -23,16 +24,29 @@ namespace SeleniumTestMain {
             // Select Make
             IVehicleSelector vehicleSelector = new VehicleSelector(driver);
             vehicleSelector.SelectMake();
+            
             // Select Model
             vehicleSelector.SelectModel();
-            // Drag Slider Test
-            var dataScraper = new DataScraper(driver);
-
-            // Call the datascraper and send through an argument for the class to search for.
-            dataScraper.GetHtml("t_main");
-            
             // Check for the number of pages of the vehicles.
-            navigator.pageNumChecker();
+            var pageCounter = new PageCounter(driver);
+            var pageNum = pageCounter.pageNumChecker();  // check number of pages and return the number of pages
+            
+            // Click next page
+            navigator.pageNum = pageNum;  // Set the property for the number of pages first
+
+
+            for (int i = 1; i <= pageNum.searchResultsPageCount; i++ ) {
+                
+                // Call the datascraper and send through an argument for the class to search for.
+                var dataScraper = new DataScraper(driver);
+                dataScraper.GetHtml(tableHTMLtagToScrape);
+
+                // Click the next page
+                navigator.ClickNextPage(i);
+
+            }
+
+
 
 
 

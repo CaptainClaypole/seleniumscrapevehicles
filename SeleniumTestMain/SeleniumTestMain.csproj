@@ -73,6 +73,7 @@
     <Compile Include="General\Data\IDataScraper.cs" />
     <Compile Include="General\IVehicleSelector.cs" />
     <Compile Include="General\Navigator.cs" />
+    <Compile Include="General\PageCounter.cs" />
     <Compile Include="General\VehicleSelector.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="Program.cs" />
