@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="General\Authenticator.cs" />
+    <Compile Include="General\ConditionPicker.cs" />
     <Compile Include="General\Data\DataScraper.cs" />
     <Compile Include="General\Data\IDataScraper.cs" />
     <Compile Include="General\IVehicleSelector.cs" />

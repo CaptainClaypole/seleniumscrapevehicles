@@ -27,6 +27,12 @@ namespace SeleniumTestMain {
             
             // Select Model
             vehicleSelector.SelectModel();
+            // Condition Picker
+            var conditionPicker = new ConditionPicker(driver);
+          
+            // Click condition list
+            conditionPicker.ClickConditions();
+
             // Check for the number of pages of the vehicles.
             var pageCounter = new PageCounter(driver);
             var pageNum = pageCounter.pageNumChecker();  // check number of pages and return the number of pages

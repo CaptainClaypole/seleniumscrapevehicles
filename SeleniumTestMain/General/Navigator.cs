@@ -109,7 +109,7 @@ namespace SeleniumTestMain
             try
             {
                 // set longer timeout to wait before clicking element.
-                driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 15));
+                driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 40));
                 driver.FindElement(By.XPath("//a[@onclick='navi(this," + currentPageNum + ");']")).Click();
                 return true;
                 driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 1));
