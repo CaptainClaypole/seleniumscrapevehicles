@@ -20,3 +20,20 @@ C:\Users\jon.JMC\Documents\Visual Studio 2010\Projects\SeleniumTestMain\Test1\bi
 C:\Users\jon.JMC\Documents\Visual Studio 2010\Projects\SeleniumTestMain\Test1\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\jon.JMC\Documents\Visual Studio 2010\Projects\SeleniumTestMain\Test1\obj\Debug\Test1.dll
 C:\Users\jon.JMC\Documents\Visual Studio 2010\Projects\SeleniumTestMain\Test1\obj\Debug\Test1.pdb
+H:\seleniumTest\Test1\bin\Debug\Test1.dll
+H:\seleniumTest\Test1\bin\Debug\Test1.pdb
+H:\seleniumTest\Test1\bin\Debug\nunit.framework.dll
+H:\seleniumTest\Test1\bin\Debug\Newtonsoft.Json.dll
+H:\seleniumTest\Test1\bin\Debug\Ionic.Zip.Reduced.dll
+H:\seleniumTest\Test1\bin\Debug\nunit.framework.xml
+H:\seleniumTest\Test1\bin\Debug\Selenium.WebDriverBackedSelenium.pdb
+H:\seleniumTest\Test1\bin\Debug\Selenium.WebDriverBackedSelenium.xml
+H:\seleniumTest\Test1\bin\Debug\ThoughtWorks.Selenium.Core.pdb
+H:\seleniumTest\Test1\bin\Debug\ThoughtWorks.Selenium.Core.xml
+H:\seleniumTest\Test1\bin\Debug\WebDriver.pdb
+H:\seleniumTest\Test1\bin\Debug\WebDriver.xml
+H:\seleniumTest\Test1\bin\Debug\Webdriver.Support.pdb
+H:\seleniumTest\Test1\bin\Debug\Webdriver.Support.xml
+H:\seleniumTest\Test1\obj\Debug\ResolveAssemblyReference.cache
+H:\seleniumTest\Test1\obj\Debug\Test1.dll
+H:\seleniumTest\Test1\obj\Debug\Test1.pdb
