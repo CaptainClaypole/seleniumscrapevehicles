@@ -47,3 +47,4 @@ H:\seleniumTest\SeleniumTestMain\bin\Debug\WebDriver.xml
 H:\seleniumTest\SeleniumTestMain\bin\Debug\Webdriver.Support.pdb
 H:\seleniumTest\SeleniumTestMain\bin\Debug\Webdriver.Support.xml
 H:\seleniumTest\SeleniumTestMain\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\jon.JMC\seleniumScrape\SeleniumTestMain\bin\Debug\SeleniumTestMain.exe.config

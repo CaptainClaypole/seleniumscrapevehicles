@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using DomainWideObjects;
+using DomainWideObjects.DataAccess;
 using SeleniumTestMain.General;
 using SeleniumTestMain.General.Data;
 
@@ -14,6 +15,9 @@ namespace SeleniumTestMain {
 
         public void MainMethod()
         {
+            DbTest();
+
+
             Navigator navigator = new Navigator();
            // Instanciate objects in the navigator
             navigator.Create();
@@ -61,6 +65,17 @@ namespace SeleniumTestMain {
 
 
 
+        }
+
+        private void DbTest()
+        {
+            CreateHTMLlist createHtmlList = new CreateHTMLlist();
+            Console.WriteLine("about to add to list...");
+            createHtmlList.addToList();
+            Console.ReadLine();
+            Console.WriteLine("about to save to db...");
+            createHtmlList.SaveList();
+            Console.ReadLine();
         }
     }
 }

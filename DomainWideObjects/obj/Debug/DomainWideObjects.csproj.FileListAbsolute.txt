@@ -8,3 +8,4 @@ C:\Users\jon.JMC\seleniumScrape\DomainWideObjects\bin\Debug\DomainWideObjects.pd
 C:\Users\jon.JMC\seleniumScrape\DomainWideObjects\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\jon.JMC\seleniumScrape\DomainWideObjects\obj\Debug\DomainWideObjects.dll
 C:\Users\jon.JMC\seleniumScrape\DomainWideObjects\obj\Debug\DomainWideObjects.pdb
+C:\Users\jon.JMC\seleniumScrape\DomainWideObjects\bin\Debug\DomainWideObjects.dll.config
