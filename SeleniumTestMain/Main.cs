@@ -15,7 +15,7 @@ namespace SeleniumTestMain {
 
         public void MainMethod()
         {
-            DbTest();
+            //DbTest();
 
 
             Navigator navigator = new Navigator();
@@ -67,15 +67,15 @@ namespace SeleniumTestMain {
 
         }
 
-        private void DbTest()
-        {
-            CreateHTMLlist createHtmlList = new CreateHTMLlist();
-            Console.WriteLine("about to add to list...");
-            createHtmlList.addToList();
-            Console.ReadLine();
-            Console.WriteLine("about to save to db...");
-            createHtmlList.SaveList();
-            Console.ReadLine();
-        }
+        //private void DbTest()
+        //{
+        //    CreateHTMLlist createHtmlList = new CreateHTMLlist();
+        //    Console.WriteLine("about to add to list...");
+        //    createHtmlList.addToList();
+        //    Console.ReadLine();
+        //    Console.WriteLine("about to save to db...");
+        //    createHtmlList.SaveList();
+        //    Console.ReadLine();
+        //}
     }
 }

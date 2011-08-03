@@ -9,3 +9,9 @@ C:\Users\jon.JMC\seleniumScrape\DomainWideObjects\obj\Debug\ResolveAssemblyRefer
 C:\Users\jon.JMC\seleniumScrape\DomainWideObjects\obj\Debug\DomainWideObjects.dll
 C:\Users\jon.JMC\seleniumScrape\DomainWideObjects\obj\Debug\DomainWideObjects.pdb
 C:\Users\jon.JMC\seleniumScrape\DomainWideObjects\bin\Debug\DomainWideObjects.dll.config
+H:\SeleniumTest\seleniumtestmain\DomainWideObjects\bin\Debug\DomainWideObjects.dll.config
+H:\SeleniumTest\seleniumtestmain\DomainWideObjects\bin\Debug\DomainWideObjects.dll
+H:\SeleniumTest\seleniumtestmain\DomainWideObjects\bin\Debug\DomainWideObjects.pdb
+H:\SeleniumTest\seleniumtestmain\DomainWideObjects\obj\Debug\ResolveAssemblyReference.cache
+H:\SeleniumTest\seleniumtestmain\DomainWideObjects\obj\Debug\DomainWideObjects.dll
+H:\SeleniumTest\seleniumtestmain\DomainWideObjects\obj\Debug\DomainWideObjects.pdb

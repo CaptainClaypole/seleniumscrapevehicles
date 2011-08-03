@@ -33,6 +33,8 @@ namespace SeleniumTestMain
         public SearchResults pageNum;
         private int currentPageNum = 1;
 
+        public bool isLogin = false;
+
 
 
        
@@ -67,12 +69,20 @@ namespace SeleniumTestMain
         public IWebDriver LoginToPage()
         {
 
-            Authenticator authenticator = new Authenticator(website, driver);
-            // Call the authenticate method.
-            authenticator.Authenticate();
+            if (isLogin) {
 
-            // return the webdriver object
+                Authenticator authenticator = new Authenticator(website, driver);
+                // Call the authenticate method.
+                authenticator.Authenticate();
+
+                // return the webdriver object
+                return driver;
+
+            }
+
             return driver;
+
+            
 
 
         }

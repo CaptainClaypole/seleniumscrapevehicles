@@ -48,3 +48,17 @@ H:\seleniumTest\SeleniumTestMain\bin\Debug\Webdriver.Support.pdb
 H:\seleniumTest\SeleniumTestMain\bin\Debug\Webdriver.Support.xml
 H:\seleniumTest\SeleniumTestMain\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\jon.JMC\seleniumScrape\SeleniumTestMain\bin\Debug\SeleniumTestMain.exe.config
+H:\SeleniumTest\seleniumtestmain\SeleniumTestMain\bin\Debug\SeleniumTestMain.exe.config
+H:\SeleniumTest\seleniumtestmain\SeleniumTestMain\obj\x86\Debug\SeleniumTestMain.exe
+H:\SeleniumTest\seleniumtestmain\SeleniumTestMain\obj\x86\Debug\SeleniumTestMain.pdb
+H:\SeleniumTest\seleniumtestmain\SeleniumTestMain\bin\Debug\SeleniumTestMain.exe
+H:\SeleniumTest\seleniumtestmain\SeleniumTestMain\bin\Debug\SeleniumTestMain.pdb
+H:\SeleniumTest\seleniumtestmain\SeleniumTestMain\bin\Debug\DomainWideObjects.dll
+H:\SeleniumTest\seleniumtestmain\SeleniumTestMain\bin\Debug\nunit.framework.dll
+H:\SeleniumTest\seleniumtestmain\SeleniumTestMain\bin\Debug\DomainWideObjects.pdb
+H:\SeleniumTest\seleniumtestmain\SeleniumTestMain\bin\Debug\nunit.framework.xml
+H:\SeleniumTest\seleniumtestmain\SeleniumTestMain\bin\Debug\WebDriver.pdb
+H:\SeleniumTest\seleniumtestmain\SeleniumTestMain\bin\Debug\WebDriver.xml
+H:\SeleniumTest\seleniumtestmain\SeleniumTestMain\bin\Debug\Webdriver.Support.pdb
+H:\SeleniumTest\seleniumtestmain\SeleniumTestMain\bin\Debug\Webdriver.Support.xml
+H:\SeleniumTest\seleniumtestmain\SeleniumTestMain\obj\x86\Debug\ResolveAssemblyReference.cache
