@@ -50,6 +50,9 @@ namespace SeleniumTestMain {
                 // Call the datascraper and send through an argument for the class to search for.
                 var dataScraper = new DataScraper(driver);
                 dataScraper.GetHtml(tableHTMLtagToScrape);
+                
+                
+
 
                 // Click the next page
                 navigator.ClickNextPage(i);

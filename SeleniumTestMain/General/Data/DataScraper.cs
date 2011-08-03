@@ -6,6 +6,8 @@ using OpenQA.Selenium;
 using DomainWideObjects.DataAccess;
 
 
+
+
 namespace SeleniumTestMain.General.Data {
     class DataScraper : IDataScraper {
         #region IDataScraper Members
@@ -37,7 +39,7 @@ namespace SeleniumTestMain.General.Data {
 
         }
 
-        private void AddHTMLtoList(string tableElementHTML)
+        public void AddHTMLtoList(string tableElementHTML)
         {
            // Add the scraped html to the list.
             var htmlData = new HTMLlist() { 
@@ -49,7 +51,7 @@ namespace SeleniumTestMain.General.Data {
             // Add to db
             AddToDb(htmlData);
 
- 
+  
 
         }
 

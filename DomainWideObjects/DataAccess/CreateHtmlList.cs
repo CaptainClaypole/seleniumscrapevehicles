@@ -16,15 +16,12 @@ namespace DomainWideObjects.DataAccess {
             // Create database context.
             var ctx = new DataModelContainer();
 
-
-            var htmlList1 = new HTMLlist()
-            {
-               
+            ctx.HTMLlists.AddObject(htmlListObject);
+            ctx.SaveChanges();
 
 
-            };
 
-            
+
 
         }
       
