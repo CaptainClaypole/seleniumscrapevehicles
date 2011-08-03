@@ -15,3 +15,9 @@ H:\SeleniumTest\seleniumtestmain\DomainWideObjects\bin\Debug\DomainWideObjects.p
 H:\SeleniumTest\seleniumtestmain\DomainWideObjects\obj\Debug\ResolveAssemblyReference.cache
 H:\SeleniumTest\seleniumtestmain\DomainWideObjects\obj\Debug\DomainWideObjects.dll
 H:\SeleniumTest\seleniumtestmain\DomainWideObjects\obj\Debug\DomainWideObjects.pdb
+C:\Users\jon.JMC\seleniumtestmain\DomainWideObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jon.JMC\seleniumtestmain\DomainWideObjects\obj\Debug\DomainWideObjects.dll
+C:\Users\jon.JMC\seleniumtestmain\DomainWideObjects\bin\Debug\DomainWideObjects.dll.config
+C:\Users\jon.JMC\seleniumtestmain\DomainWideObjects\bin\Debug\DomainWideObjects.dll
+C:\Users\jon.JMC\seleniumtestmain\DomainWideObjects\bin\Debug\DomainWideObjects.pdb
+C:\Users\jon.JMC\seleniumtestmain\DomainWideObjects\obj\Debug\DomainWideObjects.pdb

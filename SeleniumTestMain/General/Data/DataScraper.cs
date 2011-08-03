@@ -42,9 +42,9 @@ namespace SeleniumTestMain.General.Data {
         public void AddHTMLtoList(string tableElementHTML)
         {
            // Add the scraped html to the list.
-            var htmlData = new HTMLlist() { 
+            var htmlData = new tblHtml { 
             
-                ListHtml = tableElementHTML
+                html_data = tableElementHTML
                             
             };
 
@@ -55,7 +55,7 @@ namespace SeleniumTestMain.General.Data {
 
         }
 
-        private void AddToDb(HTMLlist htmlData) {
+        private void AddToDb(tblHtml htmlData) {
 
             var addHtmlToDb = new CreateHTMLlist();
 

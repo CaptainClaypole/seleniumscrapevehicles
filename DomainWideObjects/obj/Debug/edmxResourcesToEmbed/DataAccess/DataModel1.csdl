@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="seleniumScrapeModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="seleniumScrapeEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="sysdiagrams" EntityType="seleniumScrapeModel.sysdiagram" />
+    <EntitySet Name="tblHtmls" EntityType="seleniumScrapeModel.tblHtml" />
+    <EntitySet Name="tblPages" EntityType="seleniumScrapeModel.tblPage" />
+    <AssociationSet Name="FK_tblHtml_tblPage" Association="seleniumScrapeModel.FK_tblHtml_tblPage">
+      <End Role="tblPage" EntitySet="tblPages" />
+      <End Role="tblHtml" EntitySet="tblHtmls" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tblHtml">
+    <Key>
+      <PropertyRef Name="html_id_pk" />
+    </Key>
+    <Property Name="html_id_pk" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="html_data" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="page_id_fk" Type="Int32" />
+    <NavigationProperty Name="tblPage" Relationship="seleniumScrapeModel.FK_tblHtml_tblPage" FromRole="tblHtml" ToRole="tblPage" />
+  </EntityType>
+  <EntityType Name="tblPage">
+    <Key>
+      <PropertyRef Name="page_id_pk" />
+    </Key>
+    <Property Name="page_id_pk" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="page_vehicle_model" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="page_vehicle_make" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="tblHtmls" Relationship="seleniumScrapeModel.FK_tblHtml_tblPage" FromRole="tblPage" ToRole="tblHtml" />
+  </EntityType>
+  <Association Name="FK_tblHtml_tblPage">
+    <End Role="tblPage" Type="seleniumScrapeModel.tblPage" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblHtml" Type="seleniumScrapeModel.tblHtml" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblPage">
+        <PropertyRef Name="page_id_pk" />
+      </Principal>
+      <Dependent Role="tblHtml">
+        <PropertyRef Name="page_id_fk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

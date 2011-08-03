@@ -49,6 +49,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="DataAccess\DataModel1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataModel1.edmx</DependentUpon>
+    </Compile>
     <Compile Include="IAuthenticatable.cs" />
     <Compile Include="ISiteConfigurable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -64,6 +69,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
+    <EntityDeploy Include="DataAccess\DataModel1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DataModel1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
   </ItemGroup>
   <ItemGroup>
     <Content Include="DataAccess\DataModel.edmx.sql" />

@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="seleniumScrapeModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="seleniumScrapeModelStoreContainer">
+          <EntitySet Name="sysdiagrams" EntityType="seleniumScrapeModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblHtml" EntityType="seleniumScrapeModel.Store.tblHtml" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblPage" EntityType="seleniumScrapeModel.Store.tblPage" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_tblHtml_tblPage" Association="seleniumScrapeModel.Store.FK_tblHtml_tblPage">
+            <End Role="tblPage" EntitySet="tblPage" />
+            <End Role="tblHtml" EntitySet="tblHtml" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="tblHtml">
+          <Key>
+            <PropertyRef Name="html_id_pk" />
+          </Key>
+          <Property Name="html_id_pk" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="html_data" Type="nvarchar(max)" />
+          <Property Name="page_id_fk" Type="int" />
+        </EntityType>
+        <EntityType Name="tblPage">
+          <Key>
+            <PropertyRef Name="page_id_pk" />
+          </Key>
+          <Property Name="page_id_pk" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="page_vehicle_model" Type="varchar" MaxLength="50" />
+          <Property Name="page_vehicle_make" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_tblHtml_tblPage">
+          <End Role="tblPage" Type="seleniumScrapeModel.Store.tblPage" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="tblHtml" Type="seleniumScrapeModel.Store.tblHtml" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblPage">
+              <PropertyRef Name="page_id_pk" />
+            </Principal>
+            <Dependent Role="tblHtml">
+              <PropertyRef Name="page_id_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="seleniumScrapeModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="seleniumScrapeEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="sysdiagrams" EntityType="seleniumScrapeModel.sysdiagram" />
+          <EntitySet Name="tblHtmls" EntityType="seleniumScrapeModel.tblHtml" />
+          <EntitySet Name="tblPages" EntityType="seleniumScrapeModel.tblPage" />
+          <AssociationSet Name="FK_tblHtml_tblPage" Association="seleniumScrapeModel.FK_tblHtml_tblPage">
+            <End Role="tblPage" EntitySet="tblPages" />
+            <End Role="tblHtml" EntitySet="tblHtmls" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tblHtml">
+          <Key>
+            <PropertyRef Name="html_id_pk" />
+          </Key>
+          <Property Name="html_id_pk" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="html_data" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="page_id_fk" Type="Int32" />
+          <NavigationProperty Name="tblPage" Relationship="seleniumScrapeModel.FK_tblHtml_tblPage" FromRole="tblHtml" ToRole="tblPage" />
+        </EntityType>
+        <EntityType Name="tblPage">
+          <Key>
+            <PropertyRef Name="page_id_pk" />
+          </Key>
+          <Property Name="page_id_pk" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="page_vehicle_model" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="page_vehicle_make" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="tblHtmls" Relationship="seleniumScrapeModel.FK_tblHtml_tblPage" FromRole="tblPage" ToRole="tblHtml" />
+        </EntityType>
+        <Association Name="FK_tblHtml_tblPage">
+          <End Role="tblPage" Type="seleniumScrapeModel.tblPage" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="tblHtml" Type="seleniumScrapeModel.tblHtml" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblPage">
+              <PropertyRef Name="page_id_pk" />
+            </Principal>
+            <Dependent Role="tblHtml">
+              <PropertyRef Name="page_id_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="seleniumScrapeModelStoreContainer" CdmEntityContainer="seleniumScrapeEntities">
+          <EntitySetMapping Name="sysdiagrams"><EntityTypeMapping TypeName="seleniumScrapeModel.sysdiagram"><MappingFragment StoreEntitySet="sysdiagrams">
+            <ScalarProperty Name="name" ColumnName="name" />
+            <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+            <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+            <ScalarProperty Name="version" ColumnName="version" />
+            <ScalarProperty Name="definition" ColumnName="definition" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblHtmls"><EntityTypeMapping TypeName="seleniumScrapeModel.tblHtml"><MappingFragment StoreEntitySet="tblHtml">
+            <ScalarProperty Name="html_id_pk" ColumnName="html_id_pk" />
+            <ScalarProperty Name="html_data" ColumnName="html_data" />
+            <ScalarProperty Name="page_id_fk" ColumnName="page_id_fk" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblPages"><EntityTypeMapping TypeName="seleniumScrapeModel.tblPage"><MappingFragment StoreEntitySet="tblPage">
+            <ScalarProperty Name="page_id_pk" ColumnName="page_id_pk" />
+            <ScalarProperty Name="page_vehicle_model" ColumnName="page_vehicle_model" />
+            <ScalarProperty Name="page_vehicle_make" ColumnName="page_vehicle_make" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="DataModel1">
+        <EntityTypeShape EntityType="seleniumScrapeModel.sysdiagram" Width="1.5" PointX="0.75" PointY="3.75" Height="1.9802864583333335" IsExpanded="true" />
+        <EntityTypeShape EntityType="seleniumScrapeModel.tblHtml" Width="1.5" PointX="3" PointY="0.875" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="seleniumScrapeModel.tblPage" Width="1.5" PointX="0.75" PointY="0.875" Height="1.7879850260416665" IsExpanded="true" />
+        <AssociationConnector Association="seleniumScrapeModel.FK_tblHtml_tblPage" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="1.7689925130208333" />
+          <ConnectorPoint PointX="3" PointY="1.7689925130208333" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

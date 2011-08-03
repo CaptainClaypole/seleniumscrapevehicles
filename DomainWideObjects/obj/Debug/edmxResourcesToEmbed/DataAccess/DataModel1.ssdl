@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="seleniumScrapeModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="seleniumScrapeModelStoreContainer">
+    <EntitySet Name="sysdiagrams" EntityType="seleniumScrapeModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblHtml" EntityType="seleniumScrapeModel.Store.tblHtml" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblPage" EntityType="seleniumScrapeModel.Store.tblPage" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_tblHtml_tblPage" Association="seleniumScrapeModel.Store.FK_tblHtml_tblPage">
+      <End Role="tblPage" EntitySet="tblPage" />
+      <End Role="tblHtml" EntitySet="tblHtml" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="tblHtml">
+    <Key>
+      <PropertyRef Name="html_id_pk" />
+    </Key>
+    <Property Name="html_id_pk" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="html_data" Type="nvarchar(max)" />
+    <Property Name="page_id_fk" Type="int" />
+  </EntityType>
+  <EntityType Name="tblPage">
+    <Key>
+      <PropertyRef Name="page_id_pk" />
+    </Key>
+    <Property Name="page_id_pk" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="page_vehicle_model" Type="varchar" MaxLength="50" />
+    <Property Name="page_vehicle_make" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_tblHtml_tblPage">
+    <End Role="tblPage" Type="seleniumScrapeModel.Store.tblPage" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblHtml" Type="seleniumScrapeModel.Store.tblHtml" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblPage">
+        <PropertyRef Name="page_id_pk" />
+      </Principal>
+      <Dependent Role="tblHtml">
+        <PropertyRef Name="page_id_fk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
