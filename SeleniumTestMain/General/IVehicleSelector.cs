@@ -2,8 +2,8 @@
 {
     public interface IVehicleSelector
     {
-        void SelectMake();
-        void SelectModel();
+        void SelectMake(string make);
+        void SelectModel(string model);
       
 
 

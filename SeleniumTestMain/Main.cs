@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using DomainWideObjects;
 using DomainWideObjects.DataAccess;
+using OpenQA.Selenium;
 using SeleniumTestMain.General;
 using SeleniumTestMain.General.Data;
 
@@ -25,15 +26,37 @@ namespace SeleniumTestMain {
             navigator.NavigateToPage();
             // login to page - return the selenium driver into the var.
             var driver = navigator.LoginToPage();
+            // Begin foreach for all vehicles
+
+            
+          
+
+           
+            
+                
+                MainNavigationToLoop(navigator, driver);
+            
+            
+               
+
+           
+            
+            
+
+           
+        }
+
+        private void MainNavigationToLoop(Navigator navigator, IWebDriver driver)
+        {
             // Select Make
             IVehicleSelector vehicleSelector = new VehicleSelector(driver);
-            vehicleSelector.SelectMake();
-            
+            vehicleSelector.SelectMake("TOYOTA");
+
             // Select Model
-            vehicleSelector.SelectModel();
+            vehicleSelector.SelectModel("TOWN ACE TRUCK");
             // Condition Picker
             var conditionPicker = new ConditionPicker(driver);
-          
+
             // Click condition list
             conditionPicker.ClickConditions();
 
@@ -42,37 +65,25 @@ namespace SeleniumTestMain {
 
             // Check for the number of pages of the vehicles.
             var pageCounter = new PageCounter(driver);
-            var pageNum = pageCounter.pageNumChecker();  // check number of pages and return the number of pages
-            
+            var pageNum = pageCounter.pageNumChecker(); // check number of pages and return the number of pages
+
             // Click next page
-            navigator.pageNum = pageNum;  // Set the property for the number of pages first
+            navigator.pageNum = pageNum; // Set the property for the number of pages first
 
 
-            for (int i = 1; i <= pageNum.searchResultsPageCount; i++ ) {
-                
+            for (int i = 1; i <= pageNum.searchResultsPageCount; i++)
+            {
                 // Call the datascraper and send through an argument for the class to search for.
                 var dataScraper = new DataScraper(driver);
                 dataScraper.GetHtml(tableHTMLtagToScrape);
-                
+
                 // Add new vehicle (test)
                 dataScraper.AddNewVehicle();
-                
 
 
                 // Click the next page
                 navigator.ClickNextPage(i);
-
             }
-
-
-
-
-
-
-
-
-
-
         }
 
         //private void DbTest()

@@ -18,8 +18,7 @@ namespace SeleniumTestMain.General {
     public class VehicleSelector : IVehicleSelector
     {
         private IWebDriver driver;
-        private string make = "TOYOTA";
-        private string model = "HIACE VAN";
+       
 
         // construct
     
@@ -31,7 +30,7 @@ namespace SeleniumTestMain.General {
         #region IVehicleSelector Members
 
        
-        public void SelectMake()
+        public void SelectMake(string make)
         {
             // CHECK MAKE IS THERE
             bool isMakePresent = CheckMakeIsPresent(make);
@@ -56,7 +55,7 @@ namespace SeleniumTestMain.General {
 
     
 
-        public void SelectModel() {
+        public void SelectModel(string model) {
            // Check model is there
            bool isModelPresent = CheckModelIsPresent(model);
            

@@ -65,10 +65,14 @@ namespace SeleniumTestMain.General.Data {
 
         public void AddNewVehicle()
         {
-            var vehicleCountry = new tblVehicleTypeCountry()
-                                     {
-                                         Vehicle_Type = "SwarziLand"
-                                     };
+            //var vehicleCountry = new tblVehicleTypeCountry()
+            //                         {
+            //                             Vehicle_Type = "SwarziLand"
+            //                         };
+
+           
+
+
             var vehicleGeneral = new tblVehicleTypeGeneral()
                                      {
                                          VehicleTypeGeneral = "Tractor"
@@ -86,7 +90,7 @@ namespace SeleniumTestMain.General.Data {
                               {
                                   Vehicle_Make = "John Deere",
                                   Vehicle_Model = "Night Terror 14 killah",
-                                  tblVehicleTypeCountry = vehicleCountry,
+                                  //tblVehicleTypeCountry = vehicleCountry,
                                   tblVehicleTypeGeneral = vehicleGeneral,
                                   tblVehicleTypeDefined = vehicleDefined
 
@@ -96,6 +100,19 @@ namespace SeleniumTestMain.General.Data {
             SaveNewVehicleToDB(vehicle);
 
         }
+
+
+        private tblVehicleTypeCountry CheckExists(string value)
+        {
+            var ctx = new seleniumScrapeEntities();
+
+            var vehicleCountry = new tblVehicleTypeCountry()
+                                     {
+                                         Vehicle_Type = "SwarzyLand"
+                                     };
+            return vehicleCountry;
+        }
+
 
         public void SaveNewVehicleToDB(tblVehicle vehicle)
         {

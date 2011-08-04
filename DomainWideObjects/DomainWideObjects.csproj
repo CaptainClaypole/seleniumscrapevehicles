@@ -54,6 +54,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataModel1.edmx</DependentUpon>
     </Compile>
+    <Compile Include="DataAccess\Repository\DataRepository.cs" />
+    <Compile Include="DataAccess\Repository\DbChecker.cs" />
+    <Compile Include="DataAccess\Repository\IRepository.cs" />
     <Compile Include="DataAccess\VehicleSaver.cs" />
     <Compile Include="IAuthenticatable.cs" />
     <Compile Include="ISiteConfigurable.cs" />
