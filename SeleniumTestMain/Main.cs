@@ -37,6 +37,9 @@ namespace SeleniumTestMain {
             // Click condition list
             conditionPicker.ClickConditions();
 
+            // Click Search button
+
+
             // Check for the number of pages of the vehicles.
             var pageCounter = new PageCounter(driver);
             var pageNum = pageCounter.pageNumChecker();  // check number of pages and return the number of pages
@@ -51,6 +54,8 @@ namespace SeleniumTestMain {
                 var dataScraper = new DataScraper(driver);
                 dataScraper.GetHtml(tableHTMLtagToScrape);
                 
+                // Add new vehicle (test)
+                dataScraper.AddNewVehicle();
                 
 
 

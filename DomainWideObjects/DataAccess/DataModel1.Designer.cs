@@ -19,6 +19,10 @@ using System.Runtime.Serialization;
 #region EDM Relationship Metadata
 
 [assembly: EdmRelationshipAttribute("seleniumScrapeModel", "FK_tblHtml_tblPage", "tblPage", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DomainWideObjects.DataAccess.tblPage), "tblHtml", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DomainWideObjects.DataAccess.tblHtml), true)]
+[assembly: EdmRelationshipAttribute("seleniumScrapeModel", "FK_tblPage_tblVehicle", "tblVehicle", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DomainWideObjects.DataAccess.tblVehicle), "tblPage", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DomainWideObjects.DataAccess.tblPage), true)]
+[assembly: EdmRelationshipAttribute("seleniumScrapeModel", "FK_tblVehicle_tblVehicleType", "tblVehicleTypeCountry", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DomainWideObjects.DataAccess.tblVehicleTypeCountry), "tblVehicle", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DomainWideObjects.DataAccess.tblVehicle), true)]
+[assembly: EdmRelationshipAttribute("seleniumScrapeModel", "FK_tblVehicle_tblVehicleTypeDefined", "tblVehicleTypeDefined", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DomainWideObjects.DataAccess.tblVehicleTypeDefined), "tblVehicle", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DomainWideObjects.DataAccess.tblVehicle), true)]
+[assembly: EdmRelationshipAttribute("seleniumScrapeModel", "FK_tblVehicle_tblVehicleTypeGeneral", "tblVehicleTypeGeneral", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DomainWideObjects.DataAccess.tblVehicleTypeGeneral), "tblVehicle", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DomainWideObjects.DataAccess.tblVehicle), true)]
 
 #endregion
 
@@ -117,6 +121,70 @@ namespace DomainWideObjects.DataAccess
             }
         }
         private ObjectSet<tblPage> _tblPages;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<tblVehicle> tblVehicles
+        {
+            get
+            {
+                if ((_tblVehicles == null))
+                {
+                    _tblVehicles = base.CreateObjectSet<tblVehicle>("tblVehicles");
+                }
+                return _tblVehicles;
+            }
+        }
+        private ObjectSet<tblVehicle> _tblVehicles;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<tblVehicleTypeCountry> tblVehicleTypeCountries
+        {
+            get
+            {
+                if ((_tblVehicleTypeCountries == null))
+                {
+                    _tblVehicleTypeCountries = base.CreateObjectSet<tblVehicleTypeCountry>("tblVehicleTypeCountries");
+                }
+                return _tblVehicleTypeCountries;
+            }
+        }
+        private ObjectSet<tblVehicleTypeCountry> _tblVehicleTypeCountries;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<tblVehicleTypeDefined> tblVehicleTypeDefineds
+        {
+            get
+            {
+                if ((_tblVehicleTypeDefineds == null))
+                {
+                    _tblVehicleTypeDefineds = base.CreateObjectSet<tblVehicleTypeDefined>("tblVehicleTypeDefineds");
+                }
+                return _tblVehicleTypeDefineds;
+            }
+        }
+        private ObjectSet<tblVehicleTypeDefined> _tblVehicleTypeDefineds;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<tblVehicleTypeGeneral> tblVehicleTypeGenerals
+        {
+            get
+            {
+                if ((_tblVehicleTypeGenerals == null))
+                {
+                    _tblVehicleTypeGenerals = base.CreateObjectSet<tblVehicleTypeGeneral>("tblVehicleTypeGenerals");
+                }
+                return _tblVehicleTypeGenerals;
+            }
+        }
+        private ObjectSet<tblVehicleTypeGeneral> _tblVehicleTypeGenerals;
 
         #endregion
         #region AddTo Methods
@@ -143,6 +211,38 @@ namespace DomainWideObjects.DataAccess
         public void AddTotblPages(tblPage tblPage)
         {
             base.AddObject("tblPages", tblPage);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the tblVehicles EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddTotblVehicles(tblVehicle tblVehicle)
+        {
+            base.AddObject("tblVehicles", tblVehicle);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the tblVehicleTypeCountries EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddTotblVehicleTypeCountries(tblVehicleTypeCountry tblVehicleTypeCountry)
+        {
+            base.AddObject("tblVehicleTypeCountries", tblVehicleTypeCountry);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the tblVehicleTypeDefineds EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddTotblVehicleTypeDefineds(tblVehicleTypeDefined tblVehicleTypeDefined)
+        {
+            base.AddObject("tblVehicleTypeDefineds", tblVehicleTypeDefined);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the tblVehicleTypeGenerals EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddTotblVehicleTypeGenerals(tblVehicleTypeGeneral tblVehicleTypeGeneral)
+        {
+            base.AddObject("tblVehicleTypeGenerals", tblVehicleTypeGeneral);
         }
 
         #endregion
@@ -508,48 +608,48 @@ namespace DomainWideObjects.DataAccess
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
-        public global::System.String page_vehicle_model
+        public Nullable<global::System.Int32> Vehicle_ID_fk
         {
             get
             {
-                return _page_vehicle_model;
+                return _Vehicle_ID_fk;
             }
             set
             {
-                Onpage_vehicle_modelChanging(value);
-                ReportPropertyChanging("page_vehicle_model");
-                _page_vehicle_model = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("page_vehicle_model");
-                Onpage_vehicle_modelChanged();
+                OnVehicle_ID_fkChanging(value);
+                ReportPropertyChanging("Vehicle_ID_fk");
+                _Vehicle_ID_fk = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("Vehicle_ID_fk");
+                OnVehicle_ID_fkChanged();
             }
         }
-        private global::System.String _page_vehicle_model;
-        partial void Onpage_vehicle_modelChanging(global::System.String value);
-        partial void Onpage_vehicle_modelChanged();
+        private Nullable<global::System.Int32> _Vehicle_ID_fk;
+        partial void OnVehicle_ID_fkChanging(Nullable<global::System.Int32> value);
+        partial void OnVehicle_ID_fkChanged();
     
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
-        public global::System.String page_vehicle_make
+        public Nullable<global::System.DateTime> Search_Date_Timestamp
         {
             get
             {
-                return _page_vehicle_make;
+                return _Search_Date_Timestamp;
             }
             set
             {
-                Onpage_vehicle_makeChanging(value);
-                ReportPropertyChanging("page_vehicle_make");
-                _page_vehicle_make = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("page_vehicle_make");
-                Onpage_vehicle_makeChanged();
+                OnSearch_Date_TimestampChanging(value);
+                ReportPropertyChanging("Search_Date_Timestamp");
+                _Search_Date_Timestamp = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("Search_Date_Timestamp");
+                OnSearch_Date_TimestampChanged();
             }
         }
-        private global::System.String _page_vehicle_make;
-        partial void Onpage_vehicle_makeChanging(global::System.String value);
-        partial void Onpage_vehicle_makeChanged();
+        private Nullable<global::System.DateTime> _Search_Date_Timestamp;
+        partial void OnSearch_Date_TimestampChanging(Nullable<global::System.DateTime> value);
+        partial void OnSearch_Date_TimestampChanged();
 
         #endregion
     
@@ -573,6 +673,670 @@ namespace DomainWideObjects.DataAccess
                 if ((value != null))
                 {
                     ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tblHtml>("seleniumScrapeModel.FK_tblHtml_tblPage", "tblHtml", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("seleniumScrapeModel", "FK_tblPage_tblVehicle", "tblVehicle")]
+        public tblVehicle tblVehicle
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tblVehicle>("seleniumScrapeModel.FK_tblPage_tblVehicle", "tblVehicle").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tblVehicle>("seleniumScrapeModel.FK_tblPage_tblVehicle", "tblVehicle").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<tblVehicle> tblVehicleReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tblVehicle>("seleniumScrapeModel.FK_tblPage_tblVehicle", "tblVehicle");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tblVehicle>("seleniumScrapeModel.FK_tblPage_tblVehicle", "tblVehicle", value);
+                }
+            }
+        }
+
+        #endregion
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="seleniumScrapeModel", Name="tblVehicle")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class tblVehicle : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new tblVehicle object.
+        /// </summary>
+        /// <param name="vehicle_ID_Pk">Initial value of the Vehicle_ID_Pk property.</param>
+        public static tblVehicle CreatetblVehicle(global::System.Int32 vehicle_ID_Pk)
+        {
+            tblVehicle tblVehicle = new tblVehicle();
+            tblVehicle.Vehicle_ID_Pk = vehicle_ID_Pk;
+            return tblVehicle;
+        }
+
+        #endregion
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> Vehicle_Type_General_id_fk
+        {
+            get
+            {
+                return _Vehicle_Type_General_id_fk;
+            }
+            set
+            {
+                OnVehicle_Type_General_id_fkChanging(value);
+                ReportPropertyChanging("Vehicle_Type_General_id_fk");
+                _Vehicle_Type_General_id_fk = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("Vehicle_Type_General_id_fk");
+                OnVehicle_Type_General_id_fkChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _Vehicle_Type_General_id_fk;
+        partial void OnVehicle_Type_General_id_fkChanging(Nullable<global::System.Int32> value);
+        partial void OnVehicle_Type_General_id_fkChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> Vehicle_Type_Defined_fk
+        {
+            get
+            {
+                return _Vehicle_Type_Defined_fk;
+            }
+            set
+            {
+                OnVehicle_Type_Defined_fkChanging(value);
+                ReportPropertyChanging("Vehicle_Type_Defined_fk");
+                _Vehicle_Type_Defined_fk = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("Vehicle_Type_Defined_fk");
+                OnVehicle_Type_Defined_fkChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _Vehicle_Type_Defined_fk;
+        partial void OnVehicle_Type_Defined_fkChanging(Nullable<global::System.Int32> value);
+        partial void OnVehicle_Type_Defined_fkChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 Vehicle_ID_Pk
+        {
+            get
+            {
+                return _Vehicle_ID_Pk;
+            }
+            set
+            {
+                if (_Vehicle_ID_Pk != value)
+                {
+                    OnVehicle_ID_PkChanging(value);
+                    ReportPropertyChanging("Vehicle_ID_Pk");
+                    _Vehicle_ID_Pk = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("Vehicle_ID_Pk");
+                    OnVehicle_ID_PkChanged();
+                }
+            }
+        }
+        private global::System.Int32 _Vehicle_ID_Pk;
+        partial void OnVehicle_ID_PkChanging(global::System.Int32 value);
+        partial void OnVehicle_ID_PkChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String Vehicle_Make
+        {
+            get
+            {
+                return _Vehicle_Make;
+            }
+            set
+            {
+                OnVehicle_MakeChanging(value);
+                ReportPropertyChanging("Vehicle_Make");
+                _Vehicle_Make = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("Vehicle_Make");
+                OnVehicle_MakeChanged();
+            }
+        }
+        private global::System.String _Vehicle_Make;
+        partial void OnVehicle_MakeChanging(global::System.String value);
+        partial void OnVehicle_MakeChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String Vehicle_Model
+        {
+            get
+            {
+                return _Vehicle_Model;
+            }
+            set
+            {
+                OnVehicle_ModelChanging(value);
+                ReportPropertyChanging("Vehicle_Model");
+                _Vehicle_Model = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("Vehicle_Model");
+                OnVehicle_ModelChanged();
+            }
+        }
+        private global::System.String _Vehicle_Model;
+        partial void OnVehicle_ModelChanging(global::System.String value);
+        partial void OnVehicle_ModelChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> Vehicle_Type_ID_fk
+        {
+            get
+            {
+                return _Vehicle_Type_ID_fk;
+            }
+            set
+            {
+                OnVehicle_Type_ID_fkChanging(value);
+                ReportPropertyChanging("Vehicle_Type_ID_fk");
+                _Vehicle_Type_ID_fk = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("Vehicle_Type_ID_fk");
+                OnVehicle_Type_ID_fkChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _Vehicle_Type_ID_fk;
+        partial void OnVehicle_Type_ID_fkChanging(Nullable<global::System.Int32> value);
+        partial void OnVehicle_Type_ID_fkChanged();
+
+        #endregion
+    
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("seleniumScrapeModel", "FK_tblPage_tblVehicle", "tblPage")]
+        public EntityCollection<tblPage> tblPages
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tblPage>("seleniumScrapeModel.FK_tblPage_tblVehicle", "tblPage");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tblPage>("seleniumScrapeModel.FK_tblPage_tblVehicle", "tblPage", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("seleniumScrapeModel", "FK_tblVehicle_tblVehicleType", "tblVehicleTypeCountry")]
+        public tblVehicleTypeCountry tblVehicleTypeCountry
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tblVehicleTypeCountry>("seleniumScrapeModel.FK_tblVehicle_tblVehicleType", "tblVehicleTypeCountry").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tblVehicleTypeCountry>("seleniumScrapeModel.FK_tblVehicle_tblVehicleType", "tblVehicleTypeCountry").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<tblVehicleTypeCountry> tblVehicleTypeCountryReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tblVehicleTypeCountry>("seleniumScrapeModel.FK_tblVehicle_tblVehicleType", "tblVehicleTypeCountry");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tblVehicleTypeCountry>("seleniumScrapeModel.FK_tblVehicle_tblVehicleType", "tblVehicleTypeCountry", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("seleniumScrapeModel", "FK_tblVehicle_tblVehicleTypeDefined", "tblVehicleTypeDefined")]
+        public tblVehicleTypeDefined tblVehicleTypeDefined
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tblVehicleTypeDefined>("seleniumScrapeModel.FK_tblVehicle_tblVehicleTypeDefined", "tblVehicleTypeDefined").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tblVehicleTypeDefined>("seleniumScrapeModel.FK_tblVehicle_tblVehicleTypeDefined", "tblVehicleTypeDefined").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<tblVehicleTypeDefined> tblVehicleTypeDefinedReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tblVehicleTypeDefined>("seleniumScrapeModel.FK_tblVehicle_tblVehicleTypeDefined", "tblVehicleTypeDefined");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tblVehicleTypeDefined>("seleniumScrapeModel.FK_tblVehicle_tblVehicleTypeDefined", "tblVehicleTypeDefined", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("seleniumScrapeModel", "FK_tblVehicle_tblVehicleTypeGeneral", "tblVehicleTypeGeneral")]
+        public tblVehicleTypeGeneral tblVehicleTypeGeneral
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tblVehicleTypeGeneral>("seleniumScrapeModel.FK_tblVehicle_tblVehicleTypeGeneral", "tblVehicleTypeGeneral").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tblVehicleTypeGeneral>("seleniumScrapeModel.FK_tblVehicle_tblVehicleTypeGeneral", "tblVehicleTypeGeneral").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<tblVehicleTypeGeneral> tblVehicleTypeGeneralReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tblVehicleTypeGeneral>("seleniumScrapeModel.FK_tblVehicle_tblVehicleTypeGeneral", "tblVehicleTypeGeneral");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tblVehicleTypeGeneral>("seleniumScrapeModel.FK_tblVehicle_tblVehicleTypeGeneral", "tblVehicleTypeGeneral", value);
+                }
+            }
+        }
+
+        #endregion
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="seleniumScrapeModel", Name="tblVehicleTypeCountry")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class tblVehicleTypeCountry : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new tblVehicleTypeCountry object.
+        /// </summary>
+        /// <param name="vehicle_Type_Country_ID_pk">Initial value of the Vehicle_Type_Country_ID_pk property.</param>
+        public static tblVehicleTypeCountry CreatetblVehicleTypeCountry(global::System.Int32 vehicle_Type_Country_ID_pk)
+        {
+            tblVehicleTypeCountry tblVehicleTypeCountry = new tblVehicleTypeCountry();
+            tblVehicleTypeCountry.Vehicle_Type_Country_ID_pk = vehicle_Type_Country_ID_pk;
+            return tblVehicleTypeCountry;
+        }
+
+        #endregion
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 Vehicle_Type_Country_ID_pk
+        {
+            get
+            {
+                return _Vehicle_Type_Country_ID_pk;
+            }
+            set
+            {
+                if (_Vehicle_Type_Country_ID_pk != value)
+                {
+                    OnVehicle_Type_Country_ID_pkChanging(value);
+                    ReportPropertyChanging("Vehicle_Type_Country_ID_pk");
+                    _Vehicle_Type_Country_ID_pk = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("Vehicle_Type_Country_ID_pk");
+                    OnVehicle_Type_Country_ID_pkChanged();
+                }
+            }
+        }
+        private global::System.Int32 _Vehicle_Type_Country_ID_pk;
+        partial void OnVehicle_Type_Country_ID_pkChanging(global::System.Int32 value);
+        partial void OnVehicle_Type_Country_ID_pkChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String Vehicle_Type
+        {
+            get
+            {
+                return _Vehicle_Type;
+            }
+            set
+            {
+                OnVehicle_TypeChanging(value);
+                ReportPropertyChanging("Vehicle_Type");
+                _Vehicle_Type = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("Vehicle_Type");
+                OnVehicle_TypeChanged();
+            }
+        }
+        private global::System.String _Vehicle_Type;
+        partial void OnVehicle_TypeChanging(global::System.String value);
+        partial void OnVehicle_TypeChanged();
+
+        #endregion
+    
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("seleniumScrapeModel", "FK_tblVehicle_tblVehicleType", "tblVehicle")]
+        public EntityCollection<tblVehicle> tblVehicles
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tblVehicle>("seleniumScrapeModel.FK_tblVehicle_tblVehicleType", "tblVehicle");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tblVehicle>("seleniumScrapeModel.FK_tblVehicle_tblVehicleType", "tblVehicle", value);
+                }
+            }
+        }
+
+        #endregion
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="seleniumScrapeModel", Name="tblVehicleTypeDefined")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class tblVehicleTypeDefined : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new tblVehicleTypeDefined object.
+        /// </summary>
+        /// <param name="vehicleTypeDefined_id_pk">Initial value of the VehicleTypeDefined_id_pk property.</param>
+        public static tblVehicleTypeDefined CreatetblVehicleTypeDefined(global::System.Int32 vehicleTypeDefined_id_pk)
+        {
+            tblVehicleTypeDefined tblVehicleTypeDefined = new tblVehicleTypeDefined();
+            tblVehicleTypeDefined.VehicleTypeDefined_id_pk = vehicleTypeDefined_id_pk;
+            return tblVehicleTypeDefined;
+        }
+
+        #endregion
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 VehicleTypeDefined_id_pk
+        {
+            get
+            {
+                return _VehicleTypeDefined_id_pk;
+            }
+            set
+            {
+                if (_VehicleTypeDefined_id_pk != value)
+                {
+                    OnVehicleTypeDefined_id_pkChanging(value);
+                    ReportPropertyChanging("VehicleTypeDefined_id_pk");
+                    _VehicleTypeDefined_id_pk = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("VehicleTypeDefined_id_pk");
+                    OnVehicleTypeDefined_id_pkChanged();
+                }
+            }
+        }
+        private global::System.Int32 _VehicleTypeDefined_id_pk;
+        partial void OnVehicleTypeDefined_id_pkChanging(global::System.Int32 value);
+        partial void OnVehicleTypeDefined_id_pkChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String VehicleTypeDefined
+        {
+            get
+            {
+                return _VehicleTypeDefined;
+            }
+            set
+            {
+                OnVehicleTypeDefinedChanging(value);
+                ReportPropertyChanging("VehicleTypeDefined");
+                _VehicleTypeDefined = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("VehicleTypeDefined");
+                OnVehicleTypeDefinedChanged();
+            }
+        }
+        private global::System.String _VehicleTypeDefined;
+        partial void OnVehicleTypeDefinedChanging(global::System.String value);
+        partial void OnVehicleTypeDefinedChanged();
+
+        #endregion
+    
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("seleniumScrapeModel", "FK_tblVehicle_tblVehicleTypeDefined", "tblVehicle")]
+        public EntityCollection<tblVehicle> tblVehicles
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tblVehicle>("seleniumScrapeModel.FK_tblVehicle_tblVehicleTypeDefined", "tblVehicle");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tblVehicle>("seleniumScrapeModel.FK_tblVehicle_tblVehicleTypeDefined", "tblVehicle", value);
+                }
+            }
+        }
+
+        #endregion
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="seleniumScrapeModel", Name="tblVehicleTypeGeneral")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class tblVehicleTypeGeneral : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new tblVehicleTypeGeneral object.
+        /// </summary>
+        /// <param name="vehicleTypeGeneral_pk">Initial value of the VehicleTypeGeneral_pk property.</param>
+        public static tblVehicleTypeGeneral CreatetblVehicleTypeGeneral(global::System.Int32 vehicleTypeGeneral_pk)
+        {
+            tblVehicleTypeGeneral tblVehicleTypeGeneral = new tblVehicleTypeGeneral();
+            tblVehicleTypeGeneral.VehicleTypeGeneral_pk = vehicleTypeGeneral_pk;
+            return tblVehicleTypeGeneral;
+        }
+
+        #endregion
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 VehicleTypeGeneral_pk
+        {
+            get
+            {
+                return _VehicleTypeGeneral_pk;
+            }
+            set
+            {
+                if (_VehicleTypeGeneral_pk != value)
+                {
+                    OnVehicleTypeGeneral_pkChanging(value);
+                    ReportPropertyChanging("VehicleTypeGeneral_pk");
+                    _VehicleTypeGeneral_pk = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("VehicleTypeGeneral_pk");
+                    OnVehicleTypeGeneral_pkChanged();
+                }
+            }
+        }
+        private global::System.Int32 _VehicleTypeGeneral_pk;
+        partial void OnVehicleTypeGeneral_pkChanging(global::System.Int32 value);
+        partial void OnVehicleTypeGeneral_pkChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String VehicleTypeGeneral
+        {
+            get
+            {
+                return _VehicleTypeGeneral;
+            }
+            set
+            {
+                OnVehicleTypeGeneralChanging(value);
+                ReportPropertyChanging("VehicleTypeGeneral");
+                _VehicleTypeGeneral = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("VehicleTypeGeneral");
+                OnVehicleTypeGeneralChanged();
+            }
+        }
+        private global::System.String _VehicleTypeGeneral;
+        partial void OnVehicleTypeGeneralChanging(global::System.String value);
+        partial void OnVehicleTypeGeneralChanged();
+
+        #endregion
+    
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("seleniumScrapeModel", "FK_tblVehicle_tblVehicleTypeGeneral", "tblVehicle")]
+        public EntityCollection<tblVehicle> tblVehicles
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tblVehicle>("seleniumScrapeModel.FK_tblVehicle_tblVehicleTypeGeneral", "tblVehicle");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tblVehicle>("seleniumScrapeModel.FK_tblVehicle_tblVehicleTypeGeneral", "tblVehicle", value);
                 }
             }
         }

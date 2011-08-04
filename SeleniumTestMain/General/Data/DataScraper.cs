@@ -63,6 +63,49 @@ namespace SeleniumTestMain.General.Data {
 
         }
 
+        public void AddNewVehicle()
+        {
+            var vehicleCountry = new tblVehicleTypeCountry()
+                                     {
+                                         Vehicle_Type = "SwarziLand"
+                                     };
+            var vehicleGeneral = new tblVehicleTypeGeneral()
+                                     {
+                                         VehicleTypeGeneral = "Tractor"
+
+                                     };
+
+            var vehicleDefined = new tblVehicleTypeDefined()
+                                     {
+                                         VehicleTypeDefined = "Night Attack Tractor"
+
+                                     };
+
+
+            var vehicle = new tblVehicle
+                              {
+                                  Vehicle_Make = "John Deere",
+                                  Vehicle_Model = "Night Terror 14 killah",
+                                  tblVehicleTypeCountry = vehicleCountry,
+                                  tblVehicleTypeGeneral = vehicleGeneral,
+                                  tblVehicleTypeDefined = vehicleDefined
+
+
+                              };
+            // save to db
+            SaveNewVehicleToDB(vehicle);
+
+        }
+
+        public void SaveNewVehicleToDB(tblVehicle vehicle)
+        {
+
+            var vehicleSaver = new VehicleSaver();
+            vehicleSaver.SaveToDB(vehicle);
+
+
+        }
+
         
 
         #endregion

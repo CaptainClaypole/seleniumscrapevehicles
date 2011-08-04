@@ -24,9 +24,45 @@
     <EntitySetMapping Name="tblPages">
       <EntityTypeMapping TypeName="seleniumScrapeModel.tblPage">
         <MappingFragment StoreEntitySet="tblPage">
+          <ScalarProperty Name="Search_Date_Timestamp" ColumnName="Search_Date_Timestamp" />
+          <ScalarProperty Name="Vehicle_ID_fk" ColumnName="Vehicle_ID_fk" />
           <ScalarProperty Name="page_id_pk" ColumnName="page_id_pk" />
-          <ScalarProperty Name="page_vehicle_model" ColumnName="page_vehicle_model" />
-          <ScalarProperty Name="page_vehicle_make" ColumnName="page_vehicle_make" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblVehicles">
+      <EntityTypeMapping TypeName="IsTypeOf(seleniumScrapeModel.tblVehicle)">
+        <MappingFragment StoreEntitySet="tblVehicle">
+          <ScalarProperty Name="Vehicle_ID_Pk" ColumnName="Vehicle_ID_Pk" />
+          <ScalarProperty Name="Vehicle_Type_ID_fk" ColumnName="Vehicle_Type_ID_fk" />
+          <ScalarProperty Name="Vehicle_Model" ColumnName="Vehicle_Model" />
+          <ScalarProperty Name="Vehicle_Make" ColumnName="Vehicle_Make" />
+          <ScalarProperty Name="Vehicle_Type_Defined_fk" ColumnName="Vehicle_Type_Defined_fk" />
+          <ScalarProperty Name="Vehicle_Type_General_id_fk" ColumnName="Vehicle_Type_General_id_fk" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblVehicleTypeCountries">
+      <EntityTypeMapping TypeName="seleniumScrapeModel.tblVehicleTypeCountry">
+        <MappingFragment StoreEntitySet="tblVehicleTypeCountry">
+          <ScalarProperty Name="Vehicle_Type" ColumnName="Vehicle_Type" />
+          <ScalarProperty Name="Vehicle_Type_Country_ID_pk" ColumnName="Vehicle_Type_Country_ID_pk" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblVehicleTypeDefineds">
+      <EntityTypeMapping TypeName="seleniumScrapeModel.tblVehicleTypeDefined">
+        <MappingFragment StoreEntitySet="tblVehicleTypeDefined">
+          <ScalarProperty Name="VehicleTypeDefined" ColumnName="VehicleTypeDefined" />
+          <ScalarProperty Name="VehicleTypeDefined_id_pk" ColumnName="VehicleTypeDefined_id_pk" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblVehicleTypeGenerals">
+      <EntityTypeMapping TypeName="seleniumScrapeModel.tblVehicleTypeGeneral">
+        <MappingFragment StoreEntitySet="tblVehicleTypeGeneral">
+          <ScalarProperty Name="VehicleTypeGeneral" ColumnName="VehicleTypeGeneral" />
+          <ScalarProperty Name="VehicleTypeGeneral_pk" ColumnName="VehicleTypeGeneral_pk" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
