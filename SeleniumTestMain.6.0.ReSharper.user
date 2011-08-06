@@ -12,61 +12,61 @@
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:Navigator.cs" caret="2251" fromTop="7" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DataModel.Designer.cs" caret="1694" fromTop="10" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DataModel.edmx.sql" caret="3182" fromTop="108" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DbChecker.cs" caret="801" fromTop="19" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="1334" fromTop="5" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:IVehicleSelector.cs" caret="167" fromTop="8" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:VehicleSelector.cs" caret="413" fromTop="11" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="1334" fromTop="5" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DataRepository.cs" caret="1478" fromTop="19" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:IRepository.cs" caret="448" fromTop="8" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:VehicleSaver.cs" caret="285" fromTop="12" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DataModel1.Designer.cs" caret="2578" fromTop="6" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:CreateHtmlList.cs" caret="752" fromTop="9" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="894" fromTop="8" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="2920" fromTop="24" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DbChecker.cs" caret="1393" fromTop="10" />
     </RecentFiles>
     <RecentEdits>
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DataRepository.cs" caret="1078" fromTop="11" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DataRepository.cs" caret="1217" fromTop="14" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DataRepository.cs" caret="1310" fromTop="13" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DataRepository.cs" caret="1465" fromTop="17" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DataRepository.cs" caret="1529" fromTop="6" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DataRepository.cs" caret="1670" fromTop="10" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DataRepository.cs" caret="1750" fromTop="9" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DataRepository.cs" caret="2183" fromTop="13" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DataRepository.cs" caret="2183" fromTop="13" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DataRepository.cs" caret="2353" fromTop="12" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DataRepository.cs" caret="2486" fromTop="16" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DataRepository.cs" caret="2927" fromTop="17" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DataRepository.cs" caret="1936" fromTop="13" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DataRepository.cs" caret="2184" fromTop="14" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:VehicleSaver.cs" caret="132" fromTop="5" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DbChecker.cs" caret="366" fromTop="14" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DbChecker.cs" caret="675" fromTop="24" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DbChecker.cs" caret="807" fromTop="29" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DbChecker.cs" caret="403" fromTop="14" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DbChecker.cs" caret="2060" fromTop="29" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="1069" fromTop="14" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="1823" fromTop="11" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="2575" fromTop="16" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:VehicleSelector.cs" caret="721" fromTop="3" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:VehicleSelector.cs" caret="1386" fromTop="13" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:VehicleSelector.cs" caret="484" fromTop="8" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DbChecker.cs" caret="807" fromTop="22" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DbChecker.cs" caret="2060" fromTop="22" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:IVehicleSelector.cs" caret="153" fromTop="5" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="890" fromTop="10" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="964" fromTop="12" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="1164" fromTop="9" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="1411" fromTop="7" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DbChecker.cs" caret="2007" fromTop="16" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DbChecker.cs" caret="153" fromTop="5" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DbChecker.cs" caret="1015" fromTop="11" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DbChecker.cs" caret="1015" fromTop="4" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DbChecker.cs" caret="2007" fromTop="6" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DbChecker.cs" caret="2007" fromTop="29" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DbChecker.cs" caret="1645" fromTop="9" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="3210" fromTop="20" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="2611" fromTop="12" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DbChecker.cs" caret="1227" fromTop="4" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DbChecker.cs" caret="1421" fromTop="8" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DbChecker.cs" caret="1896" fromTop="21" />
     </RecentEdits>
   </RecentFiles>
   <CompletionStatisticsManager>
     <ItemStatistics item="CSharpCodeCompletionContext">
       <Item value="private" priority="287" />
       <Item value="public" priority="767" />
-      <Item value="string" priority="959" />
+      <Item value="string" priority="991" />
       <Item value="IAuthenticatable`0" priority="31" />
-      <Item value="using" priority="403" />
+      <Item value="using" priority="434" />
       <Item value="void" priority="575" />
       <Item value="DomainWideObjects" priority="124" />
       <Item value="SiteConfigurator`0" priority="63" />
-      <Item value="new" priority="672" />
+      <Item value="new" priority="736" />
       <Item value="SiteConfigurator" priority="28" />
       <Item value="siteConfig" priority="63" />
       <Item value="this" priority="287" />
@@ -107,8 +107,8 @@
       <Item value="return" priority="351" />
       <Item value="true" priority="127" />
       <Item value="false" priority="95" />
-      <Item value="if" priority="127" />
-      <Item value="else" priority="63" />
+      <Item value="if" priority="159" />
+      <Item value="else" priority="95" />
       <Item value="model" priority="63" />
       <Item value="bool" priority="63" />
       <Item value="isModelPresent" priority="95" />
@@ -131,7 +131,7 @@
       <Item value="List" priority="159" />
       <Item value="htmlList" priority="352" />
       <Item value="List&lt;string&gt;" priority="28" />
-      <Item value="var" priority="351" />
+      <Item value="var" priority="447" />
       <Item value="tagToSearch" priority="31" />
       <Item value="DataScraper" priority="29" />
       <Item value="catch" priority="31" />
@@ -177,13 +177,13 @@
       <Item value="objectType" priority="63" />
       <Item value="seleniumScrapeEntities`0" priority="63" />
       <Item value="value" priority="95" />
-      <Item value="from" priority="95" />
-      <Item value="ctx" priority="159" />
-      <Item value="where" priority="63" />
+      <Item value="from" priority="127" />
+      <Item value="ctx" priority="191" />
+      <Item value="where" priority="95" />
       <Item value="v" priority="95" />
-      <Item value="tblVehicleTypeCountry`0" priority="31" />
-      <Item value="select" priority="63" />
-      <Item value="query" priority="127" />
+      <Item value="tblVehicleTypeCountry`0" priority="95" />
+      <Item value="select" priority="95" />
+      <Item value="query" priority="191" />
       <Item value="IDisposable`0" priority="31" />
       <Item value="IQueryProvider`0" priority="31" />
       <Item value="IQueryable`0" priority="31" />
@@ -193,19 +193,27 @@
       <Item value="IRepository" priority="31" />
       <Item value="IObjectSet" priority="63" />
       <Item value="DataRepository" priority="31" />
-      <Item value="seleniumScrapeEntities" priority="28" />
+      <Item value="seleniumScrapeEntities" priority="57" />
       <Item value="_objectSet" priority="63" />
       <Item value="Fetch`0" priority="31" />
       <Item value="predicate" priority="32" />
       <Item value="protected" priority="31" />
       <Item value="ContextBoundObject`0" priority="31" />
-      <Item value="_context" priority="63" />
+      <Item value="_context" priority="95" />
       <Item value="Queryable`0" priority="63" />
-      <Item value="c" priority="127" />
+      <Item value="c" priority="223" />
       <Item value="tblVehicle" priority="28" />
       <Item value="vehicle" priority="159" />
-      <Item value="tblVehicle`0" priority="31" />
+      <Item value="tblVehicle`0" priority="63" />
       <Item value="vehicleList" priority="31" />
+      <Item value="country" priority="31" />
+      <Item value="DomainWideObjects.DataAccess" priority="30" />
+      <Item value="tblVehicleTypeCountry" priority="254" />
+      <Item value="tblVehicles" priority="31" />
+      <Item value="result" priority="31" />
+      <Item value="Vehicle_ID_Pk" priority="32" />
+      <Item value="Vehicle_Type_ID_fk" priority="131" />
+      <Item value="resultID" priority="130" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:DomainWideObjects.SiteConfigurator">
       <Item value="url" priority="53" />
@@ -316,15 +324,18 @@
       <Item value="objectType" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:DomainWideObjects.DataAccess.seleniumScrapeEntities">
-      <Item value="tblVehicleTypeCountries" priority="80" />
+      <Item value="tblVehicleTypeCountries" priority="107" />
       <Item value="tblVehicles" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:DomainWideObjects.DataAccess.tblVehicleTypeCountry">
-      <Item value="Vehicle_Type" priority="26" />
+      <Item value="Vehicle_Type" priority="80" />
+      <Item value="EntityKey" priority="53" />
+      <Item value="Vehicle_Type_Country_ID_pk" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Linq.IQueryable`1">
       <Item value="AsEnumerable`1" priority="81" />
       <Item value="ToList`1" priority="26" />
+      <Item value="FirstOrDefault`1" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Data.Objects.IObjectSet`1">
       <Item value="Where`1" priority="26" />
@@ -332,6 +343,16 @@
     <ItemStatistics item="Qualified:DomainWideObjects.DataAccess.tblVehicle">
       <Item value="Vehicle_Make" priority="26" />
       <Item value="Vehicle_Model" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DomainWideObjects.DataAccess.tblVehicleTypeCountry">
+      <Item value="tblVehicleTypeCountry" priority="140" />
+      <Item value="tblVehicleTypeCountryReference" priority="27" />
+      <Item value="Vehicle_Type_Defined_fk" priority="27" />
+      <Item value="EntityKey" priority="56" />
+      <Item value="Vehicle_Type_ID_fk" priority="83" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.EntityKey">
+      <Item value="EntityKeyValues" priority="27" />
     </ItemStatistics>
   </CompletionStatisticsManager>
   <NAntValidationSettings>

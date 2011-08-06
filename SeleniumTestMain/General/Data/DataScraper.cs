@@ -65,53 +65,145 @@ namespace SeleniumTestMain.General.Data {
 
         public void AddNewVehicle()
         {
-            //var vehicleCountry = new tblVehicleTypeCountry()
-            //                         {
-            //                             Vehicle_Type = "SwarziLand"
-            //                         };
 
-           
+            string vehicleMake = "TOYOTA";
+            string vehicleModel = "HIACE VAN"
+
+            string country = "Japanese";
+            string defined = "Super Robinson";
+            string general = "campertronic";
+
+            bool vehicleExists = CheckVehicleExists(vehicleMake, vehicleModel);
+
+            if (!vehicleExists)
+            {
+           bool countryExists =  CheckCountryExists(country);
+           bool definedExists = CheckDefinedTypeExists(defined);
+           bool generalExists = CheckGeneralTypeExists(general);
+          // Create new vehicle object.
+            var vehicle = new tblVehicle(); 
+               vehicle.Vehicle_Make = "Toyota";
+                vehicle.Vehicle_Model = "Camroad";
+             
+
+            if (countryExists)
+            {
+
+                var db2 = new seleniumScrapeEntities();
+              
+                                      // Set the Vehicle Country of Origin FK (in vehicle table)
+                vehicle.Vehicle_Type_ID_fk =
+                    db2.tblVehicleTypeCountries.Where(x => x.Vehicle_Type == country).Select(
+                        x => x.Vehicle_Type_Country_ID_pk).SingleOrDefault();
+
+                db2.Dispose();
 
 
-            var vehicleGeneral = new tblVehicleTypeGeneral()
-                                     {
-                                         VehicleTypeGeneral = "Tractor"
+            }
+            else
+            {
+                // Create new country
+            }
+              
+            if (generalExists)
+            {
+                var db2 = new seleniumScrapeEntities();
 
-                                     };
+                // Set the Vehicle Defined Type FK (in vehicle table)
+                vehicle.Vehicle_Type_Defined_fk =
+                    db2.tblVehicleTypeDefineds.Where(x => x.VehicleTypeDefined == defined).Select(
+                        x => x.VehicleTypeDefined_id_pk).SingleOrDefault();
+                   db2.Dispose();
+            }else
+            {
+                // Create new Defined Type.
+            }
+            if (definedExists)
+            {
+                var db2 = new seleniumScrapeEntities();  
+                // Set the Vehicle General Type FK (in vehicle table)
+                vehicle.Vehicle_Type_General_id_fk =
+                    db2.tblVehicleTypeGenerals.Where(x => x.VehicleTypeGeneral == general).Select(
+                        x => x.VehicleTypeGeneral_pk).SingleOrDefault();
+                db2.Dispose();
+            }else
+            {
+                // Create new general type.
+            }
+            }
 
-            var vehicleDefined = new tblVehicleTypeDefined()
-                                     {
-                                         VehicleTypeDefined = "Night Attack Tractor"
+          
 
-                                     };
-
-
-            var vehicle = new tblVehicle
-                              {
-                                  Vehicle_Make = "John Deere",
-                                  Vehicle_Model = "Night Terror 14 killah",
-                                  //tblVehicleTypeCountry = vehicleCountry,
-                                  tblVehicleTypeGeneral = vehicleGeneral,
-                                  tblVehicleTypeDefined = vehicleDefined
-
-
-                              };
-            // save to db
-            SaveNewVehicleToDB(vehicle);
 
         }
 
+        private bool CheckVehicleExists(string vehicleMake, string vehicleModel) {
+            var db = new seleniumScrapeEntities();
 
-        private tblVehicleTypeCountry CheckExists(string value)
+            //var query = db.tblVehicleTypeCountries.Where(x => x.Vehicle_Type == p);
+            var query = db.tblVehicles.Where(x => x.Vehicle_Make == vehicleMake);
+            query = db.tblVehicles.Where(x => x.Vehicle_Model == vehicleModel);
+
+
+            if (query.Count() > 0) {
+                return false;
+            }
+
+
+
+            return true; ;
+        }
+
+        private bool CheckGeneralTypeExists(string general) {
+            var db = new seleniumScrapeEntities();
+
+            var query = db.tblVehicleTypeGenerals.Where(x => x.VehicleTypeGeneral == general);
+
+            if (query.Count() > 0) {
+                return false;
+            }
+
+
+
+            return true;
+        }
+
+        private bool CheckDefinedTypeExists(string defined) {
+            var db = new seleniumScrapeEntities();
+
+            var query = db.tblVehicleTypeDefineds.Where(x => x.VehicleTypeDefined == defined);
+
+            if (query.Count() > 0) {
+                return false;
+            }
+
+
+
+            return true;
+        }
+
+        private bool CheckCountryExists(string p)
         {
-            var ctx = new seleniumScrapeEntities();
 
-            var vehicleCountry = new tblVehicleTypeCountry()
-                                     {
-                                         Vehicle_Type = "SwarzyLand"
-                                     };
-            return vehicleCountry;
+            var db = new seleniumScrapeEntities();
+
+            var query = db.tblVehicleTypeCountries.Where(x => x.Vehicle_Type == p);
+
+            if (query.Count() > 0)
+            {
+                return false;
+            }
+
+
+
+            return true;
+
         }
+
+      
+
+
+   
 
 
         public void SaveNewVehicleToDB(tblVehicle vehicle)
