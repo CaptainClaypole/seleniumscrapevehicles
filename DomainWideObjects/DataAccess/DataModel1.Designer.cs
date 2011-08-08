@@ -888,6 +888,30 @@ namespace DomainWideObjects.DataAccess
         private Nullable<global::System.Int32> _Vehicle_Type_ID_fk;
         partial void OnVehicle_Type_ID_fkChanging(Nullable<global::System.Int32> value);
         partial void OnVehicle_Type_ID_fkChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Boolean> Vehicle_WillBeSearched
+        {
+            get
+            {
+                return _Vehicle_WillBeSearched;
+            }
+            set
+            {
+                OnVehicle_WillBeSearchedChanging(value);
+                ReportPropertyChanging("Vehicle_WillBeSearched");
+                _Vehicle_WillBeSearched = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("Vehicle_WillBeSearched");
+                OnVehicle_WillBeSearchedChanged();
+            }
+        }
+        private Nullable<global::System.Boolean> _Vehicle_WillBeSearched;
+        partial void OnVehicle_WillBeSearchedChanging(Nullable<global::System.Boolean> value);
+        partial void OnVehicle_WillBeSearchedChanged();
 
         #endregion
     
@@ -1088,24 +1112,24 @@ namespace DomainWideObjects.DataAccess
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
-        public global::System.String Vehicle_Type
+        public global::System.String Vehicle_Type_Country
         {
             get
             {
-                return _Vehicle_Type;
+                return _Vehicle_Type_Country;
             }
             set
             {
-                OnVehicle_TypeChanging(value);
-                ReportPropertyChanging("Vehicle_Type");
-                _Vehicle_Type = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("Vehicle_Type");
-                OnVehicle_TypeChanged();
+                OnVehicle_Type_CountryChanging(value);
+                ReportPropertyChanging("Vehicle_Type_Country");
+                _Vehicle_Type_Country = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("Vehicle_Type_Country");
+                OnVehicle_Type_CountryChanged();
             }
         }
-        private global::System.String _Vehicle_Type;
-        partial void OnVehicle_TypeChanging(global::System.String value);
-        partial void OnVehicle_TypeChanged();
+        private global::System.String _Vehicle_Type_Country;
+        partial void OnVehicle_Type_CountryChanging(global::System.String value);
+        partial void OnVehicle_Type_CountryChanged();
 
         #endregion
     

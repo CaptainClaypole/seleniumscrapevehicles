@@ -87,6 +87,22 @@ namespace SeleniumTestMain
 
         }
 
+        public void SearchButtonClicker(IWebDriver driver) {
+
+            try {
+                   driver.FindElement(By.Id("i_but3_sch")).Click();
+             
+            } catch (Exception) {
+
+                // not found!!
+                
+
+            }
+
+            
+
+        }
+
         public void ClickNextPage(int i)
         {
             

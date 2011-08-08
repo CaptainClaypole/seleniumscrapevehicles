@@ -86,14 +86,15 @@
     <NavigationProperty Name="tblVehicleTypeCountry" Relationship="seleniumScrapeModel.FK_tblVehicle_tblVehicleType" FromRole="tblVehicle" ToRole="tblVehicleTypeCountry" />
     <NavigationProperty Name="tblVehicleTypeDefined" Relationship="seleniumScrapeModel.FK_tblVehicle_tblVehicleTypeDefined" FromRole="tblVehicle" ToRole="tblVehicleTypeDefined" />
     <NavigationProperty Name="tblVehicleTypeGeneral" Relationship="seleniumScrapeModel.FK_tblVehicle_tblVehicleTypeGeneral" FromRole="tblVehicle" ToRole="tblVehicleTypeGeneral" />
+    <Property Type="Boolean" Name="Vehicle_WillBeSearched" />
   </EntityType>
   <EntityType Name="tblVehicleTypeCountry">
     <Key>
       <PropertyRef Name="Vehicle_Type_Country_ID_pk" />
     </Key>
     <Property Type="Int32" Name="Vehicle_Type_Country_ID_pk" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Type="String" Name="Vehicle_Type" MaxLength="50" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="tblVehicles" Relationship="seleniumScrapeModel.FK_tblVehicle_tblVehicleType" FromRole="tblVehicleTypeCountry" ToRole="tblVehicle" />
+    <Property Type="String" Name="Vehicle_Type_Country" MaxLength="50" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="tblVehicleTypeDefined">
     <Key>

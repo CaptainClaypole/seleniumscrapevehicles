@@ -56,6 +56,7 @@
     </Compile>
     <Compile Include="DataAccess\Repository\DataRepository.cs" />
     <Compile Include="DataAccess\Repository\DbChecker.cs" />
+    <Compile Include="DataAccess\Repository\DBreader.cs" />
     <Compile Include="DataAccess\Repository\IRepository.cs" />
     <Compile Include="DataAccess\VehicleSaver.cs" />
     <Compile Include="IAuthenticatable.cs" />

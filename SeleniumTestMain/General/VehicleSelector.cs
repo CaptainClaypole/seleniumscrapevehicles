@@ -64,9 +64,11 @@ namespace SeleniumTestMain.General {
 
             if(isModelPresent)
             {
+                driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 45));
                 Console.WriteLine("clicking the model...");
                
                 driver.FindElement(By.PartialLinkText(model)).Click();
+               
             }
             else
             {
@@ -85,14 +87,16 @@ namespace SeleniumTestMain.General {
 
 
         private bool CheckModelIsPresent(string model) {
+            driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 5));
             try
             {
                 driver.FindElement(By.PartialLinkText(model));
+                driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 45));
                 return true;
             }
             catch (Exception)
             {
-                
+                driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 45));
                // not found!!
                 return false;
 

@@ -70,13 +70,14 @@
           <Property Name="Vehicle_Make" Type="varchar" MaxLength="50" />
           <Property Name="Vehicle_Model" Type="varchar" MaxLength="50" />
           <Property Name="Vehicle_Type_ID_fk" Type="int" />
+          <Property Name="Vehicle_WillBeSearched" Type="bit" />
         </EntityType>
         <EntityType Name="tblVehicleTypeCountry">
           <Key>
             <PropertyRef Name="Vehicle_Type_Country_ID_pk" />
           </Key>
           <Property Name="Vehicle_Type_Country_ID_pk" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="Vehicle_Type" Type="varchar" MaxLength="50" />
+          <Property Name="Vehicle_Type_Country" Type="varchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="tblVehicleTypeDefined">
           <Key>
@@ -154,16 +155,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <!--Errors Found During Generation:
-      warning 6013: The table/view 'seleniumScrape.dbo.vw_vehicle_main' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
-      
-      <EntityType Name="vw_vehicle_main">
-        <Property Name="Vehicle_Make" Type="varchar" MaxLength="50" />
-        <Property Name="Vehicle_Model" Type="varchar" MaxLength="50" />
-        <Property Name="Vehicle_Type" Type="varchar" MaxLength="50" />
-        <Property Name="VehicleTypeGeneral" Type="varchar" MaxLength="50" />
-        <Property Name="VehicleTypeDefined" Type="varchar" MaxLength="50" />
-      </EntityType>-->
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
@@ -254,14 +245,15 @@
           <NavigationProperty Name="tblVehicleTypeCountry" Relationship="seleniumScrapeModel.FK_tblVehicle_tblVehicleType" FromRole="tblVehicle" ToRole="tblVehicleTypeCountry" />
           <NavigationProperty Name="tblVehicleTypeDefined" Relationship="seleniumScrapeModel.FK_tblVehicle_tblVehicleTypeDefined" FromRole="tblVehicle" ToRole="tblVehicleTypeDefined" />
           <NavigationProperty Name="tblVehicleTypeGeneral" Relationship="seleniumScrapeModel.FK_tblVehicle_tblVehicleTypeGeneral" FromRole="tblVehicle" ToRole="tblVehicleTypeGeneral" />
+          <Property Type="Boolean" Name="Vehicle_WillBeSearched" />
         </EntityType>
         <EntityType Name="tblVehicleTypeCountry">
           <Key>
             <PropertyRef Name="Vehicle_Type_Country_ID_pk" />
           </Key>
           <Property Type="Int32" Name="Vehicle_Type_Country_ID_pk" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Type="String" Name="Vehicle_Type" MaxLength="50" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="tblVehicles" Relationship="seleniumScrapeModel.FK_tblVehicle_tblVehicleType" FromRole="tblVehicleTypeCountry" ToRole="tblVehicle" />
+          <Property Type="String" Name="Vehicle_Type_Country" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="tblVehicleTypeDefined">
           <Key>
@@ -353,6 +345,7 @@
           <EntitySetMapping Name="tblVehicles">
             <EntityTypeMapping TypeName="IsTypeOf(seleniumScrapeModel.tblVehicle)">
               <MappingFragment StoreEntitySet="tblVehicle">
+                <ScalarProperty Name="Vehicle_WillBeSearched" ColumnName="Vehicle_WillBeSearched" />
                 <ScalarProperty Name="Vehicle_ID_Pk" ColumnName="Vehicle_ID_Pk" />
                 <ScalarProperty Name="Vehicle_Type_ID_fk" ColumnName="Vehicle_Type_ID_fk" />
                 <ScalarProperty Name="Vehicle_Model" ColumnName="Vehicle_Model" />
@@ -365,7 +358,7 @@
           <EntitySetMapping Name="tblVehicleTypeCountries">
             <EntityTypeMapping TypeName="seleniumScrapeModel.tblVehicleTypeCountry">
               <MappingFragment StoreEntitySet="tblVehicleTypeCountry">
-                <ScalarProperty Name="Vehicle_Type" ColumnName="Vehicle_Type" />
+                <ScalarProperty Name="Vehicle_Type_Country" ColumnName="Vehicle_Type_Country" />
                 <ScalarProperty Name="Vehicle_Type_Country_ID_pk" ColumnName="Vehicle_Type_Country_ID_pk" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -415,7 +408,7 @@
           <ConnectorPoint PointX="4.625" PointY="1.8939925130208337" />
         </AssociationConnector>
         <EntityTypeShape EntityType="seleniumScrapeModel.tblVehicle" Width="1.5" PointX="0.75" PointY="8.875" Height="2.9417936197916639" />
-        <EntityTypeShape EntityType="seleniumScrapeModel.tblVehicleTypeCountry" Width="1.5" PointX="0.75" PointY="13.25" Height="1.5956835937499996" />
+        <EntityTypeShape EntityType="seleniumScrapeModel.tblVehicleTypeCountry" Width="2.625" PointX="0.75" PointY="13.25" Height="1.5956835937499996" />
         <EntityTypeShape EntityType="seleniumScrapeModel.tblVehicleTypeDefined" Width="1.5" PointX="0.75" PointY="15.625" Height="1.5956835937499978" />
         <EntityTypeShape EntityType="seleniumScrapeModel.tblVehicleTypeGeneral" Width="1.5" PointX="0.75" PointY="17.875" Height="1.595683593749996" />
         <AssociationConnector Association="seleniumScrapeModel.FK_tblPage_tblVehicle" >
@@ -424,19 +417,21 @@
         </AssociationConnector>
         <AssociationConnector Association="seleniumScrapeModel.FK_tblVehicle_tblVehicleType" >
           <ConnectorPoint PointX="1.5" PointY="13.25" />
-          <ConnectorPoint PointX="1.5" PointY="11.816793619791664" />
+          <ConnectorPoint PointX="1.5" PointY="12.009095052083332" />
         </AssociationConnector>
         <AssociationConnector Association="seleniumScrapeModel.FK_tblVehicle_tblVehicleTypeDefined" >
-          <ConnectorPoint PointX="0.75115284615384614" PointY="15.625" />
-          <ConnectorPoint PointX="0.375" PointY="15.248847153846153" />
-          <ConnectorPoint PointX="0.375" PointY="12.192946465945511" />
-          <ConnectorPoint PointX="0.75115284615384637" PointY="11.816793619791664" />
+          <ConnectorPoint PointX="0.75115284615384792" PointY="15.625" />
+          <ConnectorPoint PointX="0.62142556509887936" PointY="15.495272718945031" />
+          <ConnectorPoint PointX="0.50357443490112108" PointY="15.377421588747275" />
+          <ConnectorPoint PointX="0.375" PointY="15.248847153846151" />
+          <ConnectorPoint PointX="0.375" PointY="12.359864282852563" />
+          <ConnectorPoint PointX="0.75" PointY="11.984864282852563" />
         </AssociationConnector>
         <AssociationConnector Association="seleniumScrapeModel.FK_tblVehicle_tblVehicleTypeGeneral" >
-          <ConnectorPoint PointX="2.25" PointY="17.876152846153843" />
-          <ConnectorPoint PointX="2.625" PointY="17.501152846153843" />
-          <ConnectorPoint PointX="2.625" PointY="12.191793619791664" />
-          <ConnectorPoint PointX="2.2499999999999996" PointY="11.816793619791664" />
+          <ConnectorPoint PointX="0.81346053846153821" PointY="17.875" />
+          <ConnectorPoint PointX="0.5625" PointY="17.624039461538462" />
+          <ConnectorPoint PointX="0.5625" PointY="12.223132513621794" />
+          <ConnectorPoint PointX="0.77653746153846137" PointY="12.009095052083332" />
         </AssociationConnector>
         </Diagram>
     </Diagrams>

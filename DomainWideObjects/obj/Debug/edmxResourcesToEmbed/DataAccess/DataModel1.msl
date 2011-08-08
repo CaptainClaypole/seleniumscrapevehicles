@@ -33,6 +33,7 @@
     <EntitySetMapping Name="tblVehicles">
       <EntityTypeMapping TypeName="IsTypeOf(seleniumScrapeModel.tblVehicle)">
         <MappingFragment StoreEntitySet="tblVehicle">
+          <ScalarProperty Name="Vehicle_WillBeSearched" ColumnName="Vehicle_WillBeSearched" />
           <ScalarProperty Name="Vehicle_ID_Pk" ColumnName="Vehicle_ID_Pk" />
           <ScalarProperty Name="Vehicle_Type_ID_fk" ColumnName="Vehicle_Type_ID_fk" />
           <ScalarProperty Name="Vehicle_Model" ColumnName="Vehicle_Model" />
@@ -45,7 +46,7 @@
     <EntitySetMapping Name="tblVehicleTypeCountries">
       <EntityTypeMapping TypeName="seleniumScrapeModel.tblVehicleTypeCountry">
         <MappingFragment StoreEntitySet="tblVehicleTypeCountry">
-          <ScalarProperty Name="Vehicle_Type" ColumnName="Vehicle_Type" />
+          <ScalarProperty Name="Vehicle_Type_Country" ColumnName="Vehicle_Type_Country" />
           <ScalarProperty Name="Vehicle_Type_Country_ID_pk" ColumnName="Vehicle_Type_Country_ID_pk" />
         </MappingFragment>
       </EntityTypeMapping>
