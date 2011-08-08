@@ -13,6 +13,8 @@ namespace SeleniumTestMain {
     public class Main
     {
         private string tableHTMLtagToScrape = "t_main";
+        //private string tableHTMLtagToScrape = "aj_out_poisk";
+        private int searchSessionID;
         
 
         public void MainMethod()
@@ -35,12 +37,15 @@ namespace SeleniumTestMain {
             // login to page - return the selenium driver into the var.
             var driver = navigator.LoginToPage();
             
+            // Create Search Session
+            var sessionCreator = new SessionCreator();
+           searchSessionID = sessionCreator.CreateSearchSession();
 
 
             // Do a search for each vehicle read from the database.
             foreach (var item in vehicleSearchList)
             {
-                 MainNavigationToLoop(navigator, item.Vehicle_Make, item.Vehicle_Model, driver);
+                 MainNavigationToLoop(navigator, item.Vehicle_Make, item.Vehicle_Model, driver, item.Vehicle_ID_Pk);
             }
                 
                CloseBrowserAndDispose(driver);
@@ -48,7 +53,7 @@ namespace SeleniumTestMain {
 
    
 
-        private void MainNavigationToLoop(Navigator navigator,  string vehicleMake, string vehicleModel, IWebDriver driver)
+        private void MainNavigationToLoop(Navigator navigator,  string vehicleMake, string vehicleModel, IWebDriver driver, int vehicleID)
         {
 
           
@@ -86,7 +91,7 @@ namespace SeleniumTestMain {
                 for (int i = 2; i <= pageNum.searchResultsPageCount; i++) {
                    Console.WriteLine("page number is greater than one so looping...");
                     // Call the datascraper and send through an argument for the class to search for.
-                    var dataScraper = new DataScraper(driver);
+                    var dataScraper = new DataScraper(driver, vehicleID, searchSessionID);
                     dataScraper.GetHtml(tableHTMLtagToScrape);
 
 
@@ -98,7 +103,7 @@ namespace SeleniumTestMain {
             else
             {
                 Console.WriteLine("Page number returned is one...");
-                var dataScraper = new DataScraper(driver);
+                var dataScraper = new DataScraper(driver, vehicleID, searchSessionID);
                 dataScraper.GetHtml(tableHTMLtagToScrape);
             }
 

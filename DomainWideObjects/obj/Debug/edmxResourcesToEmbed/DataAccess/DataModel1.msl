@@ -15,9 +15,11 @@
     <EntitySetMapping Name="tblHtmls">
       <EntityTypeMapping TypeName="seleniumScrapeModel.tblHtml">
         <MappingFragment StoreEntitySet="tblHtml">
+          <ScalarProperty Name="Search_Session_ID_fk" ColumnName="Search_Session_ID_fk" />
+          <ScalarProperty Name="Search_Date_Timestamp" ColumnName="Search_Date_Timestamp" />
+          <ScalarProperty Name="Vehicle_id_fk" ColumnName="Vehicle_id_fk" />
           <ScalarProperty Name="html_id_pk" ColumnName="html_id_pk" />
           <ScalarProperty Name="html_data" ColumnName="html_data" />
-          <ScalarProperty Name="page_id_fk" ColumnName="page_id_fk" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -64,6 +66,13 @@
         <MappingFragment StoreEntitySet="tblVehicleTypeGeneral">
           <ScalarProperty Name="VehicleTypeGeneral" ColumnName="VehicleTypeGeneral" />
           <ScalarProperty Name="VehicleTypeGeneral_pk" ColumnName="VehicleTypeGeneral_pk" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSearchSessions">
+      <EntityTypeMapping TypeName="seleniumScrapeModel.tblSearchSession">
+        <MappingFragment StoreEntitySet="tblSearchSession">
+          <ScalarProperty Name="Search_Session_ID_PK" ColumnName="Search_Session_ID_PK" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

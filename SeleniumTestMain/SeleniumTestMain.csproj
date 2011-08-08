@@ -73,11 +73,13 @@
     <Compile Include="General\ConditionPicker.cs" />
     <Compile Include="General\Data\DataScraper.cs" />
     <Compile Include="General\Data\IDataScraper.cs" />
+    <Compile Include="General\Data\SessionCreator.cs" />
     <Compile Include="General\IVehicleSelector.cs" />
     <Compile Include="General\Navigator.cs" />
     <Compile Include="General\PageCounter.cs" />
     <Compile Include="General\VehicleSelector.cs" />
     <Compile Include="Main.cs" />
+    <Compile Include="PageGeneration\DisplayPageGenerator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

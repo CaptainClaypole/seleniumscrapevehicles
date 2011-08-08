@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using DomainWideObjects.DataAccess.Entities;
 
 namespace DomainWideObjects.DataAccess.Repository {
    public class DBreader {
@@ -22,6 +23,21 @@ namespace DomainWideObjects.DataAccess.Repository {
 
 
        }
+
+       public IQueryable<tblSearchSession> GetAllHTMLbySearchSession(int searchSessionID)
+       {
+           var db = new seleniumScrapeEntities();
+
+           var html = from s in db.tblSearchSessions
+                      from h in db.tblHtmls
+                      where s.Search_Session_ID_PK == 3
+                      select s;                           
+                               
+
+           return html;
+       }
+
+     
 
     }
 }
