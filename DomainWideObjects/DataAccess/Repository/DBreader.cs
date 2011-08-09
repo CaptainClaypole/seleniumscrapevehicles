@@ -37,7 +37,34 @@ namespace DomainWideObjects.DataAccess.Repository {
            return html;
        }
 
-     
+       public void TestQuery()
+       {
 
-    }
+           var db = new seleniumScrapeEntities();
+
+           var sessionCount = (from s in db.tblSearchSessions
+                               select s).Count();
+
+
+
+           var sessionData = from h in db.tblSearchSessions
+                             from s in h.tblHtmls
+                             where s.Search_Session_ID_fk == sessionCount
+                             select s;
+
+
+           var filterVehicle = from s in sessionData
+
+                               where s.Vehicle_id_fk == 7
+                               select s;
+				  
+
+       }
+       
+       
+
+      
+
+
+   }
 }

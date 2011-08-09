@@ -20,10 +20,7 @@ namespace WebformsUI {
 
             var htmlList = htmlQueryable.ToList();
 
-            foreach (string html in htmlList)
-            {
-               Console.WriteLine(html.ToString());
-            }
+           
           
          
 

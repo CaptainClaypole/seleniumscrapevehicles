@@ -2,14 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using NUnit.Framework;
 using OpenQA.Selenium;
 using DomainWideObjects.DataAccess;
+using System.Web;
 
 
 
 
 namespace SeleniumTestMain.General.Data {
-    class DataScraper : IDataScraper {
+    [TestFixture("test")]
+    public class DataScraper : IDataScraper {
         #region IDataScraper Members
 
         private IWebDriver driver;
@@ -27,7 +30,7 @@ namespace SeleniumTestMain.General.Data {
 
 
         }
-
+        [TestCase("test")]
         public void GetHtml(string tagToSearch) {
             // Wait for element
             driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 45));
@@ -36,10 +39,15 @@ namespace SeleniumTestMain.General.Data {
 
             string tableElementHTML =
                 (String)((IJavaScriptExecutor)driver).ExecuteScript("return arguments[0].innerHTML", tableElement);
+            
+            //string encodedHtml =  System.Security.SecurityElement.Escape("<table class=\"t_main\" cellpadding=\"0\" cellspacing=\"0\">");
+            
+            string encodedHtml = HttpUtility.HtmlEncode("<table class=\"t_main\" cellpadding=\"0\" cellspacing=\"0\">");
+            
+            tableElementHTML = HttpUtility.HtmlDecode(encodedHtml) + tableElementHTML;
 
             Console.WriteLine(tableElementHTML);
            
-
             AddHTMLtoList(tableElementHTML);
 
         }

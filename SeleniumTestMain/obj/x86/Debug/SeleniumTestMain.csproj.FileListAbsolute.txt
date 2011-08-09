@@ -81,3 +81,9 @@ C:\Users\jon.JMC\seleniumtestmain\SeleniumTestMain\bin\Debug\Ionic.Zip.Reduced.d
 C:\Users\jon.JMC\seleniumtestmain\SeleniumTestMain\bin\Debug\Newtonsoft.Json.dll
 C:\Users\jon.JMC\seleniumtestmain\SeleniumTestMain\bin\Debug\WebDriver.dll
 C:\Users\jon.JMC\seleniumtestmain\SeleniumTestMain\bin\Debug\Webdriver.Support.dll
+C:\Users\jon.JMC\seleniumtestmain\SeleniumTestMain\bin\Debug\Selenium.WebDriverBackedSelenium.dll
+C:\Users\jon.JMC\seleniumtestmain\SeleniumTestMain\bin\Debug\ThoughtWorks.Selenium.Core.dll
+C:\Users\jon.JMC\seleniumtestmain\SeleniumTestMain\bin\Debug\Selenium.WebDriverBackedSelenium.pdb
+C:\Users\jon.JMC\seleniumtestmain\SeleniumTestMain\bin\Debug\Selenium.WebDriverBackedSelenium.xml
+C:\Users\jon.JMC\seleniumtestmain\SeleniumTestMain\bin\Debug\ThoughtWorks.Selenium.Core.pdb
+C:\Users\jon.JMC\seleniumtestmain\SeleniumTestMain\bin\Debug\ThoughtWorks.Selenium.Core.xml

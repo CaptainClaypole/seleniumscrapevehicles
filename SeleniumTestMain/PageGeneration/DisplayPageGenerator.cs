@@ -28,11 +28,7 @@ namespace SeleniumTestMain.PageGeneration {
            var htmlList = htmlEnum.ToList();
 
 
-           page.html = htmlList;
-          = from h in sessionList[3].tblHtmls
-                       where h.Search_Session_ID_fk == 3
-                       select h.Search_Date_Timestamp;
-
+          
            
                var timeStampEnum = from h in sessionList[3].tblHtmls
                                   where h.Search_Session_ID_fk == 3
@@ -40,7 +36,7 @@ namespace SeleniumTestMain.PageGeneration {
 
            var timeStampList = timeStampEnum.ToList();
 
-           page.searchTimeStamp = ;
+          
 
 
 
