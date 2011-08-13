@@ -3,4 +3,5 @@
   <Module PersistentId="CD513CE6-3A30-412A-947B-E86B11F4C5E8" ModuleId="DomainWideObjects" />
   <Module PersistentId="DE36283D-5C73-47BC-B391-E9FA699EF23C" ModuleId="Test1" />
   <Module PersistentId="14EA673F-4155-4A70-8AB1-31CDBFBDBFDB" ModuleId="WebformsUI" />
+  <Module PersistentId="8C222534-591B-4D5B-A8F9-3F8DCDD9E2D2" ModuleId="MyUserInterface" />
 </Modules>

@@ -11,7 +11,7 @@ using System.Web;
 
 
 namespace SeleniumTestMain.General.Data {
-    [TestFixture("test")]
+    [TestFixture]
     public class DataScraper : IDataScraper {
         #region IDataScraper Members
 
@@ -30,7 +30,7 @@ namespace SeleniumTestMain.General.Data {
 
 
         }
-        [TestCase("test")]
+       
         public void GetHtml(string tagToSearch) {
             // Wait for element
             driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 45));

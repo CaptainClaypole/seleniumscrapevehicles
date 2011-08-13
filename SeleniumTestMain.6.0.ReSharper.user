@@ -7,46 +7,39 @@
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/f:SiteConfig.cs" caret="13" fromTop="0" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DataModel.Designer.cs" caret="1694" fromTop="10" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DataModel.edmx.sql" caret="3182" fromTop="108" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DataModel1.Designer.cs" caret="2578" fromTop="6" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DataRepository.cs" caret="1478" fromTop="19" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:IRepository.cs" caret="448" fromTop="8" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:VehicleSaver.cs" caret="0" fromTop="0" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DbChecker.cs" caret="2979" fromTop="14" />
-      <File id="14EA673F-4155-4A70-8AB1-31CDBFBDBFDB/f:Main.aspx" caret="177" fromTop="4" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="0" fromTop="0" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:IDataScraper.cs" caret="185" fromTop="9" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DBreader.cs" caret="1134" fromTop="8" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Entities/f:DisplayPage.cs" caret="364" fromTop="8" />
-      <File id="14EA673F-4155-4A70-8AB1-31CDBFBDBFDB/f:Default.aspx.cs" caret="578" fromTop="10" />
-      <File id="14EA673F-4155-4A70-8AB1-31CDBFBDBFDB/d:Controls/f:ControlMain.ascx" caret="294" fromTop="19" />
-      <File id="14EA673F-4155-4A70-8AB1-31CDBFBDBFDB/f:Default.aspx" caret="365" fromTop="6" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DBWriter.cs" caret="385" fromTop="9" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:CreateHtmlList.cs" caret="600" fromTop="11" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="870" fromTop="9" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DBreader.cs" caret="1541" fromTop="21" />
+      <File id="8C222534-591B-4D5B-A8F9-3F8DCDD9E2D2/f:DataModel1.edmx" caret="0" fromTop="0" />
+      <File id="8C222534-591B-4D5B-A8F9-3F8DCDD9E2D2/f:DataModel1.Designer.cs" caret="0" fromTop="0" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="196" fromTop="0" />
     </RecentFiles>
     <RecentEdits>
-      <File id="14EA673F-4155-4A70-8AB1-31CDBFBDBFDB/f:Default.aspx.cs" caret="257" fromTop="6" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DBreader.cs" caret="506" fromTop="14" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DBreader.cs" caret="241" fromTop="6" />
-      <File id="14EA673F-4155-4A70-8AB1-31CDBFBDBFDB/f:Default.aspx.cs" caret="630" fromTop="17" />
-      <File id="14EA673F-4155-4A70-8AB1-31CDBFBDBFDB/f:Default.aspx.cs" caret="578" fromTop="10" />
-      <File id="14EA673F-4155-4A70-8AB1-31CDBFBDBFDB/f:Default.aspx" caret="747" fromTop="16" />
-      <File id="14EA673F-4155-4A70-8AB1-31CDBFBDBFDB/f:Default.aspx" caret="368" fromTop="6" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Entities/f:DisplayPage.cs" caret="88" fromTop="3" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DBreader.cs" caret="936" fromTop="17" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DBreader.cs" caret="937" fromTop="12" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DBreader.cs" caret="638" fromTop="5" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Entities/f:DisplayPage.cs" caret="439" fromTop="14" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Entities/f:DisplayPage.cs" caret="260" fromTop="9" />
-      <File id="14EA673F-4155-4A70-8AB1-31CDBFBDBFDB/f:Default.aspx.cs" caret="591" fromTop="11" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DBreader.cs" caret="1650" fromTop="16" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DBreader.cs" caret="1134" fromTop="8" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DBreader.cs" caret="1600" fromTop="13" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="1199" fromTop="4" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="1643" fromTop="12" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="940" fromTop="8" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="759" fromTop="17" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="267" fromTop="7" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="1172" fromTop="4" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="1616" fromTop="12" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="913" fromTop="8" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="735" fromTop="6" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="261" fromTop="13" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DBreader.cs" caret="95595" fromTop="21" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="194" fromTop="8" />
     </RecentEdits>
   </RecentFiles>
   <CompletionStatisticsManager>
@@ -510,7 +503,6 @@
       <Name>Session #1</Name>
       <Elements>
         <UnitTestElement Provider="nUnit" Id="SeleniumTestMain.General.Data.DataScraper" type="NUnitTestFixtureElement" Project="597152A6-A313-4756-8701-CC7452AEC3C2" />
-        <UnitTestElement Provider="nUnit" Id="SeleniumTestMain.General.Data.DataScraper.GetHtml" ParentId="SeleniumTestMain.General.Data.DataScraper" type="NUnitTestElement" TypeName="SeleniumTestMain.General.Data.DataScraper" MethodName="GetHtml" Project="597152A6-A313-4756-8701-CC7452AEC3C2" />
       </Elements>
     </Session>
   </UnitTestSessions>
