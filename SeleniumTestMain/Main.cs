@@ -5,6 +5,7 @@ using System.Text;
 using DomainWideObjects;
 using DomainWideObjects.DataAccess;
 using DomainWideObjects.DataAccess.Repository;
+using DomainWideObjects.Settings;
 using OpenQA.Selenium;
 using SeleniumTestMain.General;
 using SeleniumTestMain.General.Data;
@@ -12,10 +13,22 @@ using SeleniumTestMain.General.Data;
 namespace SeleniumTestMain {
     public class Main
     {
+        
+        // Tag to be scraped (inner html)
         private string tableHTMLtagToScrape = "t_main";
+
         //private string tableHTMLtagToScrape = "aj_out_poisk";
         private int searchSessionID;
         
+        //// Single search properties to set if needed
+        //private bool manualSingleSearch = false;
+        //private string singleVehicleToSearch = "DYNA";
+
+        // multi vehicle search list
+        private List<tblVehicle> vehicleSearchList;
+
+     
+
 
         public void MainMethod()
         {
@@ -25,12 +38,14 @@ namespace SeleniumTestMain {
             Navigator navigator = new Navigator();
            // Instanciate objects in the navigator
             navigator.Create();
-          
+
+            vehicleSearchList = new List<tblVehicle>();
 
 
-            // create instance of dbreader class to read vehicles to search.
-            var dbReader = new DBreader();
-            var vehicleSearchList = dbReader.readSearchVehicles();
+            ISearchTypeChooser searchTypeChooser = new SearchTypeChooser();
+
+           vehicleSearchList = searchTypeChooser.ChooseTypeOfSearch(vehicleSearchList);
+
 
             // navigate to page
             navigator.NavigateToPage();
@@ -51,12 +66,12 @@ namespace SeleniumTestMain {
                CloseBrowserAndDispose(driver);
         }
 
-   
+
 
         private void MainNavigationToLoop(Navigator navigator,  string vehicleMake, string vehicleModel, IWebDriver driver, int vehicleID)
         {
 
-          
+          BEGINLOOP:
             // Begin foreach for all vehicles
 
             // Select Make
@@ -64,7 +79,11 @@ namespace SeleniumTestMain {
             vehicleSelector.SelectMake(vehicleMake);
 
             // Select Model
-            vehicleSelector.SelectModel(vehicleModel);
+            var returnCode = vehicleSelector.SelectModel(vehicleModel);
+            if (returnCode == 1)
+            {
+                goto BEGINLOOP;
+            }
             // Condition Picker
             var conditionPicker = new ConditionPicker(driver);
 
@@ -92,8 +111,12 @@ namespace SeleniumTestMain {
                    Console.WriteLine("page number is greater than one so looping...");
                     // Call the datascraper and send through an argument for the class to search for.
                     var dataScraper = new DataScraper(driver, vehicleID, searchSessionID);
-                    dataScraper.GetHtml(tableHTMLtagToScrape);
+                   // check for error code then exit
+                    var returnCode = dataScraper.GetHtml(tableHTMLtagToScrape);
+                    if (returnCode == 1) {
+                        goto BEGINLOOP;
 
+                    }
 
 
                     // Click the next page
@@ -104,7 +127,12 @@ namespace SeleniumTestMain {
             {
                 Console.WriteLine("Page number returned is one...");
                 var dataScraper = new DataScraper(driver, vehicleID, searchSessionID);
-                dataScraper.GetHtml(tableHTMLtagToScrape);
+                var returnCode = dataScraper.GetHtml(tableHTMLtagToScrape);
+                if (returnCode == 1)
+                {
+                    goto BEGINLOOP;
+
+                }
             }
 
    

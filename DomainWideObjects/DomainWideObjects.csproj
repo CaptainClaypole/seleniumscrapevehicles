@@ -66,6 +66,7 @@
     <Compile Include="ISiteConfigurable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SearchResults.cs" />
+    <Compile Include="Settings\AppSettings.cs" />
     <Compile Include="SiteConfig.cs" />
     <Compile Include="Website.cs" />
   </ItemGroup>

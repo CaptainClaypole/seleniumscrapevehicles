@@ -55,7 +55,7 @@ namespace SeleniumTestMain.General {
 
     
 
-        public void SelectModel(string model) {
+        public int SelectModel(string model) {
            // Check model is there
            bool isModelPresent = CheckModelIsPresent(model);
            
@@ -68,14 +68,16 @@ namespace SeleniumTestMain.General {
                 Console.WriteLine("clicking the model...");
                
                 driver.FindElement(By.PartialLinkText(model)).Click();
-               
-            }
-            else
-            {
-                Console.WriteLine("Oh No!  No model! ... ");
-               
+                return 0;
 
             }
+          
+           
+                Console.WriteLine("Oh No!  No model! ... ");
+
+                return 1;
+
+       
 
         }
         

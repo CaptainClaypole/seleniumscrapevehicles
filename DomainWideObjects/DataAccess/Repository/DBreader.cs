@@ -37,6 +37,21 @@ namespace DomainWideObjects.DataAccess.Repository {
            return html;
        }
 
+
+        public List<tblVehicle> GetSingleSearchVehicle(string vehicleModelToSearch)
+        {
+            var db = new seleniumScrapeEntities();
+            
+            var vehicles = from v in db.tblVehicles
+                           where v.Vehicle_Model == vehicleModelToSearch
+                          select v;
+
+           var vehicleList = vehicles.ToList();
+
+
+           return vehicleList;
+        }
+
        public void TestQuery()
        {
 

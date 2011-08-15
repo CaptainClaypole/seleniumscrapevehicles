@@ -1,7 +1,11 @@
 <Modules>
   <Module PersistentId="597152A6-A313-4756-8701-CC7452AEC3C2" ModuleId="SeleniumTestMain" />
   <Module PersistentId="CD513CE6-3A30-412A-947B-E86B11F4C5E8" ModuleId="DomainWideObjects" />
+<<<<<<< HEAD
+  <Module PersistentId="65C82E5F-564F-43D8-8B11-202DBFBC065A" ModuleId="MyMVCui" />
+=======
   <Module PersistentId="DE36283D-5C73-47BC-B391-E9FA699EF23C" ModuleId="Test1" />
   <Module PersistentId="14EA673F-4155-4A70-8AB1-31CDBFBDBFDB" ModuleId="WebformsUI" />
   <Module PersistentId="8C222534-591B-4D5B-A8F9-3F8DCDD9E2D2" ModuleId="MyUserInterface" />
+>>>>>>> edd0abf865ce09f946bd92b37c69c6d49d8630be
 </Modules>

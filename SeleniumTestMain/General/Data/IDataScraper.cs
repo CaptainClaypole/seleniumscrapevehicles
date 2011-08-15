@@ -7,7 +7,7 @@ namespace SeleniumTestMain.General.Data {
     interface IDataScraper
     {
 
-        void GetHtml(string tagToSearch);
+        int GetHtml(string tagToSearch);
 
     }
 }

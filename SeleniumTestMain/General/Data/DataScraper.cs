@@ -19,6 +19,9 @@ namespace SeleniumTestMain.General.Data {
         private int vehicleID;
         private int searchSessionID;
 
+        private string tableElementHTML;
+        private IWebElement tableElement;
+
    
 
         // Constructor
@@ -30,26 +33,63 @@ namespace SeleniumTestMain.General.Data {
 
 
         }
+<<<<<<< HEAD
+        [TestCase("test")]
+        public int GetHtml(string tagToSearch) {
+=======
        
         public void GetHtml(string tagToSearch) {
             // Wait for element
             driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 45));
             
             IWebElement tableElement = driver.FindElement(By.ClassName(tagToSearch));
+>>>>>>> edd0abf865ce09f946bd92b37c69c6d49d8630be
 
-            string tableElementHTML =
-                (String)((IJavaScriptExecutor)driver).ExecuteScript("return arguments[0].innerHTML", tableElement);
-            
-            //string encodedHtml =  System.Security.SecurityElement.Escape("<table class=\"t_main\" cellpadding=\"0\" cellspacing=\"0\">");
-            
-            string encodedHtml = HttpUtility.HtmlEncode("<table class=\"t_main\" cellpadding=\"0\" cellspacing=\"0\">");
-            
-            tableElementHTML = HttpUtility.HtmlDecode(encodedHtml) + tableElementHTML;
 
-            Console.WriteLine(tableElementHTML);
+            if (CheckElementExists(tagToSearch))
+            {
+                tableElementHTML =
+               (String)((IJavaScriptExecutor)driver).ExecuteScript("return arguments[0].innerHTML", tableElement);
+
+                //string encodedHtml =  System.Security.SecurityElement.Escape("<table class=\"t_main\" cellpadding=\"0\" cellspacing=\"0\">");
+
+                string encodedHtml = HttpUtility.HtmlEncode("<table class=\"t_main\" cellpadding=\"0\" cellspacing=\"0\">");
+
+                tableElementHTML = HttpUtility.HtmlDecode(encodedHtml) + tableElementHTML;
+
+                Console.WriteLine(tableElementHTML);
+
+                AddHTMLtoList(tableElementHTML);
+                return 0;
+            }
            
-            AddHTMLtoList(tableElementHTML);
+                // error 1 not found so go back to beginning of loop.
+                return 1;
 
+          
+
+            
+
+        }
+
+        private bool CheckElementExists(string tagToSearch)
+        {
+
+            // Wait for element
+            driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 45));
+
+            bool tableElementExists = false;
+            try {
+                // Can crash here if filtering the conditions results in nothing found.
+                tableElement = driver.FindElement(By.ClassName(tagToSearch));
+                tableElementExists = true;
+                return tableElementExists;
+            } catch (Exception e) {
+                // not found
+                tableElementExists = false;
+                return tableElementExists;
+            }
+           
         }
 
         public void AddHTMLtoList(string tableElementHTML)
