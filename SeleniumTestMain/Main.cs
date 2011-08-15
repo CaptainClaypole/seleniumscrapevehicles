@@ -19,6 +19,8 @@ namespace SeleniumTestMain {
 
         //private string tableHTMLtagToScrape = "aj_out_poisk";
         private int searchSessionID;
+        private int returnCode;
+
         
         //// Single search properties to set if needed
         //private bool manualSingleSearch = false;
@@ -61,6 +63,7 @@ namespace SeleniumTestMain {
             foreach (var item in vehicleSearchList)
             {
                  MainNavigationToLoop(navigator, item.Vehicle_Make, item.Vehicle_Model, driver, item.Vehicle_ID_Pk);
+            
             }
                 
                CloseBrowserAndDispose(driver);
@@ -71,7 +74,7 @@ namespace SeleniumTestMain {
         private void MainNavigationToLoop(Navigator navigator,  string vehicleMake, string vehicleModel, IWebDriver driver, int vehicleID)
         {
 
-          BEGINLOOP:
+         
             // Begin foreach for all vehicles
 
             // Select Make
@@ -79,10 +82,10 @@ namespace SeleniumTestMain {
             vehicleSelector.SelectMake(vehicleMake);
 
             // Select Model
-            var returnCode = vehicleSelector.SelectModel(vehicleModel);
+             returnCode = vehicleSelector.SelectModel(vehicleModel);
             if (returnCode == 1)
             {
-                goto BEGINLOOP;
+                goto ENDTHISLOOP;
             }
             // Condition Picker
             var conditionPicker = new ConditionPicker(driver);
@@ -112,9 +115,9 @@ namespace SeleniumTestMain {
                     // Call the datascraper and send through an argument for the class to search for.
                     var dataScraper = new DataScraper(driver, vehicleID, searchSessionID);
                    // check for error code then exit
-                    var returnCode = dataScraper.GetHtml(tableHTMLtagToScrape);
+                     returnCode = dataScraper.GetHtml(tableHTMLtagToScrape);
                     if (returnCode == 1) {
-                        goto BEGINLOOP;
+                        goto ENDTHISLOOP;
 
                     }
 
@@ -127,17 +130,17 @@ namespace SeleniumTestMain {
             {
                 Console.WriteLine("Page number returned is one...");
                 var dataScraper = new DataScraper(driver, vehicleID, searchSessionID);
-                var returnCode = dataScraper.GetHtml(tableHTMLtagToScrape);
+                 returnCode = dataScraper.GetHtml(tableHTMLtagToScrape);
                 if (returnCode == 1)
                 {
-                    goto BEGINLOOP;
+                    goto ENDTHISLOOP;
 
                 }
             }
 
-   
 
-           
+        ENDTHISLOOP:;
+
         }
 
 

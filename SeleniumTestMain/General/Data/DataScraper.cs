@@ -33,17 +33,17 @@ namespace SeleniumTestMain.General.Data {
 
 
         }
-<<<<<<< HEAD
+//<<<<<<< HEAD
         [TestCase("test")]
         public int GetHtml(string tagToSearch) {
-=======
+//=======
        
-        public void GetHtml(string tagToSearch) {
-            // Wait for element
-            driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 45));
+//        public void GetHtml(string tagToSearch) {
+//            // Wait for element
+//            driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 45));
             
-            IWebElement tableElement = driver.FindElement(By.ClassName(tagToSearch));
->>>>>>> edd0abf865ce09f946bd92b37c69c6d49d8630be
+//            IWebElement tableElement = driver.FindElement(By.ClassName(tagToSearch));
+//>>>>>>> edd0abf865ce09f946bd92b37c69c6d49d8630be
 
 
             if (CheckElementExists(tagToSearch))
