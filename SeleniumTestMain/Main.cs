@@ -62,7 +62,7 @@ namespace SeleniumTestMain {
             // Do a search for each vehicle read from the database.
             foreach (var item in vehicleSearchList)
             {
-                 MainNavigationToLoop(navigator, item.Vehicle_Make, item.Vehicle_Model, driver, item.Vehicle_ID_Pk);
+                 MainNavigationToLoop(navigator, item.Vehicle_Make, item.Vehicle_Model, item.Vehicle_CondtionFilter , driver, item.Vehicle_ID_Pk);
             
             }
                 
@@ -71,7 +71,7 @@ namespace SeleniumTestMain {
 
 
 
-        private void MainNavigationToLoop(Navigator navigator,  string vehicleMake, string vehicleModel, IWebDriver driver, int vehicleID)
+        private void MainNavigationToLoop(Navigator navigator,  string vehicleMake, string vehicleModel,  bool? filterCondition  , IWebDriver driver, int vehicleID)
         {
 
          
@@ -87,11 +87,19 @@ namespace SeleniumTestMain {
             {
                 goto ENDTHISLOOP;
             }
-            // Condition Picker
-            var conditionPicker = new ConditionPicker(driver);
+            // Check if condition is to be filtered.
+            var searchChecker = new SearchChecker();
 
-            // Click condition list
-            conditionPicker.ClickConditions();
+            if (searchChecker.ConditionFiltered(filterCondition))
+            {
+                // Condition Picker
+                var conditionPicker = new ConditionPicker(driver);
+                // Click condition list
+                conditionPicker.ClickConditions();
+            }
+           
+
+           
 
             // Click Search button
             navigator.SearchButtonClicker(driver);

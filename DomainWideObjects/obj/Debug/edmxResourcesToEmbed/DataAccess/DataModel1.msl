@@ -35,6 +35,7 @@
     <EntitySetMapping Name="tblVehicles">
       <EntityTypeMapping TypeName="IsTypeOf(seleniumScrapeModel.tblVehicle)">
         <MappingFragment StoreEntitySet="tblVehicle">
+          <ScalarProperty Name="Vehicle_CondtionFilter" ColumnName="Vehicle_CondtionFilter" />
           <ScalarProperty Name="Vehicle_WillBeSearched" ColumnName="Vehicle_WillBeSearched" />
           <ScalarProperty Name="Vehicle_ID_Pk" ColumnName="Vehicle_ID_Pk" />
           <ScalarProperty Name="Vehicle_Type_ID_fk" ColumnName="Vehicle_Type_ID_fk" />
@@ -73,6 +74,15 @@
       <EntityTypeMapping TypeName="seleniumScrapeModel.tblSearchSession">
         <MappingFragment StoreEntitySet="tblSearchSession">
           <ScalarProperty Name="Search_Session_ID_PK" ColumnName="Search_Session_ID_PK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblHtmlLinks">
+      <EntityTypeMapping TypeName="seleniumScrapeModel.tblHtmlLink">
+        <MappingFragment StoreEntitySet="tblHtmlLink">
+          <ScalarProperty Name="html_link_order_position_number" ColumnName="html_link_order_position_number" />
+          <ScalarProperty Name="html_data_ID_fk" ColumnName="html_data_ID_fk" />
+          <ScalarProperty Name="html_Link_ID_PK" ColumnName="html_Link_ID_PK" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

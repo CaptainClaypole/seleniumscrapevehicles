@@ -24,6 +24,7 @@ using System.Runtime.Serialization;
 [assembly: EdmRelationshipAttribute("seleniumScrapeModel", "FK_tblVehicle_tblVehicleTypeGeneral", "tblVehicleTypeGeneral", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DomainWideObjects.DataAccess.tblVehicleTypeGeneral), "tblVehicle", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DomainWideObjects.DataAccess.tblVehicle), true)]
 [assembly: EdmRelationshipAttribute("seleniumScrapeModel", "FK_tblHtml_tblVehicle1", "tblVehicle", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DomainWideObjects.DataAccess.tblVehicle), "tblHtml", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DomainWideObjects.DataAccess.tblHtml), true)]
 [assembly: EdmRelationshipAttribute("seleniumScrapeModel", "FK_tblHtml_tblSearchSession", "tblSearchSession", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DomainWideObjects.DataAccess.tblSearchSession), "tblHtml", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DomainWideObjects.DataAccess.tblHtml), true)]
+[assembly: EdmRelationshipAttribute("seleniumScrapeModel", "FK_tblHtmlLink_tblHtml", "tblHtml", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DomainWideObjects.DataAccess.tblHtml), "tblHtmlLink", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DomainWideObjects.DataAccess.tblHtmlLink), true)]
 
 #endregion
 
@@ -202,6 +203,22 @@ namespace DomainWideObjects.DataAccess
             }
         }
         private ObjectSet<tblSearchSession> _tblSearchSessions;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<tblHtmlLink> tblHtmlLinks
+        {
+            get
+            {
+                if ((_tblHtmlLinks == null))
+                {
+                    _tblHtmlLinks = base.CreateObjectSet<tblHtmlLink>("tblHtmlLinks");
+                }
+                return _tblHtmlLinks;
+            }
+        }
+        private ObjectSet<tblHtmlLink> _tblHtmlLinks;
 
         #endregion
         #region AddTo Methods
@@ -268,6 +285,14 @@ namespace DomainWideObjects.DataAccess
         public void AddTotblSearchSessions(tblSearchSession tblSearchSession)
         {
             base.AddObject("tblSearchSessions", tblSearchSession);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the tblHtmlLinks EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddTotblHtmlLinks(tblHtmlLink tblHtmlLink)
+        {
+            base.AddObject("tblHtmlLinks", tblHtmlLink);
         }
 
         #endregion
@@ -656,6 +681,172 @@ namespace DomainWideObjects.DataAccess
                 if ((value != null))
                 {
                     ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tblSearchSession>("seleniumScrapeModel.FK_tblHtml_tblSearchSession", "tblSearchSession", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("seleniumScrapeModel", "FK_tblHtmlLink_tblHtml", "tblHtmlLink")]
+        public EntityCollection<tblHtmlLink> tblHtmlLinks
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tblHtmlLink>("seleniumScrapeModel.FK_tblHtmlLink_tblHtml", "tblHtmlLink");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tblHtmlLink>("seleniumScrapeModel.FK_tblHtmlLink_tblHtml", "tblHtmlLink", value);
+                }
+            }
+        }
+
+        #endregion
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="seleniumScrapeModel", Name="tblHtmlLink")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class tblHtmlLink : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new tblHtmlLink object.
+        /// </summary>
+        /// <param name="html_Link_ID_PK">Initial value of the html_Link_ID_PK property.</param>
+        public static tblHtmlLink CreatetblHtmlLink(global::System.Int32 html_Link_ID_PK)
+        {
+            tblHtmlLink tblHtmlLink = new tblHtmlLink();
+            tblHtmlLink.html_Link_ID_PK = html_Link_ID_PK;
+            return tblHtmlLink;
+        }
+
+        #endregion
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 html_Link_ID_PK
+        {
+            get
+            {
+                return _html_Link_ID_PK;
+            }
+            set
+            {
+                if (_html_Link_ID_PK != value)
+                {
+                    Onhtml_Link_ID_PKChanging(value);
+                    ReportPropertyChanging("html_Link_ID_PK");
+                    _html_Link_ID_PK = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("html_Link_ID_PK");
+                    Onhtml_Link_ID_PKChanged();
+                }
+            }
+        }
+        private global::System.Int32 _html_Link_ID_PK;
+        partial void Onhtml_Link_ID_PKChanging(global::System.Int32 value);
+        partial void Onhtml_Link_ID_PKChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> html_data_ID_fk
+        {
+            get
+            {
+                return _html_data_ID_fk;
+            }
+            set
+            {
+                Onhtml_data_ID_fkChanging(value);
+                ReportPropertyChanging("html_data_ID_fk");
+                _html_data_ID_fk = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("html_data_ID_fk");
+                Onhtml_data_ID_fkChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _html_data_ID_fk;
+        partial void Onhtml_data_ID_fkChanging(Nullable<global::System.Int32> value);
+        partial void Onhtml_data_ID_fkChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> html_link_order_position_number
+        {
+            get
+            {
+                return _html_link_order_position_number;
+            }
+            set
+            {
+                Onhtml_link_order_position_numberChanging(value);
+                ReportPropertyChanging("html_link_order_position_number");
+                _html_link_order_position_number = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("html_link_order_position_number");
+                Onhtml_link_order_position_numberChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _html_link_order_position_number;
+        partial void Onhtml_link_order_position_numberChanging(Nullable<global::System.Int32> value);
+        partial void Onhtml_link_order_position_numberChanged();
+
+        #endregion
+    
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("seleniumScrapeModel", "FK_tblHtmlLink_tblHtml", "tblHtml")]
+        public tblHtml tblHtml
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tblHtml>("seleniumScrapeModel.FK_tblHtmlLink_tblHtml", "tblHtml").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tblHtml>("seleniumScrapeModel.FK_tblHtmlLink_tblHtml", "tblHtml").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<tblHtml> tblHtmlReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tblHtml>("seleniumScrapeModel.FK_tblHtmlLink_tblHtml", "tblHtml");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tblHtml>("seleniumScrapeModel.FK_tblHtmlLink_tblHtml", "tblHtml", value);
                 }
             }
         }
@@ -1081,6 +1272,30 @@ namespace DomainWideObjects.DataAccess
         private Nullable<global::System.Boolean> _Vehicle_WillBeSearched;
         partial void OnVehicle_WillBeSearchedChanging(Nullable<global::System.Boolean> value);
         partial void OnVehicle_WillBeSearchedChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Boolean> Vehicle_CondtionFilter
+        {
+            get
+            {
+                return _Vehicle_CondtionFilter;
+            }
+            set
+            {
+                OnVehicle_CondtionFilterChanging(value);
+                ReportPropertyChanging("Vehicle_CondtionFilter");
+                _Vehicle_CondtionFilter = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("Vehicle_CondtionFilter");
+                OnVehicle_CondtionFilterChanged();
+            }
+        }
+        private Nullable<global::System.Boolean> _Vehicle_CondtionFilter;
+        partial void OnVehicle_CondtionFilterChanging(Nullable<global::System.Boolean> value);
+        partial void OnVehicle_CondtionFilterChanged();
 
         #endregion
     

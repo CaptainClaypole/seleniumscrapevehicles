@@ -33,6 +33,11 @@
       <End Role="tblSearchSession" EntitySet="tblSearchSessions" />
       <End Role="tblHtml" EntitySet="tblHtmls" />
     </AssociationSet>
+    <EntitySet Name="tblHtmlLinks" EntityType="seleniumScrapeModel.tblHtmlLink" />
+    <AssociationSet Name="FK_tblHtmlLink_tblHtml" Association="seleniumScrapeModel.FK_tblHtmlLink_tblHtml">
+      <End Role="tblHtml" EntitySet="tblHtmls" />
+      <End Role="tblHtmlLink" EntitySet="tblHtmlLinks" />
+    </AssociationSet>
   </EntityContainer>
   <EntityType Name="sysdiagram">
     <Key>
@@ -55,6 +60,7 @@
     <NavigationProperty Name="tblVehicle" Relationship="seleniumScrapeModel.FK_tblHtml_tblVehicle1" FromRole="tblHtml" ToRole="tblVehicle" />
     <Property Type="Int32" Name="Search_Session_ID_fk" />
     <NavigationProperty Name="tblSearchSession" Relationship="seleniumScrapeModel.FK_tblHtml_tblSearchSession" FromRole="tblHtml" ToRole="tblSearchSession" />
+    <NavigationProperty Name="tblHtmlLinks" Relationship="seleniumScrapeModel.FK_tblHtmlLink_tblHtml" FromRole="tblHtml" ToRole="tblHtmlLink" />
   </EntityType>
   <EntityType Name="tblPage">
     <Key>
@@ -81,6 +87,7 @@
     <NavigationProperty Name="tblVehicleTypeGeneral" Relationship="seleniumScrapeModel.FK_tblVehicle_tblVehicleTypeGeneral" FromRole="tblVehicle" ToRole="tblVehicleTypeGeneral" />
     <Property Type="Boolean" Name="Vehicle_WillBeSearched" />
     <NavigationProperty Name="tblHtmls" Relationship="seleniumScrapeModel.FK_tblHtml_tblVehicle1" FromRole="tblVehicle" ToRole="tblHtml" />
+    <Property Type="Boolean" Name="Vehicle_CondtionFilter" />
   </EntityType>
   <EntityType Name="tblVehicleTypeCountry">
     <Key>
@@ -182,6 +189,27 @@
       </Principal>
       <Dependent Role="tblHtml">
         <PropertyRef Name="Search_Session_ID_fk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="tblHtmlLink">
+    <Key>
+      <PropertyRef Name="html_Link_ID_PK" />
+    </Key>
+    <Property Type="Int32" Name="html_Link_ID_PK" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="html_data_ID_fk" />
+    <Property Type="Int32" Name="html_link_order_position_number" />
+    <NavigationProperty Name="tblHtml" Relationship="seleniumScrapeModel.FK_tblHtmlLink_tblHtml" FromRole="tblHtmlLink" ToRole="tblHtml" />
+  </EntityType>
+  <Association Name="FK_tblHtmlLink_tblHtml">
+    <End Type="seleniumScrapeModel.tblHtml" Role="tblHtml" Multiplicity="0..1" />
+    <End Type="seleniumScrapeModel.tblHtmlLink" Role="tblHtmlLink" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblHtml">
+        <PropertyRef Name="html_id_pk" />
+      </Principal>
+      <Dependent Role="tblHtmlLink">
+        <PropertyRef Name="html_data_ID_fk" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

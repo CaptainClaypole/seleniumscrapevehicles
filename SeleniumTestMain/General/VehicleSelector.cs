@@ -39,12 +39,20 @@ namespace SeleniumTestMain.General {
             //Console.ReadLine();
             if(isMakePresent)
             {
-                driver.FindElement(By.PartialLinkText(make)).Click();
+                if(isPartialLinkClick(make))
+                {
+                    driver.FindElement(By.PartialLinkText(make)).Click();
+                }else
+                {
+                    driver.FindElement(By.LinkText(make)).Click();
+                }
+
+                
             
             }
             else
             {
-                Console.WriteLine("poopykins no make!!! :-(");
+                Console.WriteLine("no make!!! :-(");
                 Console.ReadLine();
                 // try another make ??
             }
@@ -60,15 +68,25 @@ namespace SeleniumTestMain.General {
            bool isModelPresent = CheckModelIsPresent(model);
            
             Console.WriteLine("Is the Model present? " + isModelPresent.ToString());
-          
 
-            if(isModelPresent)
+
+            if (CheckModelIsPresent(model))
             {
                 driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 45));
                 Console.WriteLine("clicking the model...");
-               
-                driver.FindElement(By.PartialLinkText(model)).Click();
-                return 0;
+                if (isPartialLinkClick(model)){
+                    Console.WriteLine("clicking PARTIAL link text...");
+                    driver.FindElement(By.PartialLinkText(model)).Click();
+                    return 0;
+
+                }
+
+                Console.WriteLine("clicking link text...");
+                    driver.FindElement(By.LinkText(model)).Click();
+                    return 0;
+                
+          
+                
 
             }
           
@@ -79,6 +97,17 @@ namespace SeleniumTestMain.General {
 
        
 
+        }
+
+        private bool isPartialLinkClick(string input) {
+            switch (input)
+            {
+                case "FORD":
+                    return false;
+                 default:
+                    return true;
+                    
+            }
         }
         
        
