@@ -16,50 +16,50 @@
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Entities/f:DisplayPage.cs" caret="364" fromTop="8" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DBWriter.cs" caret="385" fromTop="9" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:CreateHtmlList.cs" caret="600" fromTop="11" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="300" fromTop="9" />
-      <File id="65C82E5F-564F-43D8-8B11-202DBFBC065A/f:Global.asax.cs" caret="682" fromTop="9" />
-      <File id="65C82E5F-564F-43D8-8B11-202DBFBC065A/f:dataModel2.Designer.cs" caret="0" fromTop="0" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:IDataScraper.cs" caret="221" fromTop="11" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:IVehicleSelector.cs" caret="173" fromTop="9" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:VehicleSelector.cs" caret="1936" fromTop="7" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="2581" fromTop="7" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:IDataScraper.cs" caret="221" fromTop="11" />
+      <File id="65C82E5F-564F-43D8-8B11-202DBFBC065A/f:Global.asax.cs" caret="682" fromTop="9" />
+      <File id="65C82E5F-564F-43D8-8B11-202DBFBC065A/f:dataModel2.Designer.cs" caret="0" fromTop="0" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="4569" fromTop="71" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="2222" fromTop="9" />
     </RecentFiles>
     <RecentEdits>
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DBreader.cs" caret="936" fromTop="17" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DBreader.cs" caret="937" fromTop="12" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DBreader.cs" caret="638" fromTop="5" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Entities/f:DisplayPage.cs" caret="439" fromTop="14" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Entities/f:DisplayPage.cs" caret="260" fromTop="9" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DBreader.cs" caret="1650" fromTop="16" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DBreader.cs" caret="1134" fromTop="8" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DBreader.cs" caret="1600" fromTop="13" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="1780" fromTop="4" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="846" fromTop="17" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="1794" fromTop="4" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="848" fromTop="17" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="267" fromTop="7" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="917" fromTop="14" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="1780" fromTop="27" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="921" fromTop="14" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="1794" fromTop="27" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="550" fromTop="22" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="2341" fromTop="24" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="2489" fromTop="24" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="1817" fromTop="6" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="2240" fromTop="13" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="869" fromTop="3" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="1652" fromTop="19" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="1764" fromTop="23" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="3826" fromTop="17" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="4473" fromTop="18" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="3978" fromTop="12" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="2355" fromTop="24" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="2503" fromTop="24" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="1831" fromTop="6" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="1666" fromTop="19" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="1778" fromTop="23" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="4508" fromTop="18" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="4014" fromTop="12" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:IDataScraper.cs" caret="183" fromTop="9" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:VehicleSelector.cs" caret="1360" fromTop="4" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:IVehicleSelector.cs" caret="127" fromTop="5" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:VehicleSelector.cs" caret="1949" fromTop="8" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:VehicleSelector.cs" caret="2051" fromTop="13" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="2634" fromTop="12" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="2531" fromTop="9" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="3846" fromTop="9" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="641" fromTop="10" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="1252" fromTop="11" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="829" fromTop="7" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="4354" fromTop="13" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="2278" fromTop="14" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="2016" fromTop="13" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="4568" fromTop="14" />
     </RecentEdits>
   </RecentFiles>
   <CompletionStatisticsManager>
     <ItemStatistics item="CSharpCodeCompletionContext">
-      <Item value="private" priority="543" />
+      <Item value="private" priority="575" />
       <Item value="public" priority="1112" />
       <Item value="string" priority="1492" />
       <Item value="IAuthenticatable`0" priority="31" />
@@ -137,7 +137,7 @@
       <Item value="DataScraper" priority="29" />
       <Item value="catch" priority="63" />
       <Item value="Exception`0" priority="95" />
-      <Item value="int" priority="573" />
+      <Item value="int" priority="605" />
       <Item value="for" priority="31" />
       <Item value="while" priority="63" />
       <Item value="CheckForNextPage`0" priority="31" />
