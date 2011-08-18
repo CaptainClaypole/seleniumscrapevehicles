@@ -12,7 +12,7 @@ namespace DomainWideObjects.Settings {
     
 
         // Single search mode on / off ?
-        public static bool manualSingleSearchMode = true;
+        public static bool manualSingleSearchMode = false;
         
 
 
