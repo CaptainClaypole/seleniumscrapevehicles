@@ -16,6 +16,7 @@ namespace SeleniumTestMain {
         
         // Tag to be scraped (inner html)
         private string tableHTMLtagToScrape = "t_main";
+        private string tableSingleRowHtmlTagToScrape = "aj_view";
 
         //private string tableHTMLtagToScrape = "aj_out_poisk";
         private int searchSessionID;
@@ -128,6 +129,15 @@ namespace SeleniumTestMain {
                         goto ENDTHISLOOP;
 
                     }
+
+                    IRowScraper rowScraper = new RowScraper(driver, vehicleID, searchSessionID);
+                    // check for error code then exit
+                    returnCode = rowScraper.GetSingleRowHtml(tableSingleRowHtmlTagToScrape);
+                    if (returnCode == 999999) {
+                        goto ENDTHISLOOP;
+
+                    }
+                    // NOW GRAB SINGLE ROWS OF DATA
 
 
                     // Click the next page

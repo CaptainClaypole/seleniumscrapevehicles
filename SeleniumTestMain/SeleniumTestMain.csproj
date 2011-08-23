@@ -88,6 +88,9 @@
     <Compile Include="General\ConditionPicker.cs" />
     <Compile Include="General\Data\DataScraper.cs" />
     <Compile Include="General\Data\IDataScraper.cs" />
+    <Compile Include="General\Data\IRowScraper.cs" />
+    <Compile Include="General\Data\IRowWebElement.cs" />
+    <Compile Include="General\Data\RowScraper.cs" />
     <Compile Include="General\Data\SessionCreator.cs" />
     <Compile Include="General\ISearchTypeChooser.cs" />
     <Compile Include="General\IVehicleSelector.cs" />
