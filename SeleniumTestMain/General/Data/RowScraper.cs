@@ -49,12 +49,12 @@ namespace SeleniumTestMain.General.Data {
 
                     Console.WriteLine("Writing Row Element Data! ******" + rowElementHTML + "*************");
                     Console.WriteLine("Written data aj_view" + i);
-                    // Console.ReadLine();
-
-                    //  AddHTMLtoList(rowElementHTML);
+                   
                     // Save to DB
-
-                    SaveToDB(rowElementHTML);
+                    ///////
+                    var dbWriter = new DBWriter();
+ 
+                    dbWriter.SaveHtmlRowToDB(rowElementHTML);
 
 
                     // return 0;
@@ -78,45 +78,6 @@ namespace SeleniumTestMain.General.Data {
           
         }
 
-        private void SaveToDB(string rowElementHTML)
-        {
-
-            var ctx = new seleniumScrapeEntities();
-
-            var htmlRow = new tblHtmlRow
-                          {
-                           html_row_data = rowElementHTML,
-                           // get latest tblHtml ID pk (this is the fk)
-                           html_data_id_fk = GetHtmlTableId(),
- 
-                          };
-
-            
-
-            var repo = new Repo(ctx);
-
-            repo.Add(htmlRow);
-
-            repo.SaveChanges<tblHtmlRow>();
-
-            
-
-
-
-        }
-
-        private int GetHtmlTableId()
-        {
-            var ctx = new seleniumScrapeEntities();
-
-            var htmlTableId = (from h in ctx.tblHtmls
-                         where h.html_id_pk > 0
-                         orderby h.html_id_pk descending
-                         select h.html_id_pk).FirstOrDefault();
-
-            return htmlTableId;
-
-        }
 
         public bool CheckElementExists(string tagToSearch, int i)
         {
