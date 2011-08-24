@@ -86,5 +86,25 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="tblHtmlRows">
+      <EntityTypeMapping TypeName="seleniumScrapeModel.tblHtmlRow">
+        <MappingFragment StoreEntitySet="tblHtmlRow">
+          <ScalarProperty Name="html_row_number" ColumnName="html_row_number" />
+          <ScalarProperty Name="html_data_id_fk" ColumnName="html_data_id_fk" />
+          <ScalarProperty Name="html_row_data" ColumnName="html_row_data" />
+          <ScalarProperty Name="html_row_id_PK" ColumnName="html_row_id_PK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUserLogins">
+      <EntityTypeMapping TypeName="seleniumScrapeModel.tblUserLogin">
+        <MappingFragment StoreEntitySet="tblUserLogin">
+          <ScalarProperty Name="tblUserLoginEmail" ColumnName="tblUserLoginEmail" />
+          <ScalarProperty Name="tblUserLoginPassword" ColumnName="tblUserLoginPassword" />
+          <ScalarProperty Name="tblUserLoginName" ColumnName="tblUserLoginName" />
+          <ScalarProperty Name="tblUserLoginID" ColumnName="tblUserLoginID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

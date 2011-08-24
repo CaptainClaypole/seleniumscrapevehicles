@@ -25,6 +25,7 @@ using System.Runtime.Serialization;
 [assembly: EdmRelationshipAttribute("seleniumScrapeModel", "FK_tblHtml_tblVehicle1", "tblVehicle", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DomainWideObjects.DataAccess.tblVehicle), "tblHtml", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DomainWideObjects.DataAccess.tblHtml), true)]
 [assembly: EdmRelationshipAttribute("seleniumScrapeModel", "FK_tblHtml_tblSearchSession", "tblSearchSession", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DomainWideObjects.DataAccess.tblSearchSession), "tblHtml", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DomainWideObjects.DataAccess.tblHtml), true)]
 [assembly: EdmRelationshipAttribute("seleniumScrapeModel", "FK_tblHtmlLink_tblHtml", "tblHtml", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DomainWideObjects.DataAccess.tblHtml), "tblHtmlLink", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DomainWideObjects.DataAccess.tblHtmlLink), true)]
+[assembly: EdmRelationshipAttribute("seleniumScrapeModel", "FK_tblHtmlRow_tblHtml", "tblHtml", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DomainWideObjects.DataAccess.tblHtml), "tblHtmlRow", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DomainWideObjects.DataAccess.tblHtmlRow), true)]
 
 #endregion
 
@@ -219,6 +220,38 @@ namespace DomainWideObjects.DataAccess
             }
         }
         private ObjectSet<tblHtmlLink> _tblHtmlLinks;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<tblHtmlRow> tblHtmlRows
+        {
+            get
+            {
+                if ((_tblHtmlRows == null))
+                {
+                    _tblHtmlRows = base.CreateObjectSet<tblHtmlRow>("tblHtmlRows");
+                }
+                return _tblHtmlRows;
+            }
+        }
+        private ObjectSet<tblHtmlRow> _tblHtmlRows;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<tblUserLogin> tblUserLogins
+        {
+            get
+            {
+                if ((_tblUserLogins == null))
+                {
+                    _tblUserLogins = base.CreateObjectSet<tblUserLogin>("tblUserLogins");
+                }
+                return _tblUserLogins;
+            }
+        }
+        private ObjectSet<tblUserLogin> _tblUserLogins;
 
         #endregion
         #region AddTo Methods
@@ -293,6 +326,22 @@ namespace DomainWideObjects.DataAccess
         public void AddTotblHtmlLinks(tblHtmlLink tblHtmlLink)
         {
             base.AddObject("tblHtmlLinks", tblHtmlLink);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the tblHtmlRows EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddTotblHtmlRows(tblHtmlRow tblHtmlRow)
+        {
+            base.AddObject("tblHtmlRows", tblHtmlRow);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the tblUserLogins EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddTotblUserLogins(tblUserLogin tblUserLogin)
+        {
+            base.AddObject("tblUserLogins", tblUserLogin);
         }
 
         #endregion
@@ -706,6 +755,28 @@ namespace DomainWideObjects.DataAccess
                 }
             }
         }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("seleniumScrapeModel", "FK_tblHtmlRow_tblHtml", "tblHtmlRow")]
+        public EntityCollection<tblHtmlRow> tblHtmlRows
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tblHtmlRow>("seleniumScrapeModel.FK_tblHtmlRow_tblHtml", "tblHtmlRow");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tblHtmlRow>("seleniumScrapeModel.FK_tblHtmlRow_tblHtml", "tblHtmlRow", value);
+                }
+            }
+        }
 
         #endregion
     }
@@ -847,6 +918,174 @@ namespace DomainWideObjects.DataAccess
                 if ((value != null))
                 {
                     ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tblHtml>("seleniumScrapeModel.FK_tblHtmlLink_tblHtml", "tblHtml", value);
+                }
+            }
+        }
+
+        #endregion
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="seleniumScrapeModel", Name="tblHtmlRow")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class tblHtmlRow : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new tblHtmlRow object.
+        /// </summary>
+        /// <param name="html_row_id_PK">Initial value of the html_row_id_PK property.</param>
+        public static tblHtmlRow CreatetblHtmlRow(global::System.Int32 html_row_id_PK)
+        {
+            tblHtmlRow tblHtmlRow = new tblHtmlRow();
+            tblHtmlRow.html_row_id_PK = html_row_id_PK;
+            return tblHtmlRow;
+        }
+
+        #endregion
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 html_row_id_PK
+        {
+            get
+            {
+                return _html_row_id_PK;
+            }
+            set
+            {
+                if (_html_row_id_PK != value)
+                {
+                    Onhtml_row_id_PKChanging(value);
+                    ReportPropertyChanging("html_row_id_PK");
+                    _html_row_id_PK = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("html_row_id_PK");
+                    Onhtml_row_id_PKChanged();
+                }
+            }
+        }
+        private global::System.Int32 _html_row_id_PK;
+        partial void Onhtml_row_id_PKChanging(global::System.Int32 value);
+        partial void Onhtml_row_id_PKChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String html_row_data
+        {
+            get
+            {
+                return _html_row_data;
+            }
+            set
+            {
+                Onhtml_row_dataChanging(value);
+                ReportPropertyChanging("html_row_data");
+                _html_row_data = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("html_row_data");
+                Onhtml_row_dataChanged();
+            }
+        }
+        private global::System.String _html_row_data;
+        partial void Onhtml_row_dataChanging(global::System.String value);
+        partial void Onhtml_row_dataChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> html_data_id_fk
+        {
+            get
+            {
+                return _html_data_id_fk;
+            }
+            set
+            {
+                Onhtml_data_id_fkChanging(value);
+                ReportPropertyChanging("html_data_id_fk");
+                _html_data_id_fk = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("html_data_id_fk");
+                Onhtml_data_id_fkChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _html_data_id_fk;
+        partial void Onhtml_data_id_fkChanging(Nullable<global::System.Int32> value);
+        partial void Onhtml_data_id_fkChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String html_row_number
+        {
+            get
+            {
+                return _html_row_number;
+            }
+            set
+            {
+                Onhtml_row_numberChanging(value);
+                ReportPropertyChanging("html_row_number");
+                _html_row_number = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("html_row_number");
+                Onhtml_row_numberChanged();
+            }
+        }
+        private global::System.String _html_row_number;
+        partial void Onhtml_row_numberChanging(global::System.String value);
+        partial void Onhtml_row_numberChanged();
+
+        #endregion
+    
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("seleniumScrapeModel", "FK_tblHtmlRow_tblHtml", "tblHtml")]
+        public tblHtml tblHtml
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tblHtml>("seleniumScrapeModel.FK_tblHtmlRow_tblHtml", "tblHtml").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tblHtml>("seleniumScrapeModel.FK_tblHtmlRow_tblHtml", "tblHtml").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<tblHtml> tblHtmlReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tblHtml>("seleniumScrapeModel.FK_tblHtmlRow_tblHtml", "tblHtml");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tblHtml>("seleniumScrapeModel.FK_tblHtmlRow_tblHtml", "tblHtml", value);
                 }
             }
         }
@@ -1076,6 +1315,133 @@ namespace DomainWideObjects.DataAccess
         }
 
         #endregion
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="seleniumScrapeModel", Name="tblUserLogin")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class tblUserLogin : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new tblUserLogin object.
+        /// </summary>
+        /// <param name="tblUserLoginID">Initial value of the tblUserLoginID property.</param>
+        public static tblUserLogin CreatetblUserLogin(global::System.Int32 tblUserLoginID)
+        {
+            tblUserLogin tblUserLogin = new tblUserLogin();
+            tblUserLogin.tblUserLoginID = tblUserLoginID;
+            return tblUserLogin;
+        }
+
+        #endregion
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 tblUserLoginID
+        {
+            get
+            {
+                return _tblUserLoginID;
+            }
+            set
+            {
+                if (_tblUserLoginID != value)
+                {
+                    OntblUserLoginIDChanging(value);
+                    ReportPropertyChanging("tblUserLoginID");
+                    _tblUserLoginID = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("tblUserLoginID");
+                    OntblUserLoginIDChanged();
+                }
+            }
+        }
+        private global::System.Int32 _tblUserLoginID;
+        partial void OntblUserLoginIDChanging(global::System.Int32 value);
+        partial void OntblUserLoginIDChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String tblUserLoginName
+        {
+            get
+            {
+                return _tblUserLoginName;
+            }
+            set
+            {
+                OntblUserLoginNameChanging(value);
+                ReportPropertyChanging("tblUserLoginName");
+                _tblUserLoginName = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("tblUserLoginName");
+                OntblUserLoginNameChanged();
+            }
+        }
+        private global::System.String _tblUserLoginName;
+        partial void OntblUserLoginNameChanging(global::System.String value);
+        partial void OntblUserLoginNameChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String tblUserLoginPassword
+        {
+            get
+            {
+                return _tblUserLoginPassword;
+            }
+            set
+            {
+                OntblUserLoginPasswordChanging(value);
+                ReportPropertyChanging("tblUserLoginPassword");
+                _tblUserLoginPassword = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("tblUserLoginPassword");
+                OntblUserLoginPasswordChanged();
+            }
+        }
+        private global::System.String _tblUserLoginPassword;
+        partial void OntblUserLoginPasswordChanging(global::System.String value);
+        partial void OntblUserLoginPasswordChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String tblUserLoginEmail
+        {
+            get
+            {
+                return _tblUserLoginEmail;
+            }
+            set
+            {
+                OntblUserLoginEmailChanging(value);
+                ReportPropertyChanging("tblUserLoginEmail");
+                _tblUserLoginEmail = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("tblUserLoginEmail");
+                OntblUserLoginEmailChanged();
+            }
+        }
+        private global::System.String _tblUserLoginEmail;
+        partial void OntblUserLoginEmailChanging(global::System.String value);
+        partial void OntblUserLoginEmailChanged();
+
+        #endregion
+    
     }
     
     /// <summary>

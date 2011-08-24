@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Web;
 using OpenQA.Selenium;
+using DomainWideObjects.DataAccess.Repo;
+using DomainWideObjects.DataAccess;
 
 namespace SeleniumTestMain.General.Data {
     public class RowScraper : IRowScraper
@@ -50,8 +52,10 @@ namespace SeleniumTestMain.General.Data {
                     // Console.ReadLine();
 
                     //  AddHTMLtoList(rowElementHTML);
+                    // Save to DB
 
-                    
+                    SaveToDB(rowElementHTML);
+
 
                     // return 0;
                 }
@@ -72,6 +76,46 @@ namespace SeleniumTestMain.General.Data {
             return 1;
 
           
+        }
+
+        private void SaveToDB(string rowElementHTML)
+        {
+
+            var ctx = new seleniumScrapeEntities();
+
+            var htmlRow = new tblHtmlRow
+                          {
+                           html_row_data = rowElementHTML,
+                           // get latest tblHtml ID pk (this is the fk)
+                           html_data_id_fk = GetHtmlTableId(),
+ 
+                          };
+
+            
+
+            var repo = new Repo(ctx);
+
+            repo.Add(htmlRow);
+
+            repo.SaveChanges<tblHtmlRow>();
+
+            
+
+
+
+        }
+
+        private int GetHtmlTableId()
+        {
+            var ctx = new seleniumScrapeEntities();
+
+            var htmlTableId = (from h in ctx.tblHtmls
+                         where h.html_id_pk > 0
+                         orderby h.html_id_pk descending
+                         select h.html_id_pk).FirstOrDefault();
+
+            return htmlTableId;
+
         }
 
         public bool CheckElementExists(string tagToSearch, int i)

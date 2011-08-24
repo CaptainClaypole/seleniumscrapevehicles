@@ -9,8 +9,10 @@
           <EntitySet Name="sysdiagrams" EntityType="seleniumScrapeModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="tblHtml" EntityType="seleniumScrapeModel.Store.tblHtml" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="tblHtmlLink" EntityType="seleniumScrapeModel.Store.tblHtmlLink" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblHtmlRow" EntityType="seleniumScrapeModel.Store.tblHtmlRow" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="tblPage" EntityType="seleniumScrapeModel.Store.tblPage" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="tblSearchSession" EntityType="seleniumScrapeModel.Store.tblSearchSession" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblUserLogin" EntityType="seleniumScrapeModel.Store.tblUserLogin" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="tblVehicle" EntityType="seleniumScrapeModel.Store.tblVehicle" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="tblVehicleTypeCountry" EntityType="seleniumScrapeModel.Store.tblVehicleTypeCountry" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="tblVehicleTypeDefined" EntityType="seleniumScrapeModel.Store.tblVehicleTypeDefined" store:Type="Tables" Schema="dbo" />
@@ -26,6 +28,10 @@
           <AssociationSet Name="FK_tblHtmlLink_tblHtml" Association="seleniumScrapeModel.Store.FK_tblHtmlLink_tblHtml">
             <End Role="tblHtml" EntitySet="tblHtml" />
             <End Role="tblHtmlLink" EntitySet="tblHtmlLink" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblHtmlRow_tblHtml" Association="seleniumScrapeModel.Store.FK_tblHtmlRow_tblHtml">
+            <End Role="tblHtml" EntitySet="tblHtml" />
+            <End Role="tblHtmlRow" EntitySet="tblHtmlRow" />
           </AssociationSet>
           <AssociationSet Name="FK_tblPage_tblVehicle" Association="seleniumScrapeModel.Store.FK_tblPage_tblVehicle">
             <End Role="tblVehicle" EntitySet="tblVehicle" />
@@ -72,6 +78,15 @@
           <Property Name="html_data_ID_fk" Type="int" />
           <Property Name="html_link_order_position_number" Type="int" />
         </EntityType>
+        <EntityType Name="tblHtmlRow">
+          <Key>
+            <PropertyRef Name="html_row_id_PK" />
+          </Key>
+          <Property Name="html_row_id_PK" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="html_row_data" Type="varchar(max)" />
+          <Property Name="html_data_id_fk" Type="int" />
+          <Property Name="html_row_number" Type="char" MaxLength="10" />
+        </EntityType>
         <EntityType Name="tblPage">
           <Key>
             <PropertyRef Name="page_id_pk" />
@@ -85,6 +100,15 @@
             <PropertyRef Name="Search_Session_ID_PK" />
           </Key>
           <Property Name="Search_Session_ID_PK" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="tblUserLogin">
+          <Key>
+            <PropertyRef Name="tblUserLoginID" />
+          </Key>
+          <Property Name="tblUserLoginID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="tblUserLoginName" Type="varchar" MaxLength="50" />
+          <Property Name="tblUserLoginPassword" Type="char" MaxLength="10" />
+          <Property Name="tblUserLoginEmail" Type="varchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="tblVehicle">
           <Key>
@@ -156,6 +180,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_tblHtmlRow_tblHtml">
+          <End Role="tblHtml" Type="seleniumScrapeModel.Store.tblHtml" Multiplicity="0..1" />
+          <End Role="tblHtmlRow" Type="seleniumScrapeModel.Store.tblHtmlRow" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblHtml">
+              <PropertyRef Name="html_id_pk" />
+            </Principal>
+            <Dependent Role="tblHtmlRow">
+              <PropertyRef Name="html_data_id_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_tblPage_tblVehicle">
           <End Role="tblVehicle" Type="seleniumScrapeModel.Store.tblVehicle" Multiplicity="0..1" />
           <End Role="tblPage" Type="seleniumScrapeModel.Store.tblPage" Multiplicity="*" />
@@ -204,16 +240,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <!--Errors Found During Generation:
-      warning 6013: The table/view 'seleniumScrape.dbo.vw_vehicle_main' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
-      
-      <EntityType Name="vw_vehicle_main">
-        <Property Name="Vehicle_Make" Type="varchar" MaxLength="50" />
-        <Property Name="Vehicle_Model" Type="varchar" MaxLength="50" />
-        <Property Name="Vehicle_Type_Country" Type="varchar" MaxLength="50" />
-        <Property Name="VehicleTypeGeneral" Type="varchar" MaxLength="50" />
-        <Property Name="VehicleTypeDefined" Type="varchar" MaxLength="50" />
-      </EntityType>-->
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
@@ -256,6 +282,12 @@
             <End Role="tblHtml" EntitySet="tblHtmls" />
             <End Role="tblHtmlLink" EntitySet="tblHtmlLinks" />
           </AssociationSet>
+          <EntitySet Name="tblHtmlRows" EntityType="seleniumScrapeModel.tblHtmlRow" />
+          <EntitySet Name="tblUserLogins" EntityType="seleniumScrapeModel.tblUserLogin" />
+          <AssociationSet Name="FK_tblHtmlRow_tblHtml" Association="seleniumScrapeModel.FK_tblHtmlRow_tblHtml">
+            <End Role="tblHtml" EntitySet="tblHtmls" />
+            <End Role="tblHtmlRow" EntitySet="tblHtmlRows" />
+          </AssociationSet>
           </EntityContainer>
         <EntityType Name="sysdiagram">
           <Key>
@@ -279,6 +311,7 @@
           <Property Type="Int32" Name="Search_Session_ID_fk" />
           <NavigationProperty Name="tblSearchSession" Relationship="seleniumScrapeModel.FK_tblHtml_tblSearchSession" FromRole="tblHtml" ToRole="tblSearchSession" />
           <NavigationProperty Name="tblHtmlLinks" Relationship="seleniumScrapeModel.FK_tblHtmlLink_tblHtml" FromRole="tblHtml" ToRole="tblHtmlLink" />
+          <NavigationProperty Name="tblHtmlRows" Relationship="seleniumScrapeModel.FK_tblHtmlRow_tblHtml" FromRole="tblHtml" ToRole="tblHtmlRow" />
         </EntityType>
         <EntityType Name="tblPage">
           <Key>
@@ -431,6 +464,37 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <EntityType Name="tblHtmlRow">
+          <Key>
+            <PropertyRef Name="html_row_id_PK" />
+          </Key>
+          <Property Type="Int32" Name="html_row_id_PK" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="html_row_data" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="html_data_id_fk" />
+          <Property Type="String" Name="html_row_number" MaxLength="10" FixedLength="true" Unicode="false" />
+          <NavigationProperty Name="tblHtml" Relationship="seleniumScrapeModel.FK_tblHtmlRow_tblHtml" FromRole="tblHtmlRow" ToRole="tblHtml" />
+        </EntityType>
+        <EntityType Name="tblUserLogin">
+          <Key>
+            <PropertyRef Name="tblUserLoginID" />
+          </Key>
+          <Property Type="Int32" Name="tblUserLoginID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="tblUserLoginName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="tblUserLoginPassword" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="tblUserLoginEmail" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <Association Name="FK_tblHtmlRow_tblHtml">
+          <End Type="seleniumScrapeModel.tblHtml" Role="tblHtml" Multiplicity="0..1" />
+          <End Type="seleniumScrapeModel.tblHtmlRow" Role="tblHtmlRow" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblHtml">
+              <PropertyRef Name="html_id_pk" />
+            </Principal>
+            <Dependent Role="tblHtmlRow">
+              <PropertyRef Name="html_data_id_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -510,6 +574,26 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="tblHtmlRows">
+            <EntityTypeMapping TypeName="seleniumScrapeModel.tblHtmlRow">
+              <MappingFragment StoreEntitySet="tblHtmlRow">
+                <ScalarProperty Name="html_row_number" ColumnName="html_row_number" />
+                <ScalarProperty Name="html_data_id_fk" ColumnName="html_data_id_fk" />
+                <ScalarProperty Name="html_row_data" ColumnName="html_row_data" />
+                <ScalarProperty Name="html_row_id_PK" ColumnName="html_row_id_PK" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblUserLogins">
+            <EntityTypeMapping TypeName="seleniumScrapeModel.tblUserLogin">
+              <MappingFragment StoreEntitySet="tblUserLogin">
+                <ScalarProperty Name="tblUserLoginEmail" ColumnName="tblUserLoginEmail" />
+                <ScalarProperty Name="tblUserLoginPassword" ColumnName="tblUserLoginPassword" />
+                <ScalarProperty Name="tblUserLoginName" ColumnName="tblUserLoginName" />
+                <ScalarProperty Name="tblUserLoginID" ColumnName="tblUserLoginID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
@@ -561,19 +645,26 @@
           <ConnectorPoint PointX="0.77653746153846137" PointY="12.393697916666667" />
         </AssociationConnector>
         <AssociationConnector Association="seleniumScrapeModel.FK_tblHtml_tblVehicle1" >
-          <ConnectorPoint PointX="2.25" PointY="10.634348958333334" />
-          <ConnectorPoint PointX="6.03125" PointY="10.634348958333334" />
-          <ConnectorPoint PointX="6.03125" PointY="3.5571907552083331" />
+          <ConnectorPoint PointX="2.25" PointY="10.579537726143997" />
+          <ConnectorPoint PointX="6.03125" PointY="10.579537726143997" />
+          <ConnectorPoint PointX="6.03125" PointY="3.4442187142372132" />
         </AssociationConnector>
         <EntityTypeShape EntityType="seleniumScrapeModel.tblSearchSession" Width="1.5" PointX="4.375" PointY="4.875" Height="1.4033821614583317" />
         <AssociationConnector Association="seleniumScrapeModel.FK_tblHtml_tblSearchSession" >
           <ConnectorPoint PointX="5.25" PointY="4.875" />
-          <ConnectorPoint PointX="5.25" PointY="3.5571907552083331" />
+          <ConnectorPoint PointX="5.25" PointY="3.4442187142372132" />
         </AssociationConnector>
         <EntityTypeShape EntityType="seleniumScrapeModel.tblHtmlLink" Width="1.5" PointX="7.5" PointY="1.375" Height="1.7879850260416674" />
         <AssociationConnector Association="seleniumScrapeModel.FK_tblHtmlLink_tblHtml" >
-          <ConnectorPoint PointX="6.125" PointY="2.2689925130208337" />
-          <ConnectorPoint PointX="7.5" PointY="2.2689925130208337" />
+          <ConnectorPoint PointX="6.125" PointY="2.1799544166525209" />
+          <ConnectorPoint PointX="7.5" PointY="2.1799544166525209" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="seleniumScrapeModel.tblHtmlRow" Width="1.5" PointX="7.375" PointY="4.125" Height="1.7767708094914738" />
+        <EntityTypeShape EntityType="seleniumScrapeModel.tblUserLogin" Width="1.5" PointX="3.375" PointY="7.25" Height="1.6099088333050418" />
+        <AssociationConnector Association="seleniumScrapeModel.FK_tblHtmlRow_tblHtml" >
+          <ConnectorPoint PointX="6.125" PointY="3.2458137737711272" />
+          <ConnectorPoint PointX="7.40625" PointY="3.2458137737711272" />
+          <ConnectorPoint PointX="7.40625" PointY="4.125" />
         </AssociationConnector>
         </Diagram>
     </Diagrams>

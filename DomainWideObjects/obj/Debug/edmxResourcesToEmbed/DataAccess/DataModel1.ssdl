@@ -4,8 +4,10 @@
     <EntitySet Name="sysdiagrams" EntityType="seleniumScrapeModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tblHtml" EntityType="seleniumScrapeModel.Store.tblHtml" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tblHtmlLink" EntityType="seleniumScrapeModel.Store.tblHtmlLink" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblHtmlRow" EntityType="seleniumScrapeModel.Store.tblHtmlRow" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tblPage" EntityType="seleniumScrapeModel.Store.tblPage" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tblSearchSession" EntityType="seleniumScrapeModel.Store.tblSearchSession" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblUserLogin" EntityType="seleniumScrapeModel.Store.tblUserLogin" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tblVehicle" EntityType="seleniumScrapeModel.Store.tblVehicle" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tblVehicleTypeCountry" EntityType="seleniumScrapeModel.Store.tblVehicleTypeCountry" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tblVehicleTypeDefined" EntityType="seleniumScrapeModel.Store.tblVehicleTypeDefined" store:Type="Tables" Schema="dbo" />
@@ -21,6 +23,10 @@
     <AssociationSet Name="FK_tblHtmlLink_tblHtml" Association="seleniumScrapeModel.Store.FK_tblHtmlLink_tblHtml">
       <End Role="tblHtml" EntitySet="tblHtml" />
       <End Role="tblHtmlLink" EntitySet="tblHtmlLink" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblHtmlRow_tblHtml" Association="seleniumScrapeModel.Store.FK_tblHtmlRow_tblHtml">
+      <End Role="tblHtml" EntitySet="tblHtml" />
+      <End Role="tblHtmlRow" EntitySet="tblHtmlRow" />
     </AssociationSet>
     <AssociationSet Name="FK_tblPage_tblVehicle" Association="seleniumScrapeModel.Store.FK_tblPage_tblVehicle">
       <End Role="tblVehicle" EntitySet="tblVehicle" />
@@ -67,6 +73,15 @@
     <Property Name="html_data_ID_fk" Type="int" />
     <Property Name="html_link_order_position_number" Type="int" />
   </EntityType>
+  <EntityType Name="tblHtmlRow">
+    <Key>
+      <PropertyRef Name="html_row_id_PK" />
+    </Key>
+    <Property Name="html_row_id_PK" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="html_row_data" Type="varchar(max)" />
+    <Property Name="html_data_id_fk" Type="int" />
+    <Property Name="html_row_number" Type="char" MaxLength="10" />
+  </EntityType>
   <EntityType Name="tblPage">
     <Key>
       <PropertyRef Name="page_id_pk" />
@@ -80,6 +95,15 @@
       <PropertyRef Name="Search_Session_ID_PK" />
     </Key>
     <Property Name="Search_Session_ID_PK" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="tblUserLogin">
+    <Key>
+      <PropertyRef Name="tblUserLoginID" />
+    </Key>
+    <Property Name="tblUserLoginID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="tblUserLoginName" Type="varchar" MaxLength="50" />
+    <Property Name="tblUserLoginPassword" Type="char" MaxLength="10" />
+    <Property Name="tblUserLoginEmail" Type="varchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="tblVehicle">
     <Key>
@@ -151,6 +175,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_tblHtmlRow_tblHtml">
+    <End Role="tblHtml" Type="seleniumScrapeModel.Store.tblHtml" Multiplicity="0..1" />
+    <End Role="tblHtmlRow" Type="seleniumScrapeModel.Store.tblHtmlRow" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblHtml">
+        <PropertyRef Name="html_id_pk" />
+      </Principal>
+      <Dependent Role="tblHtmlRow">
+        <PropertyRef Name="html_data_id_fk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_tblPage_tblVehicle">
     <End Role="tblVehicle" Type="seleniumScrapeModel.Store.tblVehicle" Multiplicity="0..1" />
     <End Role="tblPage" Type="seleniumScrapeModel.Store.tblPage" Multiplicity="*" />
@@ -199,14 +235,4 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <!--Errors Found During Generation:
-      warning 6013: The table/view 'seleniumScrape.dbo.vw_vehicle_main' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
-      
-      <EntityType Name="vw_vehicle_main">
-        <Property Name="Vehicle_Make" Type="varchar" MaxLength="50" />
-        <Property Name="Vehicle_Model" Type="varchar" MaxLength="50" />
-        <Property Name="Vehicle_Type_Country" Type="varchar" MaxLength="50" />
-        <Property Name="VehicleTypeGeneral" Type="varchar" MaxLength="50" />
-        <Property Name="VehicleTypeDefined" Type="varchar" MaxLength="50" />
-      </EntityType>-->
 </Schema>
