@@ -66,7 +66,7 @@ namespace SeleniumTestMain.General.Data {
             }
 
             Console.WriteLine("***FINISHED SCRAPING SINGLE ROWS***");
-            Console.ReadLine();
+           // Console.ReadLine();
 
             // error 1 not found so go back to beginning of loop.
             return 1;
