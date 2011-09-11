@@ -21,7 +21,7 @@ namespace SeleniumTestMain.General.Data {
        }
 
 
-       private void SaveHtmlRowToDB(string rowElementHTML) {
+       public void SaveHtmlRowToDB(string rowElementHTML) {
 
            var ctx = new seleniumScrapeEntities();
 

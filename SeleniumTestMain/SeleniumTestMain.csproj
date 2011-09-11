@@ -97,7 +97,6 @@
     <Compile Include="General\Navigator.cs" />
     <Compile Include="General\PageCounter.cs" />
     <Compile Include="General\SearchTypeChooser.cs" />
-    <Compile Include="General\VehicleSearcher.cs" />
     <Compile Include="General\VehicleSelector.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="PageGeneration\DisplayPageGenerator.cs" />

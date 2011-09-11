@@ -56,10 +56,8 @@
       <DependentUpon>DataModel1.edmx</DependentUpon>
     </Compile>
     <Compile Include="DataAccess\Entities\DisplayPage.cs" />
-    <Compile Include="DataAccess\Repository\DataRepository.cs" />
     <Compile Include="DataAccess\Repository\DbChecker.cs" />
     <Compile Include="DataAccess\Repository\DBreader.cs" />
-    <Compile Include="DataAccess\Repository\IRepository.cs" />
     <Compile Include="DataAccess\Repo\IRepo.cs" />
     <Compile Include="DataAccess\Repo\Repo.cs" />
     <Compile Include="DataAccess\VehicleSaver.cs" />
