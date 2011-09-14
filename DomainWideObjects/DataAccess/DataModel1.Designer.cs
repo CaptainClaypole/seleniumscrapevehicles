@@ -18,16 +18,15 @@ using System.Runtime.Serialization;
 [assembly: EdmSchemaAttribute()]
 #region EDM Relationship Metadata
 
+[assembly: EdmRelationshipAttribute("seleniumScrapeModel", "FK_tblHtml_tblSearchSession", "tblSearchSession", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DomainWideObjects.DataAccess.tblSearchSession), "tblHtml", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DomainWideObjects.DataAccess.tblHtml), true)]
+[assembly: EdmRelationshipAttribute("seleniumScrapeModel", "FK_tblHtml_tblVehicle1", "tblVehicle", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DomainWideObjects.DataAccess.tblVehicle), "tblHtml", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DomainWideObjects.DataAccess.tblHtml), true)]
+[assembly: EdmRelationshipAttribute("seleniumScrapeModel", "FK_tblHtmlLink_tblHtml", "tblHtml", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DomainWideObjects.DataAccess.tblHtml), "tblHtmlLink", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DomainWideObjects.DataAccess.tblHtmlLink), true)]
+[assembly: EdmRelationshipAttribute("seleniumScrapeModel", "FK_tblHtmlRow_tblSearchSession", "tblSearchSession", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DomainWideObjects.DataAccess.tblSearchSession), "tblHtmlRow", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DomainWideObjects.DataAccess.tblHtmlRow), true)]
+[assembly: EdmRelationshipAttribute("seleniumScrapeModel", "FK_tblHtmlRow_tblVehicle", "tblVehicle", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DomainWideObjects.DataAccess.tblVehicle), "tblHtmlRow", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DomainWideObjects.DataAccess.tblHtmlRow), true)]
 [assembly: EdmRelationshipAttribute("seleniumScrapeModel", "FK_tblPage_tblVehicle", "tblVehicle", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DomainWideObjects.DataAccess.tblVehicle), "tblPage", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DomainWideObjects.DataAccess.tblPage), true)]
 [assembly: EdmRelationshipAttribute("seleniumScrapeModel", "FK_tblVehicle_tblVehicleType", "tblVehicleTypeCountry", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DomainWideObjects.DataAccess.tblVehicleTypeCountry), "tblVehicle", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DomainWideObjects.DataAccess.tblVehicle), true)]
 [assembly: EdmRelationshipAttribute("seleniumScrapeModel", "FK_tblVehicle_tblVehicleTypeDefined", "tblVehicleTypeDefined", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DomainWideObjects.DataAccess.tblVehicleTypeDefined), "tblVehicle", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DomainWideObjects.DataAccess.tblVehicle), true)]
 [assembly: EdmRelationshipAttribute("seleniumScrapeModel", "FK_tblVehicle_tblVehicleTypeGeneral", "tblVehicleTypeGeneral", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DomainWideObjects.DataAccess.tblVehicleTypeGeneral), "tblVehicle", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DomainWideObjects.DataAccess.tblVehicle), true)]
-[assembly: EdmRelationshipAttribute("seleniumScrapeModel", "FK_tblHtml_tblVehicle1", "tblVehicle", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DomainWideObjects.DataAccess.tblVehicle), "tblHtml", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DomainWideObjects.DataAccess.tblHtml), true)]
-[assembly: EdmRelationshipAttribute("seleniumScrapeModel", "FK_tblHtml_tblSearchSession", "tblSearchSession", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DomainWideObjects.DataAccess.tblSearchSession), "tblHtml", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DomainWideObjects.DataAccess.tblHtml), true)]
-[assembly: EdmRelationshipAttribute("seleniumScrapeModel", "FK_tblHtmlLink_tblHtml", "tblHtml", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DomainWideObjects.DataAccess.tblHtml), "tblHtmlLink", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DomainWideObjects.DataAccess.tblHtmlLink), true)]
-[assembly: EdmRelationshipAttribute("seleniumScrapeModel", "FK_tblHtmlRow_tblHtml", "tblHtml", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DomainWideObjects.DataAccess.tblHtml), "tblHtmlRow", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DomainWideObjects.DataAccess.tblHtmlRow), true)]
-[assembly: EdmRelationshipAttribute("seleniumScrapeModel", "FK_tblHtmlRow_tblSearchSession", "tblSearchSession", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DomainWideObjects.DataAccess.tblSearchSession), "tblHtmlRow", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DomainWideObjects.DataAccess.tblHtmlRow), true)]
-[assembly: EdmRelationshipAttribute("seleniumScrapeModel", "FK_tblHtmlRow_tblVehicle", "tblVehicle", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DomainWideObjects.DataAccess.tblVehicle), "tblHtmlRow", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DomainWideObjects.DataAccess.tblHtmlRow), true)]
 
 #endregion
 
@@ -114,6 +113,38 @@ namespace DomainWideObjects.DataAccess
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
+        public ObjectSet<tblHtmlLink> tblHtmlLinks
+        {
+            get
+            {
+                if ((_tblHtmlLinks == null))
+                {
+                    _tblHtmlLinks = base.CreateObjectSet<tblHtmlLink>("tblHtmlLinks");
+                }
+                return _tblHtmlLinks;
+            }
+        }
+        private ObjectSet<tblHtmlLink> _tblHtmlLinks;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<tblHtmlRow> tblHtmlRows
+        {
+            get
+            {
+                if ((_tblHtmlRows == null))
+                {
+                    _tblHtmlRows = base.CreateObjectSet<tblHtmlRow>("tblHtmlRows");
+                }
+                return _tblHtmlRows;
+            }
+        }
+        private ObjectSet<tblHtmlRow> _tblHtmlRows;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
         public ObjectSet<tblPage> tblPages
         {
             get
@@ -126,6 +157,38 @@ namespace DomainWideObjects.DataAccess
             }
         }
         private ObjectSet<tblPage> _tblPages;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<tblSearchSession> tblSearchSessions
+        {
+            get
+            {
+                if ((_tblSearchSessions == null))
+                {
+                    _tblSearchSessions = base.CreateObjectSet<tblSearchSession>("tblSearchSessions");
+                }
+                return _tblSearchSessions;
+            }
+        }
+        private ObjectSet<tblSearchSession> _tblSearchSessions;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<tblUserLogin> tblUserLogins
+        {
+            get
+            {
+                if ((_tblUserLogins == null))
+                {
+                    _tblUserLogins = base.CreateObjectSet<tblUserLogin>("tblUserLogins");
+                }
+                return _tblUserLogins;
+            }
+        }
+        private ObjectSet<tblUserLogin> _tblUserLogins;
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -190,70 +253,6 @@ namespace DomainWideObjects.DataAccess
             }
         }
         private ObjectSet<tblVehicleTypeGeneral> _tblVehicleTypeGenerals;
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        public ObjectSet<tblSearchSession> tblSearchSessions
-        {
-            get
-            {
-                if ((_tblSearchSessions == null))
-                {
-                    _tblSearchSessions = base.CreateObjectSet<tblSearchSession>("tblSearchSessions");
-                }
-                return _tblSearchSessions;
-            }
-        }
-        private ObjectSet<tblSearchSession> _tblSearchSessions;
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        public ObjectSet<tblHtmlLink> tblHtmlLinks
-        {
-            get
-            {
-                if ((_tblHtmlLinks == null))
-                {
-                    _tblHtmlLinks = base.CreateObjectSet<tblHtmlLink>("tblHtmlLinks");
-                }
-                return _tblHtmlLinks;
-            }
-        }
-        private ObjectSet<tblHtmlLink> _tblHtmlLinks;
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        public ObjectSet<tblHtmlRow> tblHtmlRows
-        {
-            get
-            {
-                if ((_tblHtmlRows == null))
-                {
-                    _tblHtmlRows = base.CreateObjectSet<tblHtmlRow>("tblHtmlRows");
-                }
-                return _tblHtmlRows;
-            }
-        }
-        private ObjectSet<tblHtmlRow> _tblHtmlRows;
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        public ObjectSet<tblUserLogin> tblUserLogins
-        {
-            get
-            {
-                if ((_tblUserLogins == null))
-                {
-                    _tblUserLogins = base.CreateObjectSet<tblUserLogin>("tblUserLogins");
-                }
-                return _tblUserLogins;
-            }
-        }
-        private ObjectSet<tblUserLogin> _tblUserLogins;
 
         #endregion
         #region AddTo Methods
@@ -275,11 +274,43 @@ namespace DomainWideObjects.DataAccess
         }
     
         /// <summary>
+        /// Deprecated Method for adding a new object to the tblHtmlLinks EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddTotblHtmlLinks(tblHtmlLink tblHtmlLink)
+        {
+            base.AddObject("tblHtmlLinks", tblHtmlLink);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the tblHtmlRows EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddTotblHtmlRows(tblHtmlRow tblHtmlRow)
+        {
+            base.AddObject("tblHtmlRows", tblHtmlRow);
+        }
+    
+        /// <summary>
         /// Deprecated Method for adding a new object to the tblPages EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
         public void AddTotblPages(tblPage tblPage)
         {
             base.AddObject("tblPages", tblPage);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the tblSearchSessions EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddTotblSearchSessions(tblSearchSession tblSearchSession)
+        {
+            base.AddObject("tblSearchSessions", tblSearchSession);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the tblUserLogins EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddTotblUserLogins(tblUserLogin tblUserLogin)
+        {
+            base.AddObject("tblUserLogins", tblUserLogin);
         }
     
         /// <summary>
@@ -312,38 +343,6 @@ namespace DomainWideObjects.DataAccess
         public void AddTotblVehicleTypeGenerals(tblVehicleTypeGeneral tblVehicleTypeGeneral)
         {
             base.AddObject("tblVehicleTypeGenerals", tblVehicleTypeGeneral);
-        }
-    
-        /// <summary>
-        /// Deprecated Method for adding a new object to the tblSearchSessions EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
-        /// </summary>
-        public void AddTotblSearchSessions(tblSearchSession tblSearchSession)
-        {
-            base.AddObject("tblSearchSessions", tblSearchSession);
-        }
-    
-        /// <summary>
-        /// Deprecated Method for adding a new object to the tblHtmlLinks EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
-        /// </summary>
-        public void AddTotblHtmlLinks(tblHtmlLink tblHtmlLink)
-        {
-            base.AddObject("tblHtmlLinks", tblHtmlLink);
-        }
-    
-        /// <summary>
-        /// Deprecated Method for adding a new object to the tblHtmlRows EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
-        /// </summary>
-        public void AddTotblHtmlRows(tblHtmlRow tblHtmlRow)
-        {
-            base.AddObject("tblHtmlRows", tblHtmlRow);
-        }
-    
-        /// <summary>
-        /// Deprecated Method for adding a new object to the tblUserLogins EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
-        /// </summary>
-        public void AddTotblUserLogins(tblUserLogin tblUserLogin)
-        {
-            base.AddObject("tblUserLogins", tblUserLogin);
         }
 
         #endregion
@@ -666,44 +665,6 @@ namespace DomainWideObjects.DataAccess
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("seleniumScrapeModel", "FK_tblHtml_tblVehicle1", "tblVehicle")]
-        public tblVehicle tblVehicle
-        {
-            get
-            {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tblVehicle>("seleniumScrapeModel.FK_tblHtml_tblVehicle1", "tblVehicle").Value;
-            }
-            set
-            {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tblVehicle>("seleniumScrapeModel.FK_tblHtml_tblVehicle1", "tblVehicle").Value = value;
-            }
-        }
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [BrowsableAttribute(false)]
-        [DataMemberAttribute()]
-        public EntityReference<tblVehicle> tblVehicleReference
-        {
-            get
-            {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tblVehicle>("seleniumScrapeModel.FK_tblHtml_tblVehicle1", "tblVehicle");
-            }
-            set
-            {
-                if ((value != null))
-                {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tblVehicle>("seleniumScrapeModel.FK_tblHtml_tblVehicle1", "tblVehicle", value);
-                }
-            }
-        }
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [XmlIgnoreAttribute()]
-        [SoapIgnoreAttribute()]
-        [DataMemberAttribute()]
         [EdmRelationshipNavigationPropertyAttribute("seleniumScrapeModel", "FK_tblHtml_tblSearchSession", "tblSearchSession")]
         public tblSearchSession tblSearchSession
         {
@@ -742,6 +703,44 @@ namespace DomainWideObjects.DataAccess
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("seleniumScrapeModel", "FK_tblHtml_tblVehicle1", "tblVehicle")]
+        public tblVehicle tblVehicle
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tblVehicle>("seleniumScrapeModel.FK_tblHtml_tblVehicle1", "tblVehicle").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tblVehicle>("seleniumScrapeModel.FK_tblHtml_tblVehicle1", "tblVehicle").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<tblVehicle> tblVehicleReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tblVehicle>("seleniumScrapeModel.FK_tblHtml_tblVehicle1", "tblVehicle");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tblVehicle>("seleniumScrapeModel.FK_tblHtml_tblVehicle1", "tblVehicle", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
         [EdmRelationshipNavigationPropertyAttribute("seleniumScrapeModel", "FK_tblHtmlLink_tblHtml", "tblHtmlLink")]
         public EntityCollection<tblHtmlLink> tblHtmlLinks
         {
@@ -754,28 +753,6 @@ namespace DomainWideObjects.DataAccess
                 if ((value != null))
                 {
                     ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tblHtmlLink>("seleniumScrapeModel.FK_tblHtmlLink_tblHtml", "tblHtmlLink", value);
-                }
-            }
-        }
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [XmlIgnoreAttribute()]
-        [SoapIgnoreAttribute()]
-        [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("seleniumScrapeModel", "FK_tblHtmlRow_tblHtml", "tblHtmlRow")]
-        public EntityCollection<tblHtmlRow> tblHtmlRows
-        {
-            get
-            {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tblHtmlRow>("seleniumScrapeModel.FK_tblHtmlRow_tblHtml", "tblHtmlRow");
-            }
-            set
-            {
-                if ((value != null))
-                {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tblHtmlRow>("seleniumScrapeModel.FK_tblHtmlRow_tblHtml", "tblHtmlRow", value);
                 }
             }
         }
@@ -1007,30 +984,6 @@ namespace DomainWideObjects.DataAccess
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
-        public Nullable<global::System.Int32> html_data_id_fk
-        {
-            get
-            {
-                return _html_data_id_fk;
-            }
-            set
-            {
-                Onhtml_data_id_fkChanging(value);
-                ReportPropertyChanging("html_data_id_fk");
-                _html_data_id_fk = StructuralObject.SetValidValue(value);
-                ReportPropertyChanged("html_data_id_fk");
-                Onhtml_data_id_fkChanged();
-            }
-        }
-        private Nullable<global::System.Int32> _html_data_id_fk;
-        partial void Onhtml_data_id_fkChanging(Nullable<global::System.Int32> value);
-        partial void Onhtml_data_id_fkChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
         public global::System.String html_row_number
         {
             get
@@ -1125,44 +1078,6 @@ namespace DomainWideObjects.DataAccess
         #endregion
     
         #region Navigation Properties
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [XmlIgnoreAttribute()]
-        [SoapIgnoreAttribute()]
-        [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("seleniumScrapeModel", "FK_tblHtmlRow_tblHtml", "tblHtml")]
-        public tblHtml tblHtml
-        {
-            get
-            {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tblHtml>("seleniumScrapeModel.FK_tblHtmlRow_tblHtml", "tblHtml").Value;
-            }
-            set
-            {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tblHtml>("seleniumScrapeModel.FK_tblHtmlRow_tblHtml", "tblHtml").Value = value;
-            }
-        }
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [BrowsableAttribute(false)]
-        [DataMemberAttribute()]
-        public EntityReference<tblHtml> tblHtmlReference
-        {
-            get
-            {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tblHtml>("seleniumScrapeModel.FK_tblHtmlRow_tblHtml", "tblHtml");
-            }
-            set
-            {
-                if ((value != null))
-                {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tblHtml>("seleniumScrapeModel.FK_tblHtmlRow_tblHtml", "tblHtml", value);
-                }
-            }
-        }
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -1270,6 +1185,30 @@ namespace DomainWideObjects.DataAccess
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> Vehicle_ID_fk
+        {
+            get
+            {
+                return _Vehicle_ID_fk;
+            }
+            set
+            {
+                OnVehicle_ID_fkChanging(value);
+                ReportPropertyChanging("Vehicle_ID_fk");
+                _Vehicle_ID_fk = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("Vehicle_ID_fk");
+                OnVehicle_ID_fkChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _Vehicle_ID_fk;
+        partial void OnVehicle_ID_fkChanging(Nullable<global::System.Int32> value);
+        partial void OnVehicle_ID_fkChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
         [DataMemberAttribute()]
         public global::System.Int32 page_id_pk
@@ -1293,30 +1232,6 @@ namespace DomainWideObjects.DataAccess
         private global::System.Int32 _page_id_pk;
         partial void Onpage_id_pkChanging(global::System.Int32 value);
         partial void Onpage_id_pkChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public Nullable<global::System.Int32> Vehicle_ID_fk
-        {
-            get
-            {
-                return _Vehicle_ID_fk;
-            }
-            set
-            {
-                OnVehicle_ID_fkChanging(value);
-                ReportPropertyChanging("Vehicle_ID_fk");
-                _Vehicle_ID_fk = StructuralObject.SetValidValue(value);
-                ReportPropertyChanged("Vehicle_ID_fk");
-                OnVehicle_ID_fkChanged();
-            }
-        }
-        private Nullable<global::System.Int32> _Vehicle_ID_fk;
-        partial void OnVehicle_ID_fkChanging(Nullable<global::System.Int32> value);
-        partial void OnVehicle_ID_fkChanged();
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -1845,6 +1760,50 @@ namespace DomainWideObjects.DataAccess
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("seleniumScrapeModel", "FK_tblHtml_tblVehicle1", "tblHtml")]
+        public EntityCollection<tblHtml> tblHtmls
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tblHtml>("seleniumScrapeModel.FK_tblHtml_tblVehicle1", "tblHtml");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tblHtml>("seleniumScrapeModel.FK_tblHtml_tblVehicle1", "tblHtml", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("seleniumScrapeModel", "FK_tblHtmlRow_tblVehicle", "tblHtmlRow")]
+        public EntityCollection<tblHtmlRow> tblHtmlRows
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tblHtmlRow>("seleniumScrapeModel.FK_tblHtmlRow_tblVehicle", "tblHtmlRow");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tblHtmlRow>("seleniumScrapeModel.FK_tblHtmlRow_tblVehicle", "tblHtmlRow", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
         [EdmRelationshipNavigationPropertyAttribute("seleniumScrapeModel", "FK_tblPage_tblVehicle", "tblPage")]
         public EntityCollection<tblPage> tblPages
         {
@@ -1971,50 +1930,6 @@ namespace DomainWideObjects.DataAccess
                 if ((value != null))
                 {
                     ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tblVehicleTypeGeneral>("seleniumScrapeModel.FK_tblVehicle_tblVehicleTypeGeneral", "tblVehicleTypeGeneral", value);
-                }
-            }
-        }
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [XmlIgnoreAttribute()]
-        [SoapIgnoreAttribute()]
-        [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("seleniumScrapeModel", "FK_tblHtml_tblVehicle1", "tblHtml")]
-        public EntityCollection<tblHtml> tblHtmls
-        {
-            get
-            {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tblHtml>("seleniumScrapeModel.FK_tblHtml_tblVehicle1", "tblHtml");
-            }
-            set
-            {
-                if ((value != null))
-                {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tblHtml>("seleniumScrapeModel.FK_tblHtml_tblVehicle1", "tblHtml", value);
-                }
-            }
-        }
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [XmlIgnoreAttribute()]
-        [SoapIgnoreAttribute()]
-        [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("seleniumScrapeModel", "FK_tblHtmlRow_tblVehicle", "tblHtmlRow")]
-        public EntityCollection<tblHtmlRow> tblHtmlRows
-        {
-            get
-            {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tblHtmlRow>("seleniumScrapeModel.FK_tblHtmlRow_tblVehicle", "tblHtmlRow");
-            }
-            set
-            {
-                if ((value != null))
-                {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tblHtmlRow>("seleniumScrapeModel.FK_tblHtmlRow_tblVehicle", "tblHtmlRow", value);
                 }
             }
         }

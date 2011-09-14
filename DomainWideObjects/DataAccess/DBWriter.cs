@@ -21,7 +21,7 @@ namespace SeleniumTestMain.General.Data {
        }
 
 
-       public void SaveHtmlRowToDB(string rowElementHTML) {
+       public void SaveHtmlRowToDB(string rowElementHTML, int searchSessionId, int vehicleId) {
 
            var ctx = new seleniumScrapeEntities();
 
@@ -29,10 +29,10 @@ namespace SeleniumTestMain.General.Data {
            {
                html_row_data = rowElementHTML,
                // get latest tblHtml ID pk (this is the fk)
-               html_data_id_fk = GetHtmlTableId(),
+               // html_data_id_fk = GetHtmlTableId(),
 
-               //Vehicle_id_fk = **Current Vehicle Search ID**
-               //Search_Session_ID_fk = **Current Search Session**
+               Vehicle_id_fk = vehicleId,
+               Search_Session_ID_fk =  searchSessionId
 
            };
 

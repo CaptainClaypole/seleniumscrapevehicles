@@ -54,7 +54,7 @@ namespace SeleniumTestMain.General.Data {
                     ///////
                     var dbWriter = new DBWriter();
  
-                    dbWriter.SaveHtmlRowToDB(rowElementHTML);
+                    dbWriter.SaveHtmlRowToDB(rowElementHTML, searchSessionID, vehicleID);
 
 
                     // return 0;
