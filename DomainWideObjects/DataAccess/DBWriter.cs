@@ -31,6 +31,9 @@ namespace SeleniumTestMain.General.Data {
                // get latest tblHtml ID pk (this is the fk)
                html_data_id_fk = GetHtmlTableId(),
 
+               //Vehicle_id_fk = **Current Vehicle Search ID**
+               //Search_Session_ID_fk = **Current Search Session**
+
            };
 
 

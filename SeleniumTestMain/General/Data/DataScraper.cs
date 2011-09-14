@@ -84,6 +84,8 @@ namespace SeleniumTestMain.General.Data {
            
         }
 
+        // Use similar to this below to create a new tblHTMLrow.
+
         public void AddHTMLtoList(string tableElementHTML)
         {
            // Add the scraped html to the list.

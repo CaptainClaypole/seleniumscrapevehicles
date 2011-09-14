@@ -26,6 +26,8 @@ using System.Runtime.Serialization;
 [assembly: EdmRelationshipAttribute("seleniumScrapeModel", "FK_tblHtml_tblSearchSession", "tblSearchSession", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DomainWideObjects.DataAccess.tblSearchSession), "tblHtml", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DomainWideObjects.DataAccess.tblHtml), true)]
 [assembly: EdmRelationshipAttribute("seleniumScrapeModel", "FK_tblHtmlLink_tblHtml", "tblHtml", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DomainWideObjects.DataAccess.tblHtml), "tblHtmlLink", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DomainWideObjects.DataAccess.tblHtmlLink), true)]
 [assembly: EdmRelationshipAttribute("seleniumScrapeModel", "FK_tblHtmlRow_tblHtml", "tblHtml", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DomainWideObjects.DataAccess.tblHtml), "tblHtmlRow", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DomainWideObjects.DataAccess.tblHtmlRow), true)]
+[assembly: EdmRelationshipAttribute("seleniumScrapeModel", "FK_tblHtmlRow_tblSearchSession", "tblSearchSession", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DomainWideObjects.DataAccess.tblSearchSession), "tblHtmlRow", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DomainWideObjects.DataAccess.tblHtmlRow), true)]
+[assembly: EdmRelationshipAttribute("seleniumScrapeModel", "FK_tblHtmlRow_tblVehicle", "tblVehicle", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DomainWideObjects.DataAccess.tblVehicle), "tblHtmlRow", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DomainWideObjects.DataAccess.tblHtmlRow), true)]
 
 #endregion
 
@@ -1047,6 +1049,78 @@ namespace DomainWideObjects.DataAccess
         private global::System.String _html_row_number;
         partial void Onhtml_row_numberChanging(global::System.String value);
         partial void Onhtml_row_numberChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> Search_Date_Timestamp
+        {
+            get
+            {
+                return _Search_Date_Timestamp;
+            }
+            set
+            {
+                OnSearch_Date_TimestampChanging(value);
+                ReportPropertyChanging("Search_Date_Timestamp");
+                _Search_Date_Timestamp = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("Search_Date_Timestamp");
+                OnSearch_Date_TimestampChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _Search_Date_Timestamp;
+        partial void OnSearch_Date_TimestampChanging(Nullable<global::System.DateTime> value);
+        partial void OnSearch_Date_TimestampChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> Search_Session_ID_fk
+        {
+            get
+            {
+                return _Search_Session_ID_fk;
+            }
+            set
+            {
+                OnSearch_Session_ID_fkChanging(value);
+                ReportPropertyChanging("Search_Session_ID_fk");
+                _Search_Session_ID_fk = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("Search_Session_ID_fk");
+                OnSearch_Session_ID_fkChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _Search_Session_ID_fk;
+        partial void OnSearch_Session_ID_fkChanging(Nullable<global::System.Int32> value);
+        partial void OnSearch_Session_ID_fkChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> Vehicle_id_fk
+        {
+            get
+            {
+                return _Vehicle_id_fk;
+            }
+            set
+            {
+                OnVehicle_id_fkChanging(value);
+                ReportPropertyChanging("Vehicle_id_fk");
+                _Vehicle_id_fk = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("Vehicle_id_fk");
+                OnVehicle_id_fkChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _Vehicle_id_fk;
+        partial void OnVehicle_id_fkChanging(Nullable<global::System.Int32> value);
+        partial void OnVehicle_id_fkChanged();
 
         #endregion
     
@@ -1086,6 +1160,82 @@ namespace DomainWideObjects.DataAccess
                 if ((value != null))
                 {
                     ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tblHtml>("seleniumScrapeModel.FK_tblHtmlRow_tblHtml", "tblHtml", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("seleniumScrapeModel", "FK_tblHtmlRow_tblSearchSession", "tblSearchSession")]
+        public tblSearchSession tblSearchSession
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tblSearchSession>("seleniumScrapeModel.FK_tblHtmlRow_tblSearchSession", "tblSearchSession").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tblSearchSession>("seleniumScrapeModel.FK_tblHtmlRow_tblSearchSession", "tblSearchSession").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<tblSearchSession> tblSearchSessionReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tblSearchSession>("seleniumScrapeModel.FK_tblHtmlRow_tblSearchSession", "tblSearchSession");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tblSearchSession>("seleniumScrapeModel.FK_tblHtmlRow_tblSearchSession", "tblSearchSession", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("seleniumScrapeModel", "FK_tblHtmlRow_tblVehicle", "tblVehicle")]
+        public tblVehicle tblVehicle
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tblVehicle>("seleniumScrapeModel.FK_tblHtmlRow_tblVehicle", "tblVehicle").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tblVehicle>("seleniumScrapeModel.FK_tblHtmlRow_tblVehicle", "tblVehicle").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<tblVehicle> tblVehicleReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tblVehicle>("seleniumScrapeModel.FK_tblHtmlRow_tblVehicle", "tblVehicle");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tblVehicle>("seleniumScrapeModel.FK_tblHtmlRow_tblVehicle", "tblVehicle", value);
                 }
             }
         }
@@ -1310,6 +1460,28 @@ namespace DomainWideObjects.DataAccess
                 if ((value != null))
                 {
                     ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tblHtml>("seleniumScrapeModel.FK_tblHtml_tblSearchSession", "tblHtml", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("seleniumScrapeModel", "FK_tblHtmlRow_tblSearchSession", "tblHtmlRow")]
+        public EntityCollection<tblHtmlRow> tblHtmlRows
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tblHtmlRow>("seleniumScrapeModel.FK_tblHtmlRow_tblSearchSession", "tblHtmlRow");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tblHtmlRow>("seleniumScrapeModel.FK_tblHtmlRow_tblSearchSession", "tblHtmlRow", value);
                 }
             }
         }
@@ -1821,6 +1993,28 @@ namespace DomainWideObjects.DataAccess
                 if ((value != null))
                 {
                     ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tblHtml>("seleniumScrapeModel.FK_tblHtml_tblVehicle1", "tblHtml", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("seleniumScrapeModel", "FK_tblHtmlRow_tblVehicle", "tblHtmlRow")]
+        public EntityCollection<tblHtmlRow> tblHtmlRows
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tblHtmlRow>("seleniumScrapeModel.FK_tblHtmlRow_tblVehicle", "tblHtmlRow");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tblHtmlRow>("seleniumScrapeModel.FK_tblHtmlRow_tblVehicle", "tblHtmlRow", value);
                 }
             }
         }

@@ -11,27 +11,26 @@
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DBreader.cs" caret="1134" fromTop="8" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Entities/f:DisplayPage.cs" caret="364" fromTop="8" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:IVehicleSelector.cs" caret="173" fromTop="9" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:IDataScraper.cs" caret="221" fromTop="11" />
       <File id="65C82E5F-564F-43D8-8B11-202DBFBC065A/f:Global.asax.cs" caret="682" fromTop="9" />
       <File id="65C82E5F-564F-43D8-8B11-202DBFBC065A/f:dataModel2.Designer.cs" caret="0" fromTop="0" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:IRowWebElement.cs" caret="0" fromTop="0" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:Settings/f:AppSettings.cs" caret="0" fromTop="0" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repo/f:IRepo.cs" caret="0" fromTop="0" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:VehicleSaver.cs" caret="167" fromTop="5" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DbChecker.cs" caret="153" fromTop="0" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:CreateHtmlList.cs" caret="172" fromTop="2" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repo/f:Repo.cs" caret="0" fromTop="0" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:IRowScraper.cs" caret="0" fromTop="0" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="1364" fromTop="0" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:Navigator.cs" caret="108" fromTop="0" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="4954" fromTop="8" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="551" fromTop="4" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:VehicleSelector.cs" caret="2051" fromTop="11" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DBWriter.cs" caret="425" fromTop="8" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:PageCounter.cs" caret="1193" fromTop="4" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repo/f:Repo.cs" caret="1615" fromTop="25" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DBWriter.cs" caret="922" fromTop="9" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:VehicleSaver.cs" caret="217" fromTop="5" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:IDataScraper.cs" caret="133" fromTop="5" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="2858" fromTop="9" />
     </RecentFiles>
     <RecentEdits>
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="815" fromTop="3" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="476" fromTop="12" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="4681" fromTop="14" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="2890" fromTop="13" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="3132" fromTop="19" />
@@ -55,10 +54,13 @@
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="2331" fromTop="4" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="2331" fromTop="11" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="2331" fromTop="0" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DBWriter.cs" caret="1475" fromTop="18" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DBWriter.cs" caret="1609" fromTop="18" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="1738" fromTop="20" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DBWriter.cs" caret="615" fromTop="11" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="1802" fromTop="13" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DBWriter.cs" caret="47808" fromTop="23" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DBWriter.cs" caret="999" fromTop="11" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="2536" fromTop="6" />
     </RecentEdits>
   </RecentFiles>
   <CompletionStatisticsManager>
