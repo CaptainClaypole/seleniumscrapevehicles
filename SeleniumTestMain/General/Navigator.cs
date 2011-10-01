@@ -89,9 +89,14 @@ namespace SeleniumTestMain
 
         public void SearchButtonClicker(IWebDriver driver) {
 
-            try {
-                   driver.FindElement(By.Id("i_but3_sch")).Click();
-             
+            try
+            {
+                //Get the search button into an element (webelement).
+                IWebElement searchButton = driver.FindElement(By.Id("i_but3_sch"));
+                // Send enter key to the search button so it doesnt timeout.
+                searchButton.Click();
+
+
             } catch (Exception) {
 
                 // not found!!

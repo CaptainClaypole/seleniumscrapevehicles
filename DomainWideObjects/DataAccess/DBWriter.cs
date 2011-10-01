@@ -30,6 +30,8 @@ namespace SeleniumTestMain.General.Data {
                html_row_data = rowElementHTML,
                // get latest tblHtml ID pk (this is the fk)
                // html_data_id_fk = GetHtmlTableId(),
+               Search_Date_Timestamp = DateTime.Now,
+
 
                Vehicle_id_fk = vehicleId,
                Search_Session_ID_fk =  searchSessionId

@@ -15,65 +15,67 @@
       <File id="65C82E5F-564F-43D8-8B11-202DBFBC065A/f:dataModel2.Designer.cs" caret="0" fromTop="0" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:IRowWebElement.cs" caret="0" fromTop="0" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:Settings/f:AppSettings.cs" caret="0" fromTop="0" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repo/f:IRepo.cs" caret="0" fromTop="0" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DbChecker.cs" caret="153" fromTop="0" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:CreateHtmlList.cs" caret="172" fromTop="2" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:IRowScraper.cs" caret="0" fromTop="0" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="1364" fromTop="0" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:Navigator.cs" caret="108" fromTop="0" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="4954" fromTop="8" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:VehicleSelector.cs" caret="2051" fromTop="11" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:PageCounter.cs" caret="1193" fromTop="4" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repo/f:Repo.cs" caret="1615" fromTop="25" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DBWriter.cs" caret="922" fromTop="9" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:VehicleSaver.cs" caret="217" fromTop="5" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:VehicleSaver.cs" caret="217" fromTop="6" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="570" fromTop="0" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DBWriter.cs" caret="853" fromTop="9" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:CreateHtmlList.cs" caret="511" fromTop="10" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Program.cs" caret="195" fromTop="9" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repo/f:Repo.cs" caret="879" fromTop="7" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repo/f:IRepo.cs" caret="0" fromTop="0" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:IDataScraper.cs" caret="133" fromTop="5" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="2858" fromTop="9" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:VehicleSelector.cs" caret="2051" fromTop="11" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:IRowScraper.cs" caret="0" fromTop="0" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:Navigator.cs" caret="1972" fromTop="10" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:ConditionPicker.cs" caret="357" fromTop="7" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:PageCounter.cs" caret="1445" fromTop="56" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="802" fromTop="0" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="3221" fromTop="9" />
     </RecentFiles>
     <RecentEdits>
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="4681" fromTop="14" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="2890" fromTop="13" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="3132" fromTop="19" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="2520" fromTop="7" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="2192" fromTop="15" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repo/f:Repo.cs" caret="1426" fromTop="13" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repo/f:Repo.cs" caret="769" fromTop="13" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repo/f:Repo.cs" caret="624" fromTop="14" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repo/f:Repo.cs" caret="895" fromTop="14" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repo/f:Repo.cs" caret="369" fromTop="10" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repo/f:Repo.cs" caret="257" fromTop="8" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repo/f:Repo.cs" caret="702" fromTop="13" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repo/f:Repo.cs" caret="846" fromTop="8" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repo/f:Repo.cs" caret="387" fromTop="7" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repo/f:Repo.cs" caret="160" fromTop="7" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repo/f:Repo.cs" caret="1682" fromTop="6" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="210" fromTop="7" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="2331" fromTop="10" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="2331" fromTop="15" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="2331" fromTop="9" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="2331" fromTop="4" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="2331" fromTop="11" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="2331" fromTop="0" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DBWriter.cs" caret="1609" fromTop="18" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="1738" fromTop="20" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="2460" fromTop="9" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="2460" fromTop="4" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="2460" fromTop="11" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="2460" fromTop="0" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DBWriter.cs" caret="1665" fromTop="18" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DBWriter.cs" caret="615" fromTop="11" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="1802" fromTop="13" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DBWriter.cs" caret="47808" fromTop="23" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DBWriter.cs" caret="999" fromTop="11" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="1931" fromTop="13" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DBWriter.cs" caret="47864" fromTop="23" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="2536" fromTop="6" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repo/f:Repo.cs" caret="1682" fromTop="5" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DBWriter.cs" caret="1028" fromTop="15" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="621" fromTop="10" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="1867" fromTop="8" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="508" fromTop="9" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="170" fromTop="5" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="3304" fromTop="9" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="3304" fromTop="12" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:PageCounter.cs" caret="212" fromTop="7" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:PageCounter.cs" caret="1462" fromTop="9" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:PageCounter.cs" caret="1419" fromTop="5" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:Navigator.cs" caret="3200" fromTop="11" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:Navigator.cs" caret="2043" fromTop="11" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="2979" fromTop="13" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="3308" fromTop="15" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="3219" fromTop="13" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="1658" fromTop="11" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="2525" fromTop="7" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="2845" fromTop="9" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="2950" fromTop="10" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="3219" fromTop="5" />
     </RecentEdits>
   </RecentFiles>
   <CompletionStatisticsManager>
     <ItemStatistics item="CSharpCodeCompletionContext">
       <Item value="private" priority="863" />
       <Item value="public" priority="1304" />
-      <Item value="string" priority="1620" />
+      <Item value="string" priority="1742" />
       <Item value="IAuthenticatable`0" priority="31" />
-      <Item value="using" priority="495" />
+      <Item value="using" priority="588" />
       <Item value="void" priority="829" />
       <Item value="DomainWideObjects" priority="185" />
       <Item value="SiteConfigurator`0" priority="63" />
-      <Item value="new" priority="1434" />
+      <Item value="new" priority="1724" />
       <Item value="SiteConfigurator" priority="28" />
       <Item value="siteConfig" priority="63" />
       <Item value="this" priority="479" />
@@ -86,9 +88,9 @@
       <Item value="SeleniumTestMain" priority="62" />
       <Item value="Authenticator`0" priority="63" />
       <Item value="IWebDriver`0" priority="250" />
-      <Item value="driver" priority="991" />
-      <Item value="by" priority="95" />
-      <Item value="By`0" priority="639" />
+      <Item value="driver" priority="1151" />
+      <Item value="by" priority="159" />
+      <Item value="By`0" priority="767" />
       <Item value="Navigator`0" priority="63" />
       <Item value="Navigator" priority="28" />
       <Item value="navigator" priority="191" />
@@ -99,12 +101,12 @@
       <Item value="VehicleSelector`0" priority="31" />
       <Item value="checked" priority="63" />
       <Item value="Debug`0" priority="31" />
-      <Item value="Console`0" priority="958" />
+      <Item value="Console`0" priority="1118" />
       <Item value="isMakePresent" priority="63" />
       <Item value="VehicleSelector" priority="28" />
       <Item value="vehicleSelector" priority="127" />
       <Item value="Microsoft" priority="30" />
-      <Item value="Selenium" priority="152" />
+      <Item value="Selenium" priority="179" />
       <Item value="IsElementPresent`0" priority="31" />
       <Item value="ISelenium`0" priority="31" />
       <Item value="DefaultSelenium" priority="28" />
@@ -120,14 +122,14 @@
       <Item value="bool" priority="95" />
       <Item value="isModelPresent" priority="95" />
       <Item value="FirefoxWebElement`0" priority="31" />
-      <Item value="IWebElement`0" priority="127" />
+      <Item value="IWebElement`0" priority="383" />
       <Item value="Action" priority="29" />
       <Item value="target" priority="31" />
       <Item value="Actions" priority="28" />
       <Item value="actionsProvider" priority="31" />
       <Item value="virtual" priority="31" />
-      <Item value="OpenQA" priority="31" />
-      <Item value="Support" priority="26" />
+      <Item value="OpenQA" priority="62" />
+      <Item value="Support" priority="80" />
       <Item value="IJavaScriptExecutor`0" priority="32" />
       <Item value="tableElementHTML" priority="221" />
       <Item value="DebuggerTypeProxyAttribute`0" priority="63" />
@@ -135,15 +137,15 @@
       <Item value="IDataScraper`0" priority="92" />
       <Item value="DataScraper`0" priority="31" />
       <Item value="EnvironmentVariableTarget`0" priority="31" />
-      <Item value="List" priority="316" />
+      <Item value="List" priority="439" />
       <Item value="htmlList" priority="569" />
       <Item value="List&lt;string&gt;" priority="28" />
-      <Item value="var" priority="1616" />
+      <Item value="var" priority="1872" />
       <Item value="tagToSearch" priority="63" />
       <Item value="DataScraper" priority="29" />
       <Item value="catch" priority="63" />
       <Item value="Exception`0" priority="95" />
-      <Item value="int" priority="957" />
+      <Item value="int" priority="1021" />
       <Item value="for" priority="63" />
       <Item value="while" priority="95" />
       <Item value="CheckForNextPage`0" priority="31" />
@@ -154,7 +156,7 @@
       <Item value="e" priority="31" />
       <Item value="isNextPageThere" priority="63" />
       <Item value="GopherStyleUriParser`0" priority="31" />
-      <Item value="ElementNotVisibleException`0" priority="31" />
+      <Item value="ElementNotVisibleException`0" priority="63" />
       <Item value="HTMLlist`0" priority="414" />
       <Item value="HTMLlist" priority="246" />
       <Item value="List&lt;HTMLlist&gt;" priority="28" />
@@ -176,8 +178,8 @@
       <Item value="createHtmlList" priority="95" />
       <Item value="DBNull" priority="28" />
       <Item value="htmlListEntity" priority="31" />
-      <Item value="foreach" priority="188" />
-      <Item value="in" priority="157" />
+      <Item value="foreach" priority="380" />
+      <Item value="in" priority="317" />
       <Item value="html" priority="437" />
       <Item value="T`0" priority="670" />
       <Item value="DBchecker" priority="31" />
@@ -232,15 +234,15 @@
       <Item value="vehicles" priority="63" />
       <Item value="dbReader" priority="62" />
       <Item value="vehicleSearchList" priority="31" />
-      <Item value="item" priority="221" />
+      <Item value="item" priority="253" />
       <Item value="pageCounter" priority="63" />
       <Item value="condition" priority="127" />
       <Item value="conditionList" priority="63" />
       <Item value="conditionsToSearch" priority="31" />
       <Item value="Vehicle_id_fk" priority="63" />
       <Item value="vehicleID" priority="160" />
-      <Item value="Search_Date_Timestamp" priority="32" />
-      <Item value="DateTime`0" priority="94" />
+      <Item value="Search_Date_Timestamp" priority="65" />
+      <Item value="DateTime`0" priority="127" />
       <Item value="tblSearchSession" priority="28" />
       <Item value="AddToDb`0" priority="31" />
       <Item value="searchSession" priority="158" />
@@ -310,6 +312,27 @@
       <Item value="GetHtmlTableId`0" priority="32" />
       <Item value="htmlRow" priority="31" />
       <Item value="DBWriter`0" priority="31" />
+      <Item value="By" priority="28" />
+      <Item value="List&lt;IWebElement&gt;" priority="28" />
+      <Item value="ReadOnlyObservableCollection&lt;IWebElement&gt;" priority="25" />
+      <Item value="fullTable" priority="95" />
+      <Item value="cell" priority="159" />
+      <Item value="IWebElement" priority="29" />
+      <Item value="table" priority="31" />
+      <Item value="rowEntry" priority="63" />
+      <Item value="rows" priority="95" />
+      <Item value="ReadOnlyCollection" priority="28" />
+      <Item value="cellsList" priority="63" />
+      <Item value="cells" priority="31" />
+      <Item value="KeyNotFoundException`0" priority="31" />
+      <Item value="Keys`0" priority="63" />
+      <Item value="OpenQA.Selenium" priority="61" />
+      <Item value="UI" priority="26" />
+      <Item value="Events" priority="26" />
+      <Item value="#region" priority="31" />
+      <Item value="ScrapeTextData`0" priority="31" />
+      <Item value="GetHashCode`0" priority="31" />
+      <Item value="tagList" priority="127" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:DomainWideObjects.SiteConfigurator">
       <Item value="url" priority="53" />
@@ -326,24 +349,28 @@
       <Item value="driver" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:OpenQA.Selenium.IWebDriver">
-      <Item value="FindElement`0" priority="350" />
+      <Item value="FindElement`0" priority="377" />
       <Item value="PageSource" priority="54" />
-      <Item value="FindElements`0" priority="26" />
+      <Item value="FindElements`0" priority="80" />
       <Item value="Close`0" priority="26" />
       <Item value="Dispose`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@OpenQA.Selenium.By">
-      <Item value="CssSelector`0" priority="26" />
+      <Item value="CssSelector`0" priority="53" />
       <Item value="PartialLinkText`0" priority="161" />
       <Item value="LinkText`0" priority="188" />
-      <Item value="Id`0" priority="134" />
-      <Item value="ClassName`0" priority="80" />
+      <Item value="Id`0" priority="162" />
+      <Item value="ClassName`0" priority="190" />
       <Item value="XPath`0" priority="26" />
+      <Item value="TagName`0" priority="53" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:OpenQA.Selenium.IWebElement">
-      <Item value="Click`0" priority="107" />
+      <Item value="Click`0" priority="161" />
       <Item value="Enabled" priority="26" />
       <Item value="Size" priority="80" />
+      <Item value="Text" priority="107" />
+      <Item value="FindElements`0" priority="53" />
+      <Item value="SendKeys`0" priority="54" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SeleniumTestMain.Navigator">
       <Item value="Create`0" priority="26" />
@@ -359,8 +386,8 @@
       <Item value="driver" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Console">
-      <Item value="WriteLine`0" priority="566" />
-      <Item value="ReadLine`0" priority="271" />
+      <Item value="WriteLine`0" priority="674" />
+      <Item value="ReadLine`0" priority="379" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Boolean">
       <Item value="ToString`0" priority="26" />
@@ -388,7 +415,7 @@
       <Item value="searchSessionID" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
-      <Item value="Add`0" priority="53" />
+      <Item value="Add`0" priority="135" />
       <Item value="Remove`0" priority="26" />
       <Item value="Clear`0" priority="26" />
       <Item value="ToList`1" priority="26" />
@@ -493,7 +520,7 @@
       <Item value="ToString`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.DateTime">
-      <Item value="Now" priority="54" />
+      <Item value="Now" priority="82" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@DomainWideObjects.DataAccess.tblSearchSession">
       <Item value="CreatetblSearchSession`0" priority="26" />
@@ -517,7 +544,7 @@
       <Item value="namespace" priority="7" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.String">
-      <Item value="ToString`0" priority="80" />
+      <Item value="ToString`0" priority="107" />
       <Item value="ToList`1" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:DomainWideObjects.DataAccess.Entities.DisplayPage">
@@ -551,6 +578,15 @@
       <Item value="_ctx" priority="26" />
       <Item value="SaveChanges`1" priority="53" />
       <Item value="Add`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.ObjectModel.ReadOnlyCollection`1">
+      <Item value="ToList`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@OpenQA.Selenium.Keys">
+      <Item value="Enter" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:OpenQA.Selenium.Support.UI.WebDriverWait">
+      <Item value="Until`1" priority="26" />
     </ItemStatistics>
   </CompletionStatisticsManager>
   <NAntValidationSettings>

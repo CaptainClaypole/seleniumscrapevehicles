@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using DomainWideObjects;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
+using OpenQA.Selenium.Support.Events;
 
 namespace SeleniumTestMain.General {
     class PageCounter
@@ -49,9 +51,11 @@ namespace SeleniumTestMain.General {
 
         public bool CheckForNextPage() {
             // Wait for element
-            driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 1));
-            try {
+            driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 45));
 
+
+            try {
+               
                 driver.FindElement(By.XPath("//a[@onclick='navi(this," + pageNum + ");']"));
 
                 return true;

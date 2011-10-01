@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Web;
@@ -15,12 +16,13 @@ namespace SeleniumTestMain.General.Data {
         private int searchSessionID;
         private string rowElementHTML;
         private IWebElement tableRowElement;
+
        
         private int vehicleID;
 
 
         // Construct
-        public RowScraper(IWebDriver driver, int searchSessionId, int vehicleID)
+        public RowScraper(IWebDriver driver, int vehicleID, int searchSessionId)
         {
             this.driver = driver;
             this.searchSessionID = searchSessionId;
@@ -47,9 +49,14 @@ namespace SeleniumTestMain.General.Data {
 
                     rowElementHTML = HttpUtility.HtmlDecode(encodedHtml) + rowElementHTML;
 
+                    // get all the text data 
+                    TextData(i);
+
+
                     Console.WriteLine("Writing Row Element Data! ******" + rowElementHTML + "*************");
                     Console.WriteLine("Written data aj_view" + i);
-                   
+
+                    
                     // Save to DB
                     ///////
                     var dbWriter = new DBWriter();
@@ -76,6 +83,48 @@ namespace SeleniumTestMain.General.Data {
             return 1;
 
           
+        }
+
+        private void TextData(int i) {
+            // Scrape Text Data
+            //  (Lotnumber)
+
+            var tagList = new List<string>();
+            tagList.Add("my_bids");
+            tagList.Add("tag2");
+            tagList.Add("tag3");
+
+            foreach (string tag in tagList)
+            {
+                ScrapeTextData(tag, i);
+            }
+
+          
+
+        }
+
+        private void ScrapeTextData(string dataTag, int i) {
+          
+
+          
+            // Get table
+            IWebElement table = driver.FindElement(By.ClassName("t_main"));
+            // Get Rows
+            var rows = new ReadOnlyCollection<IWebElement>(table.FindElements(By.ClassName(dataTag)));
+      
+
+            Console.WriteLine(rows[i].Text);
+            Console.ReadLine();
+
+
+
+
+
+
+
+
+
+
         }
 
 
