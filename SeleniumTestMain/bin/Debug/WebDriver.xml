@@ -14,6 +14,21 @@
             through static methods of this class. An example of this can be found in OpenQA.Support.ByIdOrName
             </remarks>
         </member>
+        <member name="M:OpenQA.Selenium.By.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:OpenQA.Selenium.By"/> class.
+            </summary>
+        </member>
+        <member name="M:OpenQA.Selenium.By.#ctor(System.Func{OpenQA.Selenium.ISearchContext,OpenQA.Selenium.IWebElement},System.Func{OpenQA.Selenium.ISearchContext,System.Collections.ObjectModel.ReadOnlyCollection{OpenQA.Selenium.IWebElement}})">
+            <summary>
+            Initializes a new instance of the <see cref="T:OpenQA.Selenium.By"/> class using the given functions to find elements.
+            </summary>
+            <param name="findElementMethod">A function that takes an object implementing <see cref="T:OpenQA.Selenium.ISearchContext"/>
+            and returns the found <see cref="T:OpenQA.Selenium.IWebElement"/>.</param>
+            <param name="findElementsMethod">A function that takes an object implementing <see cref="T:OpenQA.Selenium.ISearchContext"/> 
+            and returns a <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1"/> of the found<see cref="T:OpenQA.Selenium.IWebElement">IWebElements</see>.
+            <see cref="T:OpenQA.Selenium.IWebElement">IWebElements</see>/&gt;.</param>
+        </member>
         <member name="M:OpenQA.Selenium.By.Id(System.String)">
             <summary>
             Gets a mechanism to find elements by their ID.
@@ -110,6 +125,21 @@
             Serves as a hash function for a particular type.
             </summary>
             <returns>A hash code for the current <see cref="T:System.Object">Object</see>.</returns>
+        </member>
+        <member name="P:OpenQA.Selenium.By.Description">
+            <summary>
+            Gets or sets the value of the description for this <see cref="T:OpenQA.Selenium.By"/> class instance.
+            </summary>
+        </member>
+        <member name="P:OpenQA.Selenium.By.FindElementMethod">
+            <summary>
+            Gets or sets the method used to find a single element matching specified criteria.
+            </summary>
+        </member>
+        <member name="P:OpenQA.Selenium.By.FindElementsMethod">
+            <summary>
+            Gets or sets the method used to find all elements matching specified criteria.
+            </summary>
         </member>
         <member name="T:OpenQA.Selenium.Cookie">
             <summary>
@@ -716,6 +746,42 @@
         <member name="M:OpenQA.Selenium.InvalidElementStateException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
             <summary>
             Initializes a new instance of the <see cref="T:OpenQA.Selenium.InvalidElementStateException"/> class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo"/> that holds the serialized 
+            object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext"/> that contains contextual 
+            information about the source or destination.</param>
+        </member>
+        <member name="T:OpenQA.Selenium.InvalidSelectorException">
+            <summary>
+            The exception that is thrown when an element is not visible.
+            </summary>
+        </member>
+        <member name="M:OpenQA.Selenium.InvalidSelectorException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:OpenQA.Selenium.InvalidSelectorException"/> class.
+            </summary>
+        </member>
+        <member name="M:OpenQA.Selenium.InvalidSelectorException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OpenQA.Selenium.InvalidSelectorException"/> class with 
+            a specified error message.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:OpenQA.Selenium.InvalidSelectorException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OpenQA.Selenium.InvalidSelectorException"/> class with
+            a specified error message and a reference to the inner exception that is the
+            cause of this exception.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="innerException">The exception that is the cause of the current exception,
+            or <see langword="null"/> if no inner exception is specified.</param>
+        </member>
+        <member name="M:OpenQA.Selenium.InvalidSelectorException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OpenQA.Selenium.InvalidSelectorException"/> class with serialized data.
             </summary>
             <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo"/> that holds the serialized 
             object data about the exception being thrown.</param>
@@ -1665,9 +1731,9 @@
             Versions of Microsoft Windows that are compatible with Windows Vista.
             </summary>
         </member>
-        <member name="F:OpenQA.Selenium.PlatformType.MacOSX">
+        <member name="F:OpenQA.Selenium.PlatformType.Mac">
             <summary>
-            Any version of the Macintosh OS X
+            Any version of the Macintosh OS
             </summary>
         </member>
         <member name="F:OpenQA.Selenium.PlatformType.Unix">
@@ -1678,11 +1744,6 @@
         <member name="F:OpenQA.Selenium.PlatformType.Linux">
             <summary>
             Any version of the Linux operating system.
-            </summary>
-        </member>
-        <member name="F:OpenQA.Selenium.PlatformType.Darwin">
-            <summary>
-            Any version using the Darwin packaging system (OS X).
             </summary>
         </member>
         <member name="T:OpenQA.Selenium.Platform">
@@ -1721,6 +1782,96 @@
         <member name="P:OpenQA.Selenium.Platform.PlatformType">
             <summary>
             Gets the type of the platform.
+            </summary>
+        </member>
+        <member name="T:OpenQA.Selenium.ProxyKind">
+            <summary>
+            Describes the kind of proxy.
+            </summary>
+            <remarks>
+            Keep these in sync with the Firefox preferences numbers:
+            http://kb.mozillazine.org/Network.proxy.type
+            </remarks>
+        </member>
+        <member name="F:OpenQA.Selenium.ProxyKind.Direct">
+            <summary>
+             Direct connection, no proxy (default on Windows).
+            </summary>
+        </member>
+        <member name="F:OpenQA.Selenium.ProxyKind.Manual">
+            <summary>
+            Manual proxy settings (e.g., for httpProxy).
+            </summary>
+        </member>
+        <member name="F:OpenQA.Selenium.ProxyKind.ProxyAutoConfigure">
+            <summary>
+            Proxy autoconfiguration from URL.
+            </summary>
+        </member>
+        <member name="F:OpenQA.Selenium.ProxyKind.AutoDetect">
+            <summary>
+            Use proxy autodetection.
+            </summary>
+        </member>
+        <member name="F:OpenQA.Selenium.ProxyKind.System">
+            <summary>
+            Use the system values for proxy settings (default on Linux).
+            </summary>
+        </member>
+        <member name="F:OpenQA.Selenium.ProxyKind.Unspecified">
+            <summary>
+            No proxy type is specified.
+            </summary>
+        </member>
+        <member name="T:OpenQA.Selenium.Proxy">
+            <summary>
+            Describes proxy settings to be used with a driver instance.
+            </summary>
+        </member>
+        <member name="M:OpenQA.Selenium.Proxy.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:OpenQA.Selenium.Proxy"/> class.
+            </summary>
+        </member>
+        <member name="M:OpenQA.Selenium.Proxy.#ctor(System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Initializes a new instance of the <see cref="T:OpenQA.Selenium.Proxy"/> class with the given proxy settings.
+            </summary>
+            <param name="settings">A dictionary of settings to use with the proxy.</param>
+        </member>
+        <member name="P:OpenQA.Selenium.Proxy.Kind">
+            <summary>
+            Gets or sets the type of proxy.
+            </summary>
+        </member>
+        <member name="P:OpenQA.Selenium.Proxy.IsAutoDetect">
+            <summary>
+            Gets or sets a value indicating whether the proxy uses autodetection.
+            </summary>
+        </member>
+        <member name="P:OpenQA.Selenium.Proxy.FtpProxy">
+            <summary>
+            Gets or sets the value of the proxy for the FTP protocol.
+            </summary>
+        </member>
+        <member name="P:OpenQA.Selenium.Proxy.HttpProxy">
+            <summary>
+            Gets or sets the value of the proxy for the HTTP protocol.
+            </summary>
+        </member>
+        <member name="P:OpenQA.Selenium.Proxy.NoProxy">
+            <summary>
+            Gets or sets the value for when no proxy is specified.
+            </summary>
+        </member>
+        <member name="P:OpenQA.Selenium.Proxy.ProxyAutoConfigUrl">
+            <summary>
+            Gets or sets the URL used for proxy autoconfiguration.
+            </summary>
+        </member>
+        <member name="P:OpenQA.Selenium.Proxy.SslProxy">
+            <summary>
+            Gets or sets the value of the proxy for the SSL protocol.
             </summary>
         </member>
         <member name="T:OpenQA.Selenium.Screenshot">
@@ -2019,6 +2170,11 @@
         <member name="F:OpenQA.Selenium.WebDriverResult.InvalidElementCoordinates">
             <summary>
             The coordinates of the element are invalid.
+            </summary>
+        </member>
+        <member name="F:OpenQA.Selenium.WebDriverResult.InvalidSelector">
+            <summary>
+            The selector used (CSS/XPath) was invalid.
             </summary>
         </member>
         <member name="T:OpenQA.Selenium.XPathLookupException">
@@ -3597,6 +3753,17 @@
             </code>
             </example>
         </member>
+        <member name="F:OpenQA.Selenium.Firefox.FirefoxDriver.ProfileCapabilityName">
+            <summary>
+            The name of the ICapabilities setting to use to define a custom Firefox profile.
+            </summary>
+        </member>
+        <member name="F:OpenQA.Selenium.Firefox.FirefoxDriver.BinaryCapabilityName">
+            <summary>
+            The name of the ICapabilities setting to use to define a custom location for the
+            Firefox executable.
+            </summary>
+        </member>
         <member name="F:OpenQA.Selenium.Firefox.FirefoxDriver.DefaultPort">
             <summary>
             The default port on which to communicate with the Firefox extension.
@@ -3623,6 +3790,13 @@
             </summary>
             <param name="profile">A <see cref="T:OpenQA.Selenium.Firefox.FirefoxProfile"/> object representing the profile settings
             to be used in starting Firefox.</param>
+        </member>
+        <member name="M:OpenQA.Selenium.Firefox.FirefoxDriver.#ctor(OpenQA.Selenium.ICapabilities)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OpenQA.Selenium.Firefox.FirefoxDriver"/> class for a given set of capabilities.
+            </summary>
+            <param name="capabilities">The <see cref="T:OpenQA.Selenium.ICapabilities"/> object containing the desired
+            capabilities of this FirefoxDriver.</param>
         </member>
         <member name="M:OpenQA.Selenium.Firefox.FirefoxDriver.#ctor(OpenQA.Selenium.Firefox.FirefoxBinary,OpenQA.Selenium.Firefox.FirefoxProfile)">
             <summary>
@@ -3774,6 +3948,13 @@
             <param name="name">The name of the preference to add.</param>
             <param name="value">A <see cref="T:System.Boolean"/> value to add to the profile.</param>
         </member>
+        <member name="M:OpenQA.Selenium.Firefox.FirefoxProfile.SetProxyPreferences(OpenQA.Selenium.Proxy)">
+            <summary>
+            Set proxy preferences for this profile.
+            </summary>
+            <param name="proxy">The <see cref="T:OpenQA.Selenium.Proxy"/> object defining the proxy 
+            preferences for the profile.</param>
+        </member>
         <member name="M:OpenQA.Selenium.Firefox.FirefoxProfile.WriteToDisk">
             <summary>
             Writes this in-memory representation of a profile to disk.
@@ -3849,6 +4030,13 @@
             </summary>
             <param name="preferences">A <see cref="T:System.Collections.Generic.Dictionary`2"/> containing key-value pairs
             representing the preferences to write.</param>
+        </member>
+        <member name="M:OpenQA.Selenium.Firefox.FirefoxProfile.SetManualProxyPreference(System.String,System.String)">
+            <summary>
+            Sets a preference for a manually specified proxy.
+            </summary>
+            <param name="key">The protocol for which to set the proxy.</param>
+            <param name="settingString">The setting for the proxy.</param>
         </member>
         <member name="P:OpenQA.Selenium.Firefox.FirefoxProfile.Port">
             <summary>
@@ -4452,6 +4640,12 @@
             Performs the currently built action.
             </summary>
         </member>
+        <member name="M:OpenQA.Selenium.Interactions.Actions.AddAction(OpenQA.Selenium.Interactions.IAction)">
+            <summary>
+            Adds an action to current list of actions to be performed.
+            </summary>
+            <param name="actionToAdd">The <see cref="T:OpenQA.Selenium.Interactions.IAction"/> to be added.</param>
+        </member>
         <member name="T:OpenQA.Selenium.Interactions.ButtonReleaseAction">
             <summary>
             Defines an action for releasing the currently held mouse button.
@@ -5053,6 +5247,16 @@
         <member name="F:OpenQA.Selenium.Remote.CapabilityType.Rotatable">
             <summary>
             Capability name used to indicate whether the browser supports rotation.
+            </summary>
+        </member>
+        <member name="F:OpenQA.Selenium.Remote.CapabilityType.AcceptSslCertificates">
+            <summary>
+            Capability name used to indicate whether the browser accepts SSL certificates.
+            </summary>
+        </member>
+        <member name="F:OpenQA.Selenium.Remote.CapabilityType.HasNativeEvents">
+            <summary>
+            Capability name used to indicate whether the browser uses native events.
             </summary>
         </member>
         <member name="T:OpenQA.Selenium.Remote.Command">
@@ -6288,6 +6492,36 @@
             <param name="writer">JSON Writer instance</param>
             <param name="value">the platform</param>
             <param name="serializer">JSON Serializer Instance</param>
+        </member>
+        <member name="T:OpenQA.Selenium.Remote.ProxyJsonConverter">
+            <summary>
+            Provides a way to convert a <see cref="T:OpenQA.Selenium.Proxy"/> arry to JSON
+            </summary>
+        </member>
+        <member name="M:OpenQA.Selenium.Remote.ProxyJsonConverter.CanConvert(System.Type)">
+            <summary>
+            Checks if the object can be converted
+            </summary>
+            <param name="objectType">Type of the object</param>
+            <returns>A value indicating if it can be converted</returns>
+        </member>
+        <member name="M:OpenQA.Selenium.Remote.ProxyJsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)">
+            <summary>
+            Get the platform from the JSON reader
+            </summary>
+            <param name="reader">JSON Reader instance</param>
+            <param name="objectType">Object type being read</param>
+            <param name="existingValue">The exisiting value of the object</param>
+            <param name="serializer">JSON Serializer instance</param>
+            <returns>Platform from JSON reader</returns>
+        </member>
+        <member name="M:OpenQA.Selenium.Remote.ProxyJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)">
+            <summary>
+            Create a JSON string representation of the Proxy
+            </summary>
+            <param name="writer">The JSON writer with a string</param>
+            <param name="value">Value of the string</param>
+            <param name="serializer">JSON serializer instance</param>
         </member>
         <member name="T:OpenQA.Selenium.Remote.ResponseValueJsonConverter">
             <summary>

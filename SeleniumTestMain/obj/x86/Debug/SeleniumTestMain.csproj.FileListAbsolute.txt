@@ -136,3 +136,4 @@ F:\Documents and Settings\jon.JMC\seleniumscrapevehicles\SeleniumTestMain\bin\De
 F:\Documents and Settings\jon.JMC\seleniumscrapevehicles\SeleniumTestMain\bin\Debug\WebDriver.xml
 F:\Documents and Settings\jon.JMC\seleniumscrapevehicles\SeleniumTestMain\bin\Debug\Webdriver.Support.pdb
 F:\Documents and Settings\jon.JMC\seleniumscrapevehicles\SeleniumTestMain\bin\Debug\Webdriver.Support.xml
+F:\Documents and Settings\jon.JMC\seleniumscrapevehicles\SeleniumTestMain\bin\Debug\Ionic.Zip.dll

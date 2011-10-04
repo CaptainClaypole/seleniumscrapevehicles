@@ -91,8 +91,8 @@ namespace SeleniumTestMain.General.Data {
 
             var tagList = new List<string>();
             tagList.Add("my_bids");
-            tagList.Add("tag2");
-            tagList.Add("tag3");
+           // tagList.Add("tag2");
+           // tagList.Add("tag3");
 
             foreach (string tag in tagList)
             {
@@ -114,7 +114,7 @@ namespace SeleniumTestMain.General.Data {
       
 
             Console.WriteLine(rows[i].Text);
-            Console.ReadLine();
+            //Console.ReadLine();
 
 
 
