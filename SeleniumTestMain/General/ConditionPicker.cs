@@ -64,7 +64,7 @@ namespace SeleniumTestMain.General {
             foreach (double condition in conditionList) {
              
                 try {
-                   // driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 5));
+                   driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 5));
                 
                     //driver.FindElement(By.LinkText(condition.ToString())).Click();
                     driver.FindElement(By.LinkText(condition.ToString()));

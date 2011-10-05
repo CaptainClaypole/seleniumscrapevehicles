@@ -91,7 +91,7 @@ namespace SeleniumTestMain.General.Data {
 
             var tagList = new List<string>();
             tagList.Add("my_bids");
-           // tagList.Add("tag2");
+           // tagList.Add("color:#a93f15");
            // tagList.Add("tag3");
 
             foreach (string tag in tagList)
@@ -110,11 +110,14 @@ namespace SeleniumTestMain.General.Data {
             // Get table
             IWebElement table = driver.FindElement(By.ClassName("t_main"));
             // Get Rows
-            var rows = new ReadOnlyCollection<IWebElement>(table.FindElements(By.ClassName(dataTag)));
+     
+                var rows = new ReadOnlyCollection<IWebElement>(table.FindElements(By.ClassName(dataTag))); 
+           
+
       
 
             Console.WriteLine(rows[i].Text);
-            //Console.ReadLine();
+           
 
 
 
@@ -131,7 +134,7 @@ namespace SeleniumTestMain.General.Data {
         public bool CheckElementExists(string tagToSearch, int i)
         {
             // Wait for element
-            driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 2));
+            driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 10));
 
             bool tableElementExists = false;
             try {

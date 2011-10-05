@@ -51,7 +51,8 @@ namespace SeleniumTestMain.General {
 
         public bool CheckForNextPage() {
             // Wait for element
-            driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 45));
+           //  driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 45));
+            driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 5));
 
 
             try {
