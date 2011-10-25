@@ -8,6 +8,7 @@ using Castle;
 using OpenQA.Selenium;
 using OpenQA.Selenium.IE;
 using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Chrome;
 using System.Diagnostics;
 using DomainWideObjects;
 using SeleniumTestMain.General;
@@ -43,7 +44,8 @@ namespace SeleniumTestMain
 
         public void Create()
         {
-            driver = new FirefoxDriver();
+            
+            driver = new ChromeDriver();
             //instanciate the website class.
             website = new Website();
 
