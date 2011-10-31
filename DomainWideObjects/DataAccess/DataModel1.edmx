@@ -106,6 +106,7 @@
             <PropertyRef Name="Search_Session_ID_PK" />
           </Key>
           <Property Name="Search_Session_ID_PK" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Search_Session_Timestamp" Type="smalldatetime" />
         </EntityType>
         <EntityType Name="tblUserLogin">
           <Key>
@@ -372,6 +373,7 @@
           <Property Type="Int32" Name="Search_Session_ID_PK" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <NavigationProperty Name="tblHtmls" Relationship="seleniumScrapeModel.FK_tblHtml_tblSearchSession" FromRole="tblSearchSession" ToRole="tblHtml" />
           <NavigationProperty Name="tblHtmlRows" Relationship="seleniumScrapeModel.FK_tblHtmlRow_tblSearchSession" FromRole="tblSearchSession" ToRole="tblHtmlRow" />
+          <Property Type="DateTime" Name="Search_Session_Timestamp" />
         </EntityType>
         <EntityType Name="tblUserLogin">
           <Key>
@@ -594,6 +596,7 @@
           <EntitySetMapping Name="tblSearchSessions">
             <EntityTypeMapping TypeName="seleniumScrapeModel.tblSearchSession">
               <MappingFragment StoreEntitySet="tblSearchSession">
+                <ScalarProperty Name="Search_Session_Timestamp" ColumnName="Search_Session_Timestamp" />
                 <ScalarProperty Name="Search_Session_ID_PK" ColumnName="Search_Session_ID_PK" />
               </MappingFragment>
             </EntityTypeMapping>

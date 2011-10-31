@@ -1352,6 +1352,30 @@ namespace DomainWideObjects.DataAccess
         private global::System.Int32 _Search_Session_ID_PK;
         partial void OnSearch_Session_ID_PKChanging(global::System.Int32 value);
         partial void OnSearch_Session_ID_PKChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> Search_Session_Timestamp
+        {
+            get
+            {
+                return _Search_Session_Timestamp;
+            }
+            set
+            {
+                OnSearch_Session_TimestampChanging(value);
+                ReportPropertyChanging("Search_Session_Timestamp");
+                _Search_Session_Timestamp = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("Search_Session_Timestamp");
+                OnSearch_Session_TimestampChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _Search_Session_Timestamp;
+        partial void OnSearch_Session_TimestampChanging(Nullable<global::System.DateTime> value);
+        partial void OnSearch_Session_TimestampChanged();
 
         #endregion
     

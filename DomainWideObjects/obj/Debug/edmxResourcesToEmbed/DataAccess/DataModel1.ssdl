@@ -101,6 +101,7 @@
       <PropertyRef Name="Search_Session_ID_PK" />
     </Key>
     <Property Name="Search_Session_ID_PK" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Search_Session_Timestamp" Type="smalldatetime" />
   </EntityType>
   <EntityType Name="tblUserLogin">
     <Key>

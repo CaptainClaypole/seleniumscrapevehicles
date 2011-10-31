@@ -8,8 +8,12 @@ namespace SeleniumTestMain.General.Data {
    public class SessionCreator {
 
        public int CreateSearchSession() {
-           var searchSession = new tblSearchSession();
+           var searchSession = new tblSearchSession()
+                                   {
+                                       Search_Session_Timestamp = DateTime.Now
 
+                                   };
+           
            // add search session to db
            int searchSessionID = AddSearchSessionToDb(searchSession);
 

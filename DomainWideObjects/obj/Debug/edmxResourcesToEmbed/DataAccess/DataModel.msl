@@ -1,45 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="DataModelStoreContainer" CdmEntityContainer="DataModelContainer">
-    <EntitySetMapping Name="HTMLlists">
-      <EntityTypeMapping TypeName="IsTypeOf(DataModel.HTMLlist)">
-        <MappingFragment StoreEntitySet="HTMLlists">
-          <ScalarProperty Name="ListId" ColumnName="ListId" />
-          <ScalarProperty Name="ListHtml" ColumnName="ListHtml" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="HTMLpages">
-      <EntityTypeMapping TypeName="IsTypeOf(DataModel.HTMLpage)">
-        <MappingFragment StoreEntitySet="HTMLpages">
-          <ScalarProperty Name="PageID" ColumnName="PageID" />
-          <ScalarProperty Name="VehicleModel" ColumnName="VehicleModel" />
-          <ScalarProperty Name="VehicleMake" ColumnName="VehicleMake" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="ListGroups">
-      <EntityTypeMapping TypeName="IsTypeOf(DataModel.ListGroup)">
-        <MappingFragment StoreEntitySet="ListGroups">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <AssociationSetMapping Name="Page2ListList" TypeName="DataModel.Page2ListList" StoreEntitySet="HTMLlists">
-      <EndProperty Name="Page2List">
-        <ScalarProperty Name="ID" ColumnName="Page2List_ID" />
-      </EndProperty>
-      <EndProperty Name="List">
-        <ScalarProperty Name="ListId" ColumnName="ListId" />
-      </EndProperty>
-    </AssociationSetMapping>
-    <AssociationSetMapping Name="PagePage2List" TypeName="DataModel.PagePage2List" StoreEntitySet="HTMLpages">
-      <EndProperty Name="Page2List">
-        <ScalarProperty Name="ID" ColumnName="Page2List_ID" />
-      </EndProperty>
-      <EndProperty Name="Page">
-        <ScalarProperty Name="PageID" ColumnName="PageID" />
-      </EndProperty>
-    </AssociationSetMapping>
-  </EntityContainerMapping>
+  <EntityContainerMapping StorageEntityContainer="DataModelStoreContainer" CdmEntityContainer="DataModelContainer" />
 </Mapping>

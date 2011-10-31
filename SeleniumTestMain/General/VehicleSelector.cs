@@ -53,7 +53,7 @@ namespace SeleniumTestMain.General {
             else
             {
                 Console.WriteLine("no make!!! :-(");
-                Console.ReadLine();
+                // Console.ReadLine();
                 // try another make ??
             }
 

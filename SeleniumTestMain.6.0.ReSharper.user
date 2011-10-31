@@ -1,7 +1,6 @@
 <Configuration>
   <RecentFiles>
     <RecentFiles>
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DataModel.edmx.sql" caret="3182" fromTop="108" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DataModel1.Designer.cs" caret="2578" fromTop="6" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DBreader.cs" caret="1134" fromTop="8" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Entities/f:DisplayPage.cs" caret="364" fromTop="8" />
@@ -12,70 +11,71 @@
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:Settings/f:AppSettings.cs" caret="0" fromTop="0" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DbChecker.cs" caret="153" fromTop="0" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:VehicleSaver.cs" caret="217" fromTop="6" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:RegexFinder/f:RegexFinder.cs" caret="88" fromTop="3" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:RegexFinder/d:Objects/f:DataRow.cs" caret="201" fromTop="8" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:RegexFinder/f:TextProcessor.cs" caret="0" fromTop="0" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repo/f:Repo.cs" caret="879" fromTop="39" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:ConditionPicker.cs" caret="2098" fromTop="5" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:PageCounter.cs" caret="1527" fromTop="6" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:Navigator.cs" caret="1756" fromTop="6" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="570" fromTop="0" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:CreateHtmlList.cs" caret="511" fromTop="10" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Program.cs" caret="195" fromTop="9" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repo/f:IRepo.cs" caret="0" fromTop="0" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:IDataScraper.cs" caret="133" fromTop="5" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:VehicleSelector.cs" caret="2051" fromTop="11" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:IRowScraper.cs" caret="0" fromTop="0" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repo/f:Repo.cs" caret="879" fromTop="39" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:RegexFinder/f:TextProcessor.cs" caret="0" fromTop="0" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="3419" fromTop="105" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:SessionCreator.cs" caret="305" fromTop="1" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DBWriter.cs" caret="333" fromTop="9" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:RegexFinder/d:Objects/f:DataRow.cs" caret="201" fromTop="8" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:VehicleSelector.cs" caret="963" fromTop="17" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:RegexFinder/f:DataGetter.cs" caret="919" fromTop="7" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:RegexFinder/f:RegexFinder.cs" caret="88" fromTop="3" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="867" fromTop="3" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:SessionCreator.cs" caret="692" fromTop="6" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="2079" fromTop="18" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="5099" fromTop="23" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DBWriter.cs" caret="2116" fromTop="13" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="2034" fromTop="0" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="1870" fromTop="10" />
     </RecentFiles>
     <RecentEdits>
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:PageCounter.cs" caret="212" fromTop="7" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:PageCounter.cs" caret="1544" fromTop="9" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:Navigator.cs" caret="3200" fromTop="11" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:Navigator.cs" caret="2043" fromTop="11" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="2992" fromTop="13" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="3328" fromTop="15" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="1658" fromTop="11" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="2525" fromTop="7" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="2858" fromTop="9" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="2963" fromTop="10" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="2018" fromTop="9" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:ConditionPicker.cs" caret="1210" fromTop="12" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:ConditionPicker.cs" caret="2116" fromTop="12" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="3249" fromTop="12" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="3249" fromTop="8" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="3320" fromTop="13" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="2691" fromTop="5" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:ConditionPicker.cs" caret="1636" fromTop="4" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:PageCounter.cs" caret="1358" fromTop="2" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="3543" fromTop="9" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="990" fromTop="4" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DBWriter.cs" caret="336" fromTop="0" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:RegexFinder/d:Objects/f:DataRow.cs" caret="258" fromTop="10" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:RegexFinder/f:DataGetter.cs" caret="167" fromTop="5" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:RegexFinder/f:DataGetter.cs" caret="753" fromTop="11" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:RegexFinder/f:DataGetter.cs" caret="473" fromTop="4" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:RegexFinder/f:DataGetter.cs" caret="949" fromTop="6" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:RegexFinder/f:DataGetter.cs" caret="778" fromTop="5" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:RegexFinder/f:DataGetter.cs" caret="1015" fromTop="18" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:RegexFinder/f:RegexFinder.cs" caret="196" fromTop="14" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DBWriter.cs" caret="2115" fromTop="9" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="4012" fromTop="4" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DBWriter.cs" caret="2115" fromTop="16" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="4656" fromTop="28" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="2326" fromTop="23" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="2322" fromTop="28" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="3156" fromTop="22" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="1212" fromTop="35" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="1029" fromTop="19" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="1212" fromTop="24" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="1212" fromTop="29" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="1212" fromTop="34" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="1212" fromTop="24" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="213" fromTop="10" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="776" fromTop="13" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="804" fromTop="16" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="5349" fromTop="14" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="1334" fromTop="33" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DBWriter.cs" caret="2115" fromTop="17" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="692" fromTop="9" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="2934" fromTop="5" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="3642" fromTop="29" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DBWriter.cs" caret="2116" fromTop="13" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="1979" fromTop="23" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="1781" fromTop="18" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="1716" fromTop="12" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="2022" fromTop="27" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="2248" fromTop="29" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="1781" fromTop="10" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="2487" fromTop="13" />
     </RecentEdits>
   </RecentFiles>
   <CompletionStatisticsManager>
     <ItemStatistics item="CSharpCodeCompletionContext">
       <Item value="private" priority="863" />
-      <Item value="public" priority="1463" />
-      <Item value="string" priority="1838" />
+      <Item value="public" priority="2004" />
+      <Item value="string" priority="2126" />
       <Item value="IAuthenticatable`0" priority="31" />
-      <Item value="using" priority="588" />
-      <Item value="void" priority="829" />
+      <Item value="using" priority="650" />
+      <Item value="void" priority="893" />
       <Item value="DomainWideObjects" priority="185" />
       <Item value="SiteConfigurator`0" priority="63" />
-      <Item value="new" priority="1852" />
+      <Item value="new" priority="2204" />
       <Item value="SiteConfigurator" priority="28" />
       <Item value="siteConfig" priority="63" />
       <Item value="this" priority="479" />
@@ -101,7 +101,7 @@
       <Item value="VehicleSelector`0" priority="31" />
       <Item value="checked" priority="63" />
       <Item value="Debug`0" priority="31" />
-      <Item value="Console`0" priority="1118" />
+      <Item value="Console`0" priority="1182" />
       <Item value="isMakePresent" priority="63" />
       <Item value="VehicleSelector" priority="28" />
       <Item value="vehicleSelector" priority="127" />
@@ -113,7 +113,7 @@
       <Item value="WebDriverBackedSelenium" priority="28" />
       <Item value="selenium" priority="31" />
       <Item value="try" priority="159" />
-      <Item value="return" priority="863" />
+      <Item value="return" priority="1055" />
       <Item value="true" priority="191" />
       <Item value="false" priority="191" />
       <Item value="if" priority="287" />
@@ -137,15 +137,15 @@
       <Item value="IDataScraper`0" priority="92" />
       <Item value="DataScraper`0" priority="31" />
       <Item value="EnvironmentVariableTarget`0" priority="31" />
-      <Item value="List" priority="439" />
+      <Item value="List" priority="532" />
       <Item value="htmlList" priority="569" />
       <Item value="List&lt;string&gt;" priority="28" />
-      <Item value="var" priority="2000" />
+      <Item value="var" priority="2320" />
       <Item value="tagToSearch" priority="63" />
       <Item value="DataScraper" priority="29" />
       <Item value="catch" priority="63" />
       <Item value="Exception`0" priority="95" />
-      <Item value="int" priority="1053" />
+      <Item value="int" priority="1245" />
       <Item value="for" priority="63" />
       <Item value="while" priority="95" />
       <Item value="CheckForNextPage`0" priority="31" />
@@ -167,7 +167,7 @@
       <Item value="CreateHTMLlist`0" priority="31" />
       <Item value="DataModelContainer`0" priority="90" />
       <Item value="DataModelContainer" priority="57" />
-      <Item value="db" priority="666" />
+      <Item value="db" priority="730" />
       <Item value="HTML" priority="31" />
       <Item value="ListHtml" priority="95" />
       <Item value="objectSet" priority="191" />
@@ -178,21 +178,21 @@
       <Item value="createHtmlList" priority="95" />
       <Item value="DBNull" priority="28" />
       <Item value="htmlListEntity" priority="31" />
-      <Item value="foreach" priority="380" />
-      <Item value="in" priority="317" />
+      <Item value="foreach" priority="412" />
+      <Item value="in" priority="349" />
       <Item value="html" priority="437" />
       <Item value="T`0" priority="670" />
       <Item value="DBchecker" priority="31" />
       <Item value="objectType" priority="63" />
       <Item value="seleniumScrapeEntities`0" priority="159" />
       <Item value="value" priority="95" />
-      <Item value="from" priority="444" />
-      <Item value="ctx" priority="701" />
-      <Item value="where" priority="381" />
+      <Item value="from" priority="476" />
+      <Item value="ctx" priority="766" />
+      <Item value="where" priority="413" />
       <Item value="v" priority="191" />
       <Item value="tblVehicleTypeCountry`0" priority="95" />
-      <Item value="select" priority="540" />
-      <Item value="query" priority="223" />
+      <Item value="select" priority="572" />
+      <Item value="query" priority="287" />
       <Item value="IDisposable`0" priority="63" />
       <Item value="IQueryProvider`0" priority="31" />
       <Item value="IQueryable`0" priority="124" />
@@ -202,7 +202,7 @@
       <Item value="IRepository" priority="31" />
       <Item value="IObjectSet" priority="63" />
       <Item value="DataRepository" priority="31" />
-      <Item value="seleniumScrapeEntities" priority="346" />
+      <Item value="seleniumScrapeEntities" priority="375" />
       <Item value="_objectSet" priority="63" />
       <Item value="Fetch`0" priority="31" />
       <Item value="predicate" priority="32" />
@@ -228,10 +228,10 @@
       <Item value="definedType" priority="31" />
       <Item value="SelectExistingGeneralType`0" priority="31" />
       <Item value="SelectExistingDefinedType`0" priority="31" />
-      <Item value="vehicleMake" priority="95" />
-      <Item value="vehicleModel" priority="31" />
+      <Item value="vehicleMake" priority="127" />
+      <Item value="vehicleModel" priority="64" />
       <Item value="#define" priority="63" />
-      <Item value="vehicles" priority="63" />
+      <Item value="vehicles" priority="159" />
       <Item value="dbReader" priority="62" />
       <Item value="vehicleSearchList" priority="31" />
       <Item value="item" priority="253" />
@@ -242,7 +242,7 @@
       <Item value="Vehicle_id_fk" priority="63" />
       <Item value="vehicleID" priority="160" />
       <Item value="Search_Date_Timestamp" priority="65" />
-      <Item value="DateTime`0" priority="127" />
+      <Item value="DateTime`0" priority="224" />
       <Item value="tblSearchSession" priority="28" />
       <Item value="AddToDb`0" priority="31" />
       <Item value="searchSession" priority="158" />
@@ -259,7 +259,7 @@
       <Item value="DBreader`0" priority="30" />
       <Item value="DBreader" priority="57" />
       <Item value="tblHtml`0" priority="124" />
-      <Item value="System" priority="123" />
+      <Item value="System" priority="155" />
       <Item value="Data" priority="58" />
       <Item value="String`0" priority="92" />
       <Item value="htmlQueryable" priority="61" />
@@ -289,18 +289,18 @@
       <Item value="IRowScraper`0" priority="122" />
       <Item value="RowScraper" priority="28" />
       <Item value="RowScraper`0" priority="31" />
-      <Item value="searchSessionId" priority="31" />
+      <Item value="searchSessionId" priority="127" />
       <Item value="rowScraper" priority="31" />
       <Item value="tableSingleRowHtmlTagToScrape" priority="31" />
       <Item value="GetSetName`1" priority="31" />
       <Item value="_ctx" priority="95" />
       <Item value="Repo`0" priority="31" />
-      <Item value="rowElementHTML" priority="64" />
+      <Item value="rowElementHTML" priority="128" />
       <Item value="Repo" priority="56" />
       <Item value="IRepo`0" priority="29" />
       <Item value="ValueType`0" priority="31" />
       <Item value="repo" priority="159" />
-      <Item value="row" priority="31" />
+      <Item value="row" priority="63" />
       <Item value="tblHtmlRow`0" priority="95" />
       <Item value="tblHtmlRow" priority="28" />
       <Item value="html_row_data" priority="31" />
@@ -310,7 +310,7 @@
       <Item value="html_row_id_PK" priority="32" />
       <Item value="html_data_id_fk" priority="32" />
       <Item value="GetHtmlTableId`0" priority="32" />
-      <Item value="htmlRow" priority="31" />
+      <Item value="htmlRow" priority="127" />
       <Item value="DBWriter`0" priority="31" />
       <Item value="By" priority="28" />
       <Item value="List&lt;IWebElement&gt;" priority="28" />
@@ -331,16 +331,55 @@
       <Item value="Events" priority="26" />
       <Item value="#region" priority="31" />
       <Item value="ScrapeTextData`0" priority="31" />
-      <Item value="GetHashCode`0" priority="31" />
+      <Item value="GetHashCode`0" priority="63" />
       <Item value="tagList" priority="127" />
       <Item value="selectorType" priority="31" />
-      <Item value="IQueryable" priority="31" />
+      <Item value="IQueryable" priority="63" />
       <Item value="DataRow`0" priority="63" />
       <Item value="hr" priority="97" />
       <Item value="DataRow" priority="28" />
       <Item value="id" priority="31" />
       <Item value="dataRowHtml" priority="32" />
       <Item value="SearchChecker`0" priority="31" />
+      <Item value="Search_Session_Timestamp" priority="31" />
+      <Item value="MongoDB" priority="187" />
+      <Item value="MongoDB.Driver" priority="30" />
+      <Item value="Bson" priority="53" />
+      <Item value="MongoConnectionStringBuilder" priority="29" />
+      <Item value="MongoServer`0" priority="63" />
+      <Item value="MongoDatabase`0" priority="63" />
+      <Item value="server" priority="31" />
+      <Item value="class" priority="92" />
+      <Item value="AuctionVehicleHtmlRow`0" priority="95" />
+      <Item value="MongoCollection`0" priority="63" />
+      <Item value="Auctionvehicles" priority="31" />
+      <Item value="ConnectToMongo`0" priority="31" />
+      <Item value="VehicleSaver`0" priority="31" />
+      <Item value="AuctionVehicles" priority="31" />
+      <Item value="AuctionVehicle`0" priority="127" />
+      <Item value="AuctionVehicle" priority="57" />
+      <Item value="newVehicle" priority="383" />
+      <Item value="Guid`0" priority="26" />
+      <Item value="AuctionVehicleHtmlRow" priority="57" />
+      <Item value="SaveHtmlRowToDB`0" priority="31" />
+      <Item value="DoMongo`0" priority="31" />
+      <Item value="AuctionVehicleRow" priority="28" />
+      <Item value="List&lt;AuctionVehicleHtmlRow&gt;" priority="57" />
+      <Item value="BsonArray`0" priority="31" />
+      <Item value="ObjectId`0" priority="26" />
+      <Item value="mongoOps" priority="63" />
+      <Item value="vehicleId" priority="63" />
+      <Item value="rowElementHtml" priority="161" />
+      <Item value="context" priority="31" />
+      <Item value="make" priority="63" />
+      <Item value="Enum`0" priority="28" />
+      <Item value="Dictionary" priority="29" />
+      <Item value="Vehicle" priority="29" />
+      <Item value="modelQuery" priority="65" />
+      <Item value="makeQuery" priority="161" />
+      <Item value="Vehicle`0" priority="63" />
+      <Item value="vehicleData" priority="127" />
+      <Item value="htmlData" priority="31" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:DomainWideObjects.SiteConfigurator">
       <Item value="url" priority="53" />
@@ -394,8 +433,8 @@
       <Item value="driver" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Console">
-      <Item value="WriteLine`0" priority="674" />
-      <Item value="ReadLine`0" priority="379" />
+      <Item value="WriteLine`0" priority="701" />
+      <Item value="ReadLine`0" priority="406" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Boolean">
       <Item value="ToString`0" priority="26" />
@@ -423,7 +462,7 @@
       <Item value="searchSessionID" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
-      <Item value="Add`0" priority="135" />
+      <Item value="Add`0" priority="189" />
       <Item value="Remove`0" priority="26" />
       <Item value="Clear`0" priority="26" />
       <Item value="ToList`1" priority="26" />
@@ -466,7 +505,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:DomainWideObjects.DataAccess.seleniumScrapeEntities">
       <Item value="tblVehicleTypeCountries" priority="107" />
-      <Item value="tblVehicles" priority="53" />
+      <Item value="tblVehicles" priority="80" />
       <Item value="tblVehicleTypeDefineds" priority="53" />
       <Item value="tblVehicleTypeGenerals" priority="80" />
       <Item value="tblSearchSessions" priority="215" />
@@ -485,19 +524,20 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Linq.IQueryable`1">
       <Item value="AsEnumerable`1" priority="81" />
-      <Item value="ToList`1" priority="188" />
+      <Item value="ToList`1" priority="215" />
       <Item value="FirstOrDefault`1" priority="53" />
+      <Item value="ToString`0" priority="136" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Data.Objects.IObjectSet`1">
       <Item value="Where`1" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:DomainWideObjects.DataAccess.tblVehicle">
-      <Item value="Vehicle_Make" priority="53" />
+      <Item value="Vehicle_Make" priority="80" />
       <Item value="Vehicle_Model" priority="53" />
       <Item value="Vehicle_Type_General_id_fk" priority="26" />
       <Item value="Vehicle_Type_Defined_fk" priority="26" />
       <Item value="Vehicle_WillBeSearched" priority="26" />
-      <Item value="Vehicle_ID_Pk" priority="26" />
+      <Item value="Vehicle_ID_Pk" priority="53" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@DomainWideObjects.DataAccess.tblVehicleTypeCountry">
       <Item value="tblVehicleTypeCountry" priority="140" />
@@ -528,7 +568,7 @@
       <Item value="ToString`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.DateTime">
-      <Item value="Now" priority="82" />
+      <Item value="Now" priority="137" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@DomainWideObjects.DataAccess.tblSearchSession">
       <Item value="CreatetblSearchSession`0" priority="26" />
@@ -554,6 +594,8 @@
     <ItemStatistics item="Qualified:System.String">
       <Item value="ToString`0" priority="107" />
       <Item value="ToList`1" priority="26" />
+      <Item value="FirstOrDefault`1" priority="80" />
+      <Item value="First`1" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:DomainWideObjects.DataAccess.Entities.DisplayPage">
       <Item value="html" priority="107" />
@@ -600,6 +642,50 @@
       <Item value="Search_Session_ID_fk" priority="26" />
       <Item value="html_row_id_PK" priority="27" />
       <Item value="html_row_data" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@MongoDB.Driver.MongoServer">
+      <Item value="Create`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MongoDB.Driver.MongoServer">
+      <Item value="GetDatabase`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MongoDB.Driver.MongoDatabase">
+      <Item value="GetCollection`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SeleniumTestMain.General.Data.AuctionVehicle">
+      <Item value="_id" priority="26" />
+      <Item value="_searchSession" priority="53" />
+      <Item value="make" priority="26" />
+      <Item value="model" priority="26" />
+      <Item value="searchSessionTimeStamp" priority="26" />
+      <Item value="htmlData" priority="53" />
+      <Item value="numberOfVehicles" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Guid">
+      <Item value="NewGuid`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Guid">
+      <Item value="ToString`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MongoDB.Driver.MongoCollection">
+      <Item value="Insert`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SeleniumTestMain.General.Data.AuctionVehicleHtmlRow">
+      <Item value="htmlRow" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DomainWideObjects.DataAccess.Repository.MongoOps">
+      <Item value="DoMongo`0" priority="26" />
+      <Item value="DoHtmlRows`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Vehicle">
+      <Item value="vehicleMake" priority="26" />
+      <Item value="vehicleModel" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:AuctionVehicle">
+      <Item value="htmlData" priority="54" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Char">
+      <Item value="ToString`0" priority="26" />
     </ItemStatistics>
   </CompletionStatisticsManager>
   <NAntValidationSettings>

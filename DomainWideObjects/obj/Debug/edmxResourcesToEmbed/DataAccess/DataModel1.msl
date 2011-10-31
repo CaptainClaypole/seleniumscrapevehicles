@@ -56,6 +56,7 @@
     <EntitySetMapping Name="tblSearchSessions">
       <EntityTypeMapping TypeName="seleniumScrapeModel.tblSearchSession">
         <MappingFragment StoreEntitySet="tblSearchSession">
+          <ScalarProperty Name="Search_Session_Timestamp" ColumnName="Search_Session_Timestamp" />
           <ScalarProperty Name="Search_Session_ID_PK" ColumnName="Search_Session_ID_PK" />
         </MappingFragment>
       </EntityTypeMapping>
