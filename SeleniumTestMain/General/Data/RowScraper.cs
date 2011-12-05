@@ -53,7 +53,7 @@ namespace SeleniumTestMain.General.Data {
                     TextData(i);
 
 
-                    Console.WriteLine("Writing Row Element Data! ******" + rowElementHTML + "*************");
+                    // Console.WriteLine("Writing Row Element Data! ******" + rowElementHTML + "*************");
                     Console.WriteLine("Written data aj_view" + i);
 
                     
@@ -116,7 +116,7 @@ namespace SeleniumTestMain.General.Data {
 
       
 
-            Console.WriteLine(rows[i].Text);
+            // Console.WriteLine(rows[i].Text);
            
 
 

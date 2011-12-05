@@ -49,7 +49,7 @@ namespace SeleniumTestMain.General.Data {
 
                 tableElementHTML = HttpUtility.HtmlDecode(encodedHtml) + tableElementHTML;
 
-                Console.WriteLine(tableElementHTML);
+                // Console.WriteLine(tableElementHTML);
 
                 AddHTMLtoList(tableElementHTML);
                 return 0;

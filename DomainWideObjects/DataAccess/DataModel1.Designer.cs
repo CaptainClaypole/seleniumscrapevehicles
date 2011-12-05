@@ -1773,6 +1773,30 @@ namespace DomainWideObjects.DataAccess
         private Nullable<global::System.Boolean> _Vehicle_CondtionFilter;
         partial void OnVehicle_CondtionFilterChanging(Nullable<global::System.Boolean> value);
         partial void OnVehicle_CondtionFilterChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Double> Vehicle_ConditionCode
+        {
+            get
+            {
+                return _Vehicle_ConditionCode;
+            }
+            set
+            {
+                OnVehicle_ConditionCodeChanging(value);
+                ReportPropertyChanging("Vehicle_ConditionCode");
+                _Vehicle_ConditionCode = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("Vehicle_ConditionCode");
+                OnVehicle_ConditionCodeChanged();
+            }
+        }
+        private Nullable<global::System.Double> _Vehicle_ConditionCode;
+        partial void OnVehicle_ConditionCodeChanging(Nullable<global::System.Double> value);
+        partial void OnVehicle_ConditionCodeChanged();
 
         #endregion
     

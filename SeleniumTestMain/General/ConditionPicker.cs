@@ -9,13 +9,23 @@ namespace SeleniumTestMain.General {
     {
         private IWebDriver driver;
         private string tagToSearch = "ajr";
-        private List<double> conditionList;
+        private List<double?> conditionList;
         private List<double> conditionsToSearch;
 
-        public ConditionPicker(IWebDriver driver)
+        public ConditionPicker(IWebDriver driver, double? conditionGrade)
         {
             this.driver = driver;
-            conditionList = new List<double>(){3, 3.5 , 4 , 4.5};
+            
+            if (conditionGrade == 1000)
+            {
+                conditionList = new List<double?>() { 3, 3.5, 4, 4.5 };
+            }
+            else
+            {
+                conditionList = new List<double?>();
+                conditionList.Add(conditionGrade);
+            }
+            
 
 
         }
@@ -41,8 +51,8 @@ namespace SeleniumTestMain.General {
                     driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 5));
                     driver.FindElement(By.LinkText(condition.ToString())).Click();
 
-                    // Wait for element
-                    driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 45));
+                    // Wait for element (was set to 45)
+                    driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 17));
 
 
                 }

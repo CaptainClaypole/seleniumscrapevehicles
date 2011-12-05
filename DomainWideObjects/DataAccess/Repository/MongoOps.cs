@@ -34,7 +34,7 @@ namespace DomainWideObjects.DataAccess.Repository {
 
 // Get Session variables!
 
-            GetSession(181);
+           // GetSession(181);
 
 
 
@@ -132,7 +132,8 @@ namespace DomainWideObjects.DataAccess.Repository {
                                        {
                                            htmlRow = rowElementHtml
                                        });
-        
+
+           newVehicle.inPostgres = false;
            
 
            return newVehicle;
@@ -189,15 +190,24 @@ namespace DomainWideObjects.DataAccess.Repository {
             // Get the latest search session (first session in the list)
             int latestSession = list[0]._searchSession;
 
+            // this one works for ANDS
             var biggerQuery = Query.And(
                 Query.EQ("make", "TOYOTA"),
                 Query.EQ("model", "HIACE VAN")
                 
                 );
 
-            // Create regex for mongo wildcard search
-            var regex = new BsonRegularExpression("/.*USS Yokohama*/");
+            // This one works for ORs
+            var queryOr = Query.Or(
+                Query.EQ("model", "SAFARI"),
+                Query.EQ("model", "ASTRO"),
+                Query.EQ("model", "CHEVYVAN")
+                );
 
+            // Create regex for mongo wildcard search
+            var regex = new BsonRegularExpression("/.*" + "USS Nagoya" + "*/");
+            
+            // This one works for ands and regex
             // This is my favourite way to query.  each one is an And and finally a regex to do wildcard text search  - remember the bsonregularexpression.
             var biggerQueryDocumentStyle = new QueryDocument()
                                                {
@@ -205,21 +215,15 @@ namespace DomainWideObjects.DataAccess.Repository {
                                                    {"model", "HIACE VAN"},
                                                    {"htmlData.htmlRow", regex}
                                                };
-
-           
-
+            
             var cursor3 = collection.Find(biggerQueryDocumentStyle);
-
+            
             var cursor2 = collection.Find(biggerQuery);
-
-           
-
+            
             var cursor3list = cursor3.ToList();
-
-         
-
-             var cursor2list = cursor2.ToList();
-
+            
+            var cursor2list = cursor2.ToList();
+            /*
             foreach (var item in cursor2list) {
                 Console.WriteLine(item.make + " " + item.model + " " + "Session ID = " + item._searchSession);
                 Console.ReadLine();
@@ -268,6 +272,8 @@ public class AuctionVehicle
         public List<AuctionVehicleHtmlRow> htmlData { get; set; }
 
         public int numberOfVehicles { get; set; }
+
+        public Boolean inPostgres { get; set; }
 
     }
 

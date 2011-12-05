@@ -129,6 +129,7 @@
           <Property Name="Vehicle_Type_ID_fk" Type="int" />
           <Property Name="Vehicle_WillBeSearched" Type="bit" />
           <Property Name="Vehicle_CondtionFilter" Type="bit" />
+          <Property Name="Vehicle_ConditionCode" Type="float" />
         </EntityType>
         <EntityType Name="tblVehicleTypeCountry">
           <Key>
@@ -402,6 +403,7 @@
           <NavigationProperty Name="tblVehicleTypeCountry" Relationship="seleniumScrapeModel.FK_tblVehicle_tblVehicleType" FromRole="tblVehicle" ToRole="tblVehicleTypeCountry" />
           <NavigationProperty Name="tblVehicleTypeDefined" Relationship="seleniumScrapeModel.FK_tblVehicle_tblVehicleTypeDefined" FromRole="tblVehicle" ToRole="tblVehicleTypeDefined" />
           <NavigationProperty Name="tblVehicleTypeGeneral" Relationship="seleniumScrapeModel.FK_tblVehicle_tblVehicleTypeGeneral" FromRole="tblVehicle" ToRole="tblVehicleTypeGeneral" />
+          <Property Type="Double" Name="Vehicle_ConditionCode" />
         </EntityType>
         <EntityType Name="tblVehicleTypeCountry">
           <Key>
@@ -614,6 +616,7 @@
           <EntitySetMapping Name="tblVehicles">
             <EntityTypeMapping TypeName="seleniumScrapeModel.tblVehicle">
               <MappingFragment StoreEntitySet="tblVehicle">
+                <ScalarProperty Name="Vehicle_ConditionCode" ColumnName="Vehicle_ConditionCode" />
                 <ScalarProperty Name="Vehicle_CondtionFilter" ColumnName="Vehicle_CondtionFilter" />
                 <ScalarProperty Name="Vehicle_WillBeSearched" ColumnName="Vehicle_WillBeSearched" />
                 <ScalarProperty Name="Vehicle_Type_ID_fk" ColumnName="Vehicle_Type_ID_fk" />

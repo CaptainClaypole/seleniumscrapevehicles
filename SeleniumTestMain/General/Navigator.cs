@@ -141,8 +141,8 @@ namespace SeleniumTestMain
         private bool ClickPage(int currentPageNum) {
             try
             {
-                // set longer timeout to wait before clicking element.
-                driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 40));
+                // set longer timeout to wait before clicking element. (was set to 40
+                driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 17));
                 driver.FindElement(By.XPath("//a[@onclick='navi(this," + currentPageNum + ");']")).Click();
                 return true;
                 driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 1));
