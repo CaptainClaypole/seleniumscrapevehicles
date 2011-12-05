@@ -124,6 +124,7 @@
     <Property Name="Vehicle_Type_ID_fk" Type="int" />
     <Property Name="Vehicle_WillBeSearched" Type="bit" />
     <Property Name="Vehicle_CondtionFilter" Type="bit" />
+    <Property Name="Vehicle_ConditionCode" Type="float" />
   </EntityType>
   <EntityType Name="tblVehicleTypeCountry">
     <Key>

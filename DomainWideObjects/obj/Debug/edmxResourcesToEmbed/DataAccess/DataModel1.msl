@@ -74,6 +74,7 @@
     <EntitySetMapping Name="tblVehicles">
       <EntityTypeMapping TypeName="seleniumScrapeModel.tblVehicle">
         <MappingFragment StoreEntitySet="tblVehicle">
+          <ScalarProperty Name="Vehicle_ConditionCode" ColumnName="Vehicle_ConditionCode" />
           <ScalarProperty Name="Vehicle_CondtionFilter" ColumnName="Vehicle_CondtionFilter" />
           <ScalarProperty Name="Vehicle_WillBeSearched" ColumnName="Vehicle_WillBeSearched" />
           <ScalarProperty Name="Vehicle_Type_ID_fk" ColumnName="Vehicle_Type_ID_fk" />
