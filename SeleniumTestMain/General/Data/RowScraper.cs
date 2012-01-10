@@ -43,18 +43,17 @@ namespace SeleniumTestMain.General.Data {
                     rowElementHTML =
                    (String)((IJavaScriptExecutor)driver).ExecuteScript("return arguments[0].innerHTML", tableRowElement);
 
-                    //string encodedHtml =  System.Security.SecurityElement.Escape("<table class=\"t_main\" cellpadding=\"0\" cellspacing=\"0\">");
-
+                   
                     string encodedHtml = HttpUtility.HtmlEncode("<table class=\"t_main\" cellpadding=\"0\" cellspacing=\"0\">");
 
                     rowElementHTML = HttpUtility.HtmlDecode(encodedHtml) + rowElementHTML;
 
                     // get all the text data 
-                    TextData(i);
+                   // TextData(i);
 
 
-                    // Console.WriteLine("Writing Row Element Data! ******" + rowElementHTML + "*************");
-                    Console.WriteLine("Written data aj_view" + i);
+                   /* // Console.WriteLine("Writing Row Element Data! ******" + rowElementHTML + "*************");
+                    Console.WriteLine("Written data aj_view" + i);*/
 
                     
                     // Save to DB
@@ -142,14 +141,14 @@ namespace SeleniumTestMain.General.Data {
                 tableRowElement = driver.FindElement(By.Id(tagToSearch + i));
                 tableElementExists = true;
 
-                driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 45));
+                driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 18));
 
                 return tableElementExists;
             } catch (Exception e) {
                 // not found
                 tableElementExists = false;
 
-                driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 45));
+                driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 18));
 
                 return tableElementExists;
             }

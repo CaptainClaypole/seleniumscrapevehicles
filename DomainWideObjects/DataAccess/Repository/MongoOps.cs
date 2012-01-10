@@ -22,12 +22,12 @@ namespace DomainWideObjects.DataAccess.Repository {
 
            var vehicles = GetMongoCollection(AuctionVehicles);
 
-           var vehicleData = GetVehicleData(vehicleId);
+         //  var vehicleData = GetVehicleData(vehicleId);
 
            //DoHtmlRows(rowElementHtml);
 
 
-           var newVehicle = CreateVehicle(vehicleData, searchSessionId, rowElementHtml);
+           var newVehicle = CreateVehicle(searchSessionId, rowElementHtml);
             
            SaveMongo(AuctionVehicles, vehicles, newVehicle);
 
@@ -115,7 +115,7 @@ namespace DomainWideObjects.DataAccess.Repository {
 
        }
 
-       private AuctionVehicle CreateVehicle(Vehicle vehicleData, int searchSessionId, string rowElementHtml)
+       private AuctionVehicle CreateVehicle(int searchSessionId, string rowElementHtml)
        {
           
           
@@ -124,8 +124,8 @@ namespace DomainWideObjects.DataAccess.Repository {
            
            //newVehicle._id = System.Guid.NewGuid().ToString();
            newVehicle._searchSession = searchSessionId;
-           newVehicle.make = vehicleData.vehicleMake;
-           newVehicle.model = vehicleData.vehicleModel;
+           newVehicle.make = "TOYOTA";
+           newVehicle.model = "HIACE VAN";
            newVehicle.searchSessionTimeStamp = DateTime.Now;
            newVehicle.htmlData = new List<AuctionVehicleHtmlRow>();
            newVehicle.htmlData.Add(new AuctionVehicleHtmlRow()

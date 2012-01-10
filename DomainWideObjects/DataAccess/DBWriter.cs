@@ -31,7 +31,7 @@ namespace SeleniumTestMain.General.Data
         public void SaveHtmlRowToDB(string rowElementHTML, int searchSessionId, int vehicleId)
         {
 
-            var ctx = new seleniumScrapeEntities();
+            /*var ctx = new seleniumScrapeEntities();
 
             var htmlRow = new tblHtmlRow
                               {
@@ -52,7 +52,7 @@ namespace SeleniumTestMain.General.Data
 
             repo.Add(htmlRow);
 
-            repo.SaveChanges<tblHtmlRow>();
+            repo.SaveChanges<tblHtmlRow>();*/
 
             // Do Mongo DB stuff
 
