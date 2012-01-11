@@ -132,23 +132,23 @@ namespace SeleniumTestMain.General.Data {
 
         public bool CheckElementExists(string tagToSearch, int i)
         {
-            // Wait for element
-            driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 10));
+            // Wait for element (was 10)
+            driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 7));
 
             bool tableElementExists = false;
             try {
                 // Can crash here if filtering the conditions results in nothing found.
                 tableRowElement = driver.FindElement(By.Id(tagToSearch + i));
                 tableElementExists = true;
-
-                driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 18));
+                // was 18
+                driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 7));
 
                 return tableElementExists;
             } catch (Exception e) {
                 // not found
                 tableElementExists = false;
-
-                driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 18));
+                // was 18
+                driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 7));
 
                 return tableElementExists;
             }

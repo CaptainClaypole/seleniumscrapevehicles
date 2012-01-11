@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using DomainWideObjects.Settings;
 using MongoDB.Driver;
 using MongoDB.Bson;
 using MongoDB.Driver.Builders;
@@ -124,8 +125,9 @@ namespace DomainWideObjects.DataAccess.Repository {
            
            //newVehicle._id = System.Guid.NewGuid().ToString();
            newVehicle._searchSession = searchSessionId;
-           newVehicle.make = "TOYOTA";
-           newVehicle.model = "HIACE VAN";
+           // Set the current search vehicle based on the current one being search (global)
+           newVehicle.make = AppSettings.globalMake;
+           newVehicle.model = AppSettings.globalModel;
            newVehicle.searchSessionTimeStamp = DateTime.Now;
            newVehicle.htmlData = new List<AuctionVehicleHtmlRow>();
            newVehicle.htmlData.Add(new AuctionVehicleHtmlRow()

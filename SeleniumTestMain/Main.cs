@@ -74,6 +74,9 @@ namespace SeleniumTestMain {
 
         private void MainNavigationToLoop(Navigator navigator,  string vehicleMake, string vehicleModel,  bool? filterCondition  , IWebDriver driver, int vehicleID, double? vehicleCondition)
         {
+            // Set current global search vehicle.
+
+            AppSettings.setCurrentVehicle(vehicleID);
 
          
             // Begin foreach for all vehicles

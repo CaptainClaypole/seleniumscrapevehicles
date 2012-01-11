@@ -51,8 +51,8 @@ namespace SeleniumTestMain.General {
                     driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 5));
                     driver.FindElement(By.LinkText(condition.ToString())).Click();
 
-                    // Wait for element (was set to 45)
-                    driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 17));
+                    // Wait for element (was set to 45 / was 17)
+                    driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 10));
 
 
                 }

@@ -1,0 +1,4 @@
+[0111/184235:ERROR:automation_proxy.cc(389)] Channel error in AutomationProxy.
+[0111/184235:ERROR:automation_proxy.cc(389)] Channel error in AutomationProxy.
+[0111/184235:WARNING:webdriver_command.cc(56)] Command did not finish successfully: Chrome did not respond to 'WaitForAllTabsToStopLoading'. Elapsed time was 0 ms. Request details: ({"command":"WaitForAllTabsToStopLoading"}).
+[0111/184235:ERROR:automation_proxy.cc(389)] Channel error in AutomationProxy.

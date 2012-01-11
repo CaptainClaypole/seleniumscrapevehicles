@@ -1,19 +1,14 @@
 <Configuration>
   <RecentFiles>
     <RecentFiles>
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:ConditionPicker.cs" caret="486" fromTop="8" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:IRowScraper.cs" caret="0" fromTop="0" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:DBreader.cs" caret="661" fromTop="11" />
       <File id="65C82E5F-564F-43D8-8B11-202DBFBC065A/d:Scripts/f:modernizr-1.7.js" caret="31023" fromTop="14" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:App.Config" caret="1047" fromTop="6" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="2342" fromTop="5" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Program.cs" caret="251" fromTop="11" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DBWriter.cs" caret="931" fromTop="8" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:CreateHtmlList.cs" caret="509" fromTop="8" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Program.cs" caret="251" fromTop="11" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repo/f:Repo.cs" caret="339" fromTop="0" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="8535" fromTop="9" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="2023" fromTop="18" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:SessionCreator.cs" caret="0" fromTop="0" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:VehicleSelector.cs" caret="0" fromTop="0" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:SessionCreator.cs" caret="0" fromTop="0" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:RegexFinder/f:DataGetter.cs" caret="0" fromTop="0" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:RegexFinder/d:Objects/f:DataRow.cs" caret="0" fromTop="0" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:RegexFinder/f:TextProcessor.cs" caret="0" fromTop="0" />
@@ -21,13 +16,19 @@
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:Navigator.cs" caret="0" fromTop="0" />
       <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repo/f:IRepo.cs" caret="0" fromTop="0" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:IDataScraper.cs" caret="0" fromTop="0" />
-      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="3071" fromTop="7" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:IRowScraper.cs" caret="0" fromTop="0" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DBWriter.cs" caret="1638" fromTop="14" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="3314" fromTop="9" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="4358" fromTop="14" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="1928" fromTop="13" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:ConditionPicker.cs" caret="1977" fromTop="12" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="4012" fromTop="12" />
     </RecentFiles>
     <RecentEdits>
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="8430" fromTop="16" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="3988" fromTop="17" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="8370" fromTop="16" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="3928" fromTop="17" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="1480" fromTop="12" />
-      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DBWriter.cs" caret="1116" fromTop="11" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DBWriter.cs" caret="1118" fromTop="11" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:App.Config" caret="401" fromTop="2" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:DataScraper.cs" caret="2734" fromTop="8" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/f:Main.cs" caret="3316" fromTop="7" />
@@ -38,6 +39,18 @@
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:ConditionPicker.cs" caret="290" fromTop="6" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:ConditionPicker.cs" caret="606" fromTop="9" />
       <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/f:ConditionPicker.cs" caret="781" fromTop="14" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/f:DBWriter.cs" caret="1529" fromTop="9" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="1223" fromTop="13" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="1720" fromTop="14" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="1519" fromTop="7" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="2452" fromTop="20" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="1455" fromTop="10" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="623" fromTop="12" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="761" fromTop="17" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="3171" fromTop="12" />
+      <File id="CD513CE6-3A30-412A-947B-E86B11F4C5E8/d:DataAccess/d:Repository/f:MongoOps.cs" caret="3518" fromTop="13" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="3790" fromTop="21" />
+      <File id="597152A6-A313-4756-8701-CC7452AEC3C2/d:General/d:Data/f:RowScraper.cs" caret="4034" fromTop="12" />
     </RecentEdits>
   </RecentFiles>
   <CompletionStatisticsManager>
