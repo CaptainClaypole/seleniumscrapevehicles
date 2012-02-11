@@ -30,11 +30,11 @@ namespace DomainWideObjects.Settings {
                    
             globalMake = (from v in context.tblVehicles
                             where v.Vehicle_ID_Pk == vehicleID
-                            select v.Vehicle_Make).First().ToString();
+                            select v.Vehicle_Make).First();
 
             globalModel = (from db in context.tblVehicles
                            where db.Vehicle_ID_Pk == vehicleID
-                           select db.Vehicle_Model).First().ToString();
+                           select db.Vehicle_Model).First();
 
             //var makeList = makeQuery.ToList();
 

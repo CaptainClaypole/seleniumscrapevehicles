@@ -16,10 +16,10 @@ namespace DomainWideObjects.DataAccess {
            
 
             // Create database context.
-            var ctx = new seleniumScrapeEntities();
+            //var ctx = new seleniumScrapeEntities();
 
-            ctx.tblHtmls.AddObject(htmlListObject);
-            ctx.SaveChanges();
+            //ctx.tblHtmls.AddObject(htmlListObject);
+            //ctx.SaveChanges();
 
 
 

@@ -129,13 +129,13 @@ namespace SeleniumTestMain {
                 for (int i = 2; i <= pageNum.searchResultsPageCount; i++) {
                    Console.WriteLine("page number is greater than one so looping...");
                     // Call the datascraper and send through an argument for the class to search for.
-                    var dataScraper = new DataScraper(driver, vehicleID, searchSessionID);
+                   // var dataScraper = new DataScraper(driver, vehicleID, searchSessionID);
                    // check for error code then exit
-                     returnCode = dataScraper.GetHtml(tableHTMLtagToScrape);
-                    if (returnCode == 1) {
-                        goto ENDTHISLOOP;
+                    // returnCode = dataScraper.GetHtml(tableHTMLtagToScrape);
+                    //if (returnCode == 1) {
+                      // goto ENDTHISLOOP;
 
-                    }
+                    //}
 
                     IRowScraper rowScraper = new RowScraper(driver, vehicleID, searchSessionID);
                     // check for error code then exit
